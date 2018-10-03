@@ -1,49 +1,38 @@
 <?php
-    $nav = array("Música","Cinema","Séries","Animações","Literatura","Jogos","Moda");
-
-    ${$nav[0]} = array("Artistas","Playlists","Novidades","Top 10");
-    ${$nav[1]} = array("Filmes","Novidades","Críticas","Top 10");
-    ${$nav[2]} = array("Séries","Novidades","Críticas","Top 10");
-    ${$nav[3]} = array("Autores","Novidades","Curiosidades","Top 10");
-    ${$nav[4]} = array("Livros","Quadrinhos","Memes","Críticas");
-    ${$nav[5]} = array("Novidades","Lançamentos","Análises","Top 10");
-    ${$nav[6]} = array("80/2000","Cortes","Loja");
+    echo "<nav class='navbar $pastaatual container-fluid'>";
 ?>
-<nav class="navbar container-fluid">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <i class="fas fa-bars"></i>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
             <?php
-                $c=0;
-                foreach ($nav as $pn) {
+                foreach ($nav as $area => $pagina) {
                     echo "<li class='nav-item row'>
                         <div class='col'>
-                            <a class='nav-link h4' href='#'>$pn</a>
+                            <a class='nav-link h4' href='#'>$area</a>
                         </div>
                         <div class='col'>
-                            <button class='navbar-toggler float-right flecha' type='button' data-toggle='collapse' data-target='#collapsibleNavbar$c'>
+                            <button class='navbar-toggler float-right flecha' type='button' data-toggle='collapse' data-target='#collapsibleNavbar$area'>
                                 <i class='fas fa-angle-down'></i>
                                 <i class='fas fa-angle-left'></i>
                             </button>
                         </div>
                     </li>
                     <li>
-                        <div class='collapse navbar-collapse' id='collapsibleNavbar$c'>
-                            <ul class='navbar-nav'>";
+                        <div class='collapse navbar-collapse' id='collapsibleNavbar$area'>
+                            <ul class='navbar-nav ul-inside-collapse'>";
                         
-                    foreach (${$nav[$c]} as $sn) {
+                    foreach ($nav[$area] as $pagina) {
                         echo "<li class='nav-item row'>
                             <div class='col'>
-                                <a class='nav-link h4' href='#'>$sn</a>
+                                <a class='nav-link h4' href='#'>$pagina</a>
                             </div>
                         </li>";
                     }
                     echo "      </ul>
                         </div>
                     </li>";
-                    $c++;
                 }
             ?>
         </ul>

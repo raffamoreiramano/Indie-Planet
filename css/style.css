@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+/*@media screen and (min-width:960px) {
+    .pos-f-t {
+        display: none;
+
+    }
+}*/
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+  font-family: 'Arial', sans-serif !important;
+}
+
+.navbar.container-fluid {
+    padding: 8px 0;
+    background-color: #19CBCB;
+}
+
+.navbar.musica {
+    background-color: #CE3EB7;
+}
+
+.navbar.cinema {
+    background-color: #5F778A;
+}
+
+.navbar.series {
+    background-color: #E1BE82;
+}
+
+.navbar.animacoes {
+    background-color: #8BCCF2;
+}
+
+.navbar.literatura {
+    background-color: #DE813A;
+}
+
+.navbar.jogos {
+    background-color: #78BB78;
+}
+
+.navbar.moda {
+    background-color: #FF3D4A;
+}
+
+.nav-item.row {
+    padding-left: 12px;
+    padding-top: 8px;
+}
+
+.ul-inside-collapse {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler.active {
+    border: none;
+}
+
+.fas.fa-bars {
+    font-size: 2em;
+    color: white;
+}
+
+.fas.fa-angle-left {
+    font-size: 2em;
+    color: white;
+}
+
+.fas.fa-angle-down {
+    font-size: 2em;
+    color: white;
+}
+
+.nav-link {
+    font-weight: bolder;
+    color: white;
+}
+
+.nav-link:hover {
+    opacity: 0.5;
+    color: white;
+}
+
+.collapse.navbar-collapse {
+    overflow-x: hidden;
+}
+
+
+
+.fa-angle-down {
+    display: none;
+}
+
+.flecha[aria-expanded=true] .fa-angle-left {
+    display: none;
+}
+
+.flecha[aria-expanded=true] .fa-angle-down {
+    display: block;
+}
