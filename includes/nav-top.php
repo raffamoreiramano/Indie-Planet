@@ -1,8 +1,14 @@
 <?php
-    echo "<nav class='navbar $pastaatual container-fluid'>";
+    echo "<nav class='navbar $pastaAtual container-fluid'>";
 ?>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <i class="fas fa-bars"></i>
+    </button>
+    <a class="navbar-brand" href="#">
+        <i class="fas fa-bowling-ball"></i>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbarlogin">
+        <i class="fas fa-ellipsis-v trespontinhos"></i>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
@@ -10,7 +16,7 @@
                 foreach ($nav as $area => $pagina) {
                     echo "<li class='nav-item row'>
                         <div class='col'>
-                            <a class='nav-link h4' href='#'>$area</a>
+                            <a class='nav-link h4' href='".$corredor.strtolower(pato($area))."/index.php"."'>$area</a>
                         </div>
                         <div class='col'>
                             <button class='navbar-toggler float-right flecha' type='button' data-toggle='collapse' data-target='#collapsibleNavbar$area'>
@@ -26,7 +32,7 @@
                     foreach ($nav[$area] as $pagina) {
                         echo "<li class='nav-item row'>
                             <div class='col'>
-                                <a class='nav-link h4' href='#'>$pagina</a>
+                                <a class='nav-link h4' href='".$corredor.strtolower(pato($area))."/".strtolower(pato($pagina)).".php'>$pagina</a>
                             </div>
                         </li>";
                     }

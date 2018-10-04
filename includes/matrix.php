@@ -1,11 +1,11 @@
 <?php
     $info = pathinfo($_SERVER['PHP_SELF']);
     $caminho = str_replace('/Indie-Planet','',$info[dirname]);
-    $contabarras = substr_count($caminho, '/');
+    $contaBarras = substr_count($caminho, '/');
     $corredor = "";
-    if ($contabarras > 0) {
-        $pastaatual = str_replace('/',' ',$caminho);
-        for ($i=1;$i<=$contabarras;$i++) {
+    if ($contaBarras > 0) {
+        $pastaAtual = str_replace('/',' ',$caminho);
+        for ($i=1;$i<=$contaBarras;$i++) {
             $corredor.="../";
         }
     }
@@ -20,4 +20,37 @@
 	"Jogos" => array("Novidades","Lançamentos","Análises","Top 10"),
 	"Moda" => array("80/2000","Cortes","Loja")
     );
+    
+    $navhref = array(
+    "musica" => array("artistas","playlists","novidades","top_10"),
+    "cinema" => array("filmes","novidades","criticas","top_10"),
+	"series" => array("series","novidades","criticas","top_10"),
+	"animacoes" => array("autores","novidades","curiosidades","top_10"),
+	"literatura" => array("livros","quadrinhos","memes","criticas"),
+	"jogos" => array("novidades","lancamentos","analises","top_10"),
+	"moda" => array("802000","cortes","loja")
+    );
+
+    function pato($str) {
+	$a=array(
+        "Á","á","Â","â","À","à","Å","å","Ã","ã","Ä","ä",
+        "É","é","Ê","ê","È","è","Ë","ë",
+        "Í","í","Î","î","Ì","ì","Ï","ï",
+        "Ó","ó","Ô","ô","Ò","ò","Õ","õ","Ö","ö",
+        "Ú","ú","Û","û","Ù","ù","Ü","ü",
+        "Ç","ç",
+        "Ñ","ñ"
+    );
+	$b=array(
+        "A","a","A","a","A","a","A","a","A","a","A","a",
+        "E","e","E","e","E","e","E","e",
+        "I","i","I","i","I","i","I","i",
+        "O","o","O","o","O","o","O","o","O","o",
+        "U","u","U","u","U","u","U","u",
+        "C","c",
+        "N","n"
+    );
+	return str_replace($a,$b,$str);
+}
+
 ?>

@@ -66,6 +66,11 @@ body {
     border: none;
 }
 
+.fas.fa-bowling-ball {
+    font-size: 2em;
+    color: white;
+}
+
 .fas.fa-bars {
     font-size: 2em;
     color: white;
@@ -95,7 +100,11 @@ body {
     overflow-x: hidden;
 }
 
-
+.trespontinhos{
+    font-size: 2em;
+    color: white;
+    padding-right: 8px;
+}
 
 .fa-angle-down {
     display: none;
