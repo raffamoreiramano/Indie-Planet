@@ -4,32 +4,23 @@
     $contaBarras = substr_count($caminho, '/');
     $corredor = "";
     if ($contaBarras > 0) {
-        $pastaAtual = str_replace('/',' ',$caminho);
+        $pastaAtual = ltrim(str_replace('/',' ',$caminho));
+        $caminho = ltrim($caminho,'/');
         for ($i=1;$i<=$contaBarras;$i++) {
             $corredor.="../";
         }
-    }
-    
-    
+    }   
     $nav = array(
 	"Música" => array("Artistas","Playlists","Novidades","Top 10"),
 	"Cinema" => array("Filmes","Novidades","Críticas","Top 10"),
-	"Séries" => array("Séries","Novidades","Críticas","Top 10"),
+	"Séries" => array("Seriados","Novidades","Críticas","Top 10"),
 	"Animações" => array("Autores","Novidades","Curiosidades","Top 10"),
 	"Literatura" => array("Livros","Quadrinhos","Memes","Críticas"),
 	"Jogos" => array("Novidades","Lançamentos","Análises","Top 10"),
-	"Moda" => array("80/2000","Cortes","Loja")
+	"Moda" => array("80-2000","Cortes","Loja")
     );
-    
-    $navhref = array(
-    "musica" => array("artistas","playlists","novidades","top_10"),
-    "cinema" => array("filmes","novidades","criticas","top_10"),
-	"series" => array("series","novidades","criticas","top_10"),
-	"animacoes" => array("autores","novidades","curiosidades","top_10"),
-	"literatura" => array("livros","quadrinhos","memes","criticas"),
-	"jogos" => array("novidades","lancamentos","analises","top_10"),
-	"moda" => array("802000","cortes","loja")
-    );
+
+    $navgeral = array("Sobre","Quem somos","Fórum","Contato");
 
     function pato($str) {
 	$a=array(

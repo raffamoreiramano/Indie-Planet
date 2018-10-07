@@ -1,11 +1,9 @@
 @charset "utf-8";
 
-/*@media screen and (min-width:960px) {
-    .pos-f-t {
-        display: none;
-
-    }
-}*/
+@font-face {
+    font-family: baltar;
+    src: url(../webfonts/baltar.ttf);
+}
 
 html, body {
     max-width: 100%;
@@ -16,7 +14,14 @@ body {
   font-family: 'Arial', sans-serif !important;
 }
 
-.navbar.container-fluid {
+.row.flex-row.flex-nowrap {
+    overflow-x: scroll;
+}
+.row.flex-row.flex-nowrap::-webkit-scrollbar { 
+    display: none; 
+}
+
+.navbar {
     padding: 8px 0;
     background-color: #19CBCB;
 }
@@ -54,8 +59,15 @@ body {
     padding-top: 8px;
 }
 
+.navbar.rolagem {
+    padding: 0 16px;
+}
+.navbar.rolagem .nav-item {
+    padding-top: 0;
+}
+
 .ul-inside-collapse {
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.25);
 }
 
 .navbar-toggler {
@@ -64,6 +76,10 @@ body {
 
 .navbar-toggler.active {
     border: none;
+}
+
+button:focus {
+    outline: none;
 }
 
 .fas.fa-bowling-ball {
@@ -86,7 +102,7 @@ body {
     color: white;
 }
 
-.nav-link {
+.nav-link.h4 {
     font-weight: bolder;
     color: white;
 }
@@ -116,4 +132,34 @@ body {
 
 .flecha[aria-expanded=true] .fa-angle-down {
     display: block;
+}
+
+.navbar.rolagem {
+    padding: 0;
+}
+
+.navbar.rolagem ul {
+    margin: 0;
+}
+    
+.navbar.rolagem ul li a {
+    color: white;
+    padding: 16px 12px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.nav-link.h4.align-baseline {
+    margin-bottom: 0;
+}
+
+.navbar-expand a {
+    padding: 0;
+}
+
+.indie-brand {
+    margin: auto 4px;
+    font-family: baltar;
+    color: white;
+    
 }

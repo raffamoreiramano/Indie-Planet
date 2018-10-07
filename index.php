@@ -10,14 +10,17 @@
     <body>
         <header>
             <?php
-            include $corredor.'includes/nav-top.php';
+                include $corredor.'includes/nav-top.php';
             ?>
-            
+            <?php
+                include $corredor.'includes/nav-mid.php';
+            ?>
         </header>
         
-    <?php
-        include $corredor.'includes/footer.php';
-    ?>    
+        
+        <?php
+            include $corredor.'includes/footer.php';
+        ?>    
     </body>
 
 </html>

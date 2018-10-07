@@ -1,6 +1,6 @@
 <!doctype html>
 <?php
-    include '../includes/matrix.php';
+    include '../../includes/matrix.php';
 ?>
 <html lang="pt-BR">
 <?php
