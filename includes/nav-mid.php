@@ -27,20 +27,18 @@
                     </li>
                     ";
                 }
-                else {
-                    foreach ($navGeral as $area) {
-                        if ($pastaAtual==strtolower(pato($area))||$pastaAtual=="session") {
-                            foreach ($nav as $area => $pagina) {
-                                echo "<li class='nav-item'>
-                                    <a class='nav-link h4 rolamento' href='"
-                                    .$corredor.str_replace(' ','_',strtolower(pato($area)))."/index.php'>$area</a>
-                                </li>
-                                ";
-                            }
-                        }
+            }
+            foreach ($navGeral as $area) {
+                if ($pastaAtual==strtolower(pato($area))||$pastaAtual=="session") {
+                    foreach ($nav as $area => $pagina) {
+                        echo "<li class='nav-item'>
+                            <a class='nav-link h4 rolamento' href='"
+                            .$corredor.str_replace('','_',strtolower(pato($area)))."/index.php'>$area</a>
+                        </li>
+                        ";
                     }
                 }
-            }
+            }  
             
         ?>
     </ul>

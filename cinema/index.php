@@ -17,7 +17,7 @@
                 $titles="Título da primeira postagem teste do carrossel||Título da segunda postagem teste do carrossel||Título da terceira postagem teste do carrossel";
                 $texts="Descrição resumida da postagem que se encontra em um dos slides||Descrição resumida da postagem que se encontra em um dos slides||Descrição resumida da postagem que se encontra em um dos slides";
                 $images="carouselteste01.png||carouselteste02.png||carouselteste03.png";
-                $links="musicas/novidades/index.php||cinema/criticas/index.php||jogos/novidades/index.php";
+                $links="musica/novidades/index.php||cinema/criticas/index.php||jogos/novidades/index.php";
                 $dates="uma hora atrás||duas horas atrás||três horas atrás";
                 include $corredor.'includes/carousel.php';
             ?>

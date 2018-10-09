@@ -22,5 +22,4 @@
             include $corredor.'includes/footer.php';
         ?>    
     </body>
-
 </html>

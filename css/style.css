@@ -106,6 +106,26 @@ button:focus {
     color: white;
 }
 
+.fab.fa-facebook {
+    font-size: 2em;
+    color: white;
+}
+
+.fab.fa-instagram {
+    font-size: 2em;
+    color: white;
+}
+
+.fab.fa-twitter-square {
+    font-size: 2em;
+    color: white;
+}
+
+.fab.fa-youtube-square {
+    font-size: 2em;
+    color: white;
+}
+
 .nav-link.h4 {
     font-weight: bolder;
     color: white;
@@ -331,4 +351,19 @@ button:focus {
 
 .desk-indicators .nav-link:focus {
     border-radius: 0;
+}
+
+.footer-text {
+    text-transform: none;
+    color: white;
+    opacity: 0.5;
+}
+
+.footer-link {
+    font-weight: bolder;
+    color: #00AED2;
+}
+
+.footer-link:hover {
+    text-decoration: none;
 }
