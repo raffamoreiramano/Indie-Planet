@@ -7,7 +7,7 @@
     include $corredor.'includes/head.php';
 ?>
 
-    <body>
+    <body class="<?php echo $pastaAtual; ?>">
         <header>
             <?php
                 include $corredor.'includes/nav-top.php';

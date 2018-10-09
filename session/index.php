@@ -1,14 +1,14 @@
 <!doctype html>
 <?php
-    include '../../includes/matrix.php';
+    include '../includes/matrix.php';
 ?>
 <html lang="pt-BR">
 <?php
     include $corredor.'includes/head.php';
 ?>
 
-    <body>
-        <header class="<?php echo $pastaAtual; ?>">
+    <body class="<?php echo $pastaAtual; ?>">
+        <header>
             <?php
                 include $corredor.'includes/nav-top.php';
             ?>

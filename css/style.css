@@ -16,9 +16,15 @@ body {
 
 .row.flex-row.flex-nowrap {
     overflow-x: scroll;
+
 }
 .row.flex-row.flex-nowrap::-webkit-scrollbar { 
-    display: none; 
+    display: none;
+
+}
+
+.desk-indicators .nav-link:focus {        
+    background-color: #19CBCB;
 }
 
 .navbar {
@@ -26,31 +32,31 @@ body {
     background-color: #19CBCB;
 }
 
-.navbar.musica {
+.musica .navbar , .musica .desk-indicators .nav-link:focus {
     background-color: #CE3EB7;
 }
 
-.navbar.cinema {
+.cinema .navbar , .cinema .desk-indicators .nav-link:focus {
     background-color: #5F778A;
 }
 
-.navbar.series {
+.series .navbar , .series .desk-indicators .nav-link:focus {
     background-color: #E1BE82;
 }
 
-.navbar.animacoes {
+.animacoes .navbar , .animacoes .desk-indicators .nav-link:focus {
     background-color: #8BCCF2;
 }
 
-.navbar.literatura {
+.literatura .navbar , .literatura .desk-indicators .nav-link:focus {
     background-color: #DE813A;
 }
 
-.navbar.jogos {
+.jogos .navbar , .jogos .desk-indicators .nav-link:focus {
     background-color: #78BB78;
 }
 
-.navbar.moda {
+.moda .navbar , .moda .desk-indicators .nav-link:focus {
     background-color: #FF3D4A;
 }
 
@@ -59,9 +65,7 @@ body {
     padding-top: 8px;
 }
 
-.navbar.rolagem {
-    padding: 0 16px;
-}
+
 .navbar.rolagem .nav-item {
     padding-top: 0;
 }
@@ -136,12 +140,94 @@ button:focus {
 
 .navbar.rolagem {
     padding: 0;
+    overflow-y: hidden;
+    height: 60px;
 }
 
 .navbar.rolagem ul {
     margin: 0;
 }
-    
+
+.navbar.rolagem::before {
+    pointer-events: none;
+    content: "";
+    display: block;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background: linear-gradient(to right,#19CBCB, transparent);
+}
+
+.navbar.rolagem::after {
+    pointer-events: none;
+    content: "";
+    display: block;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 100%;
+    background: linear-gradient(to left, #19CBCB, transparent);
+}
+
+.musica .navbar.rolagem::before {
+    background: linear-gradient(to right,#CE3EB7, transparent); 
+}
+
+.musica .navbar.rolagem::after {
+    background: linear-gradient(to left,#CE3EB7, transparent); 
+}
+
+.cinema .navbar.rolagem::before {
+    background: linear-gradient(to right,#5F778A, transparent); 
+}
+
+.cinema .navbar.rolagem::after {
+    background: linear-gradient(to left,#5F778A, transparent); 
+}
+
+.series .navbar.rolagem::before {
+    background: linear-gradient(to right,#E1BE82, transparent); 
+}
+
+.series .navbar.rolagem::after {
+    background: linear-gradient(to left,#E1BE82, transparent); 
+}
+
+.animacoes .navbar.rolagem::before {
+    background: linear-gradient(to right,#8BCCF2, transparent); 
+}
+
+.animacoes .navbar.rolagem::after {
+    background: linear-gradient(to left,#8BCCF2, transparent); 
+}
+
+.literatura .navbar.rolagem::before {
+    background: linear-gradient(to right,#DE813A, transparent); 
+}
+
+.literatura .navbar.rolagem::after {
+    background: linear-gradient(to left,#DE813A, transparent); 
+}
+
+.jogos .navbar.rolagem::before {
+    background: linear-gradient(to right,#78BB78, transparent); 
+}
+
+.jogos .navbar.rolagem::after {
+    background: linear-gradient(to left,#78BB78, transparent); 
+}
+
+.moda .navbar.rolagem::before {
+    background: linear-gradient(to right,#FF3D4A, transparent); 
+}
+
+.moda .navbar.rolagem::after {
+    background: linear-gradient(to left,#FF3D4A, transparent); 
+}
+
 .navbar.rolagem ul li a {
     color: white;
     padding: 16px 12px;
@@ -158,8 +244,91 @@ button:focus {
 }
 
 .indie-brand {
-    margin: auto 4px;
+    margin: auto 6px;
     font-family: baltar;
+    color: white; 
+}
+
+.card::before {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top,black,rgba(0,0,0,0.95),rgba(0,0,0,0.85),rgba(0,0,0,0.70),rgba(0,0,0,0.50),rgba(0,0,0,0.30),rgba(0,0,0,0.15),rgba(0,0,0,0.10),rgba(0,0,0,0.05),transparent);
+}
+
+.carousel-link {
     color: white;
-    
+}
+
+.carousel-link:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.h1 , .h2 , .h3 , .h4 , .h5 , .h6 {
+    transition: 0.25s ease-in-out;
+}
+
+.carousel-link:hover h5 {
+    color: #19CBCB;
+}
+
+.musica .carousel-link:hover h5 {
+    color: #CE3EB7;
+}
+
+.cinema .carousel-link:hover h5 {
+    color: #5F778A;
+}
+
+.series .carousel-link:hover h5 {
+    color: #E1BE82;
+}
+
+.animacoes .carousel-link:hover h5 {
+    color: #8BCCF2;
+}
+
+.literatura .carousel-link:hover h5 {
+    color: #DE813A;
+}
+
+.jogos .carousel-link:hover h5 {
+    color: #78BB78;
+}
+
+.moda .carousel-link:hover h5 {
+    color: #FF3D4A;
+}
+
+.desk-indicators {
+    padding: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.desk-indicators::-webkit-scrollbar { 
+    display: none;
+}
+
+.desk-indicators ul {
+    padding: 0;
+}
+
+.desk-indicators ul li {
+    padding: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    margin-bottom: 0;
+}
+
+.desk-indicators ul li:hover , .desk-indicators .nav-link:hover {
+    border-radius: 0;
+    color: white;
+}
+
+.desk-indicators .nav-link:focus {
+    border-radius: 0;
 }

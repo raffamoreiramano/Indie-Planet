@@ -7,7 +7,7 @@
             </a>
         </li>
         <?php 
-            foreach ($navgeral as $area) {
+            foreach ($navGeral as $area) {
                 echo "<li class='nav-item'>
                         <a class='nav-link h4 align-baseline' href='"
                     .$corredor.str_replace(' ','_',strtolower(pato($area)))."/index.php'>$area</a>
@@ -19,7 +19,7 @@
         </li>
     </ul>
 </nav>
-<nav class='navbar <?php echo $pastaAtual; ?> d-lg-none container-fluid'>
+<nav class='navbar d-lg-none container-fluid'>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <i class="fas fa-bars"></i>
     </button>
@@ -64,7 +64,7 @@
                         </div>
                     </li>";
                 }
-                foreach ($navgeral as $area) {
+                foreach ($navGeral as $area) {
                     echo "<li class='nav-item row'>
                         <div class='col'>
                             <a class='nav-link h4' href='"

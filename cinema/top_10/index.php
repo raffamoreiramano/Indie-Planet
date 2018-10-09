@@ -8,7 +8,7 @@
 ?>
 
     <body>
-        <header>
+        <header class="<?php echo $pastaAtual; ?>">
             <?php
                 include $corredor.'includes/nav-top.php';
             ?>
