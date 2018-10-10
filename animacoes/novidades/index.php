@@ -7,8 +7,8 @@
     include $corredor.'includes/head.php';
 ?>
 
-    <body>
-        <header class="<?php echo $pastaAtual; ?>">
+    <body class="<?php echo $pastaAtual; ?>">
+        <header>
             <?php
                 include $corredor.'includes/nav-top.php';
             ?>
@@ -16,7 +16,9 @@
                 include $corredor.'includes/nav-mid.php';
             ?>
         </header>
-        
+        <?php
+            include $corredor.'includes/trail.php';
+        ?>
         
         <?php
             include $corredor.'includes/footer.php';

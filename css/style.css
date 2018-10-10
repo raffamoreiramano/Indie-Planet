@@ -291,35 +291,39 @@ button:focus {
     transition: 0.25s ease-in-out;
 }
 
-.carousel-link:hover h5 {
+.breadcrumb li a {
+    color: #6C757D;
+}
+
+.carousel-link:hover h5 , .breadcrumb li a {
     color: #19CBCB;
 }
 
-.musica .carousel-link:hover h5 {
+.musica .carousel-link:hover h5 , .musica .breadcrumb li a {
     color: #CE3EB7;
 }
 
-.cinema .carousel-link:hover h5 {
+.cinema .carousel-link:hover h5 , .cinema .breadcrumb li a {
     color: #5F778A;
 }
 
-.series .carousel-link:hover h5 {
+.series .carousel-link:hover h5 , .series .breadcrumb li a {
     color: #E1BE82;
 }
 
-.animacoes .carousel-link:hover h5 {
+.animacoes .carousel-link:hover h5 , .animacoes .breadcrumb li a {
     color: #8BCCF2;
 }
 
-.literatura .carousel-link:hover h5 {
+.literatura .carousel-link:hover h5 , .literatura .breadcrumb li a {
     color: #DE813A;
 }
 
-.jogos .carousel-link:hover h5 {
+.jogos .carousel-link:hover h5 , .jogos .breadcrumb li a {
     color: #78BB78;
 }
 
-.moda .carousel-link:hover h5 {
+.moda .carousel-link:hover h5 , .moda .breadcrumb li a {
     color: #FF3D4A;
 }
 
@@ -365,5 +369,9 @@ button:focus {
 }
 
 .footer-link:hover {
+    text-decoration: none;
+}
+
+.breadcrumb li a:hover {
     text-decoration: none;
 }
