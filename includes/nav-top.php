@@ -2,20 +2,20 @@
     <ul class="navbar-nav container">
         <li class="nav-item">
             <a class="navbar-brand align-baseline d-flex flex-row" href="<?php echo $corredor."index.php"; ?>">
-                <i><img alt="logo" src="<?php echo $corredor."img/planet.ico"; ?>"/></i>
-                <h3 class="h3 indie-brand">INDIE PLANET</h3>
+                <i><img alt="logo" src="<?php echo $corredor."img/planet.ico"; ?>" class="ml-2"/></i>
+                <h3 class="h3 indie-brand mt-auto mb-auto ml-2 mr-2 text-white">INDIE PLANET</h3>
             </a>
         </li>
         <?php 
             foreach ($navGeral as $area) {
                 echo "<li class='nav-item'>
-                        <a class='nav-link h4 align-baseline' href='"
+                        <a class='nav-link h4 m-auto' href='"
                     .$corredor.str_replace(' ','_',strtolower(pato($area)))."/index.php'>$area</a>
                 </li>";
-            }
+            } // Gera conteúdo de acordo com os elementos da matriz $navGeral, que contém os nomes das áreas gerais do portal
         ?>
         <li class="nav-item">
-            <button type="button" class="btn btn-secondary align-baseline">Faça seu login!</button>
+            <button type="button" class="btn btn-secondary mt-auto mb-auto mr-2 ml-0">Faça seu login!</button>
         </li>
     </ul>
 </nav>
@@ -59,11 +59,11 @@
                             "/index.php'>$pagina</a>
                             </div>
                         </li>";
-                    }
+                    } // Laço com o conteúdo particular de cada área do portal
                     echo "      </ul>
                         </div>
                     </li>";
-                }
+                } // Esse laço serve para gerar o conteúdo principal da navegação do portal
                 foreach ($navGeral as $area) {
                     echo "<li class='nav-item row'>
                         <div class='col'>
@@ -71,7 +71,7 @@
                         .$corredor.str_replace(' ','_',strtolower(pato($area)))."/index.php'>$area</a>
                         </div>
                     </li>";
-                }
+                } // Termina o menu de navegação com algumas das áreas gerais do portal
             ?>
             
             

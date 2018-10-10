@@ -255,18 +255,12 @@ button:focus {
     white-space: nowrap;
 }
 
-.nav-link.h4.align-baseline {
-    margin-bottom: 0;
-}
-
 .navbar-expand a {
     padding: 0;
 }
 
 .indie-brand {
-    margin: auto 6px;
     font-family: baltar;
-    color: white; 
 }
 
 .card::before {
