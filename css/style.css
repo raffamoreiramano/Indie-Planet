@@ -23,40 +23,36 @@ body {
 
 }
 
-.desk-indicators .nav-link:focus {        
-    background-color: #19CBCB;
-}
-
 .navbar {
     padding: 8px 0;
     background-color: #19CBCB;
 }
 
-.musica .navbar , .musica .desk-indicators .nav-link:focus {
+.musica .navbar {
     background-color: #CE3EB7;
 }
 
-.cinema .navbar , .cinema .desk-indicators .nav-link:focus {
+.cinema .navbar {
     background-color: #5F778A;
 }
 
-.series .navbar , .series .desk-indicators .nav-link:focus {
+.series .navbar {
     background-color: #E1BE82;
 }
 
-.animacoes .navbar , .animacoes .desk-indicators .nav-link:focus {
+.animacoes .navbar {
     background-color: #8BCCF2;
 }
 
-.literatura .navbar , .literatura .desk-indicators .nav-link:focus {
+.literatura .navbar {
     background-color: #DE813A;
 }
 
-.jogos .navbar , .jogos .desk-indicators .nav-link:focus {
+.jogos .navbar {
     background-color: #78BB78;
 }
 
-.moda .navbar , .moda .desk-indicators .nav-link:focus {
+.moda .navbar {
     background-color: #FF3D4A;
 }
 
@@ -330,27 +326,6 @@ button:focus {
     display: none;
 }
 
-.desk-indicators ul {
-    padding: 0;
-}
-
-.desk-indicators ul li {
-    padding: 0;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    margin-bottom: 0;
-}
-
-.desk-indicators ul li:hover , .desk-indicators .nav-link:hover {
-    border-radius: 0;
-    color: white;
-}
-
-.desk-indicators .nav-link:focus {
-    border-radius: 0;
-}
-
 .footer-text {
     text-transform: none;
     color: white;
@@ -368,4 +343,70 @@ button:focus {
 
 .breadcrumb li a:hover {
     text-decoration: none;
+}
+.login-dropdown {
+    min-width: 300px;
+    margin-top: 10px;
+    background-color: rgb(25, 26, 27);
+}
+
+.carousel-indicators {
+    top: 0;
+}
+
+.carousel-indicators li {
+    text-indent: 0;
+    height: 100px;
+}
+
+.carousel-indicators li h5 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: inherit;
+    display: block;
+    overflow: hidden;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .carousel-indicators li h5 {
+        white-space: normal;
+        display: block;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        }
+}
+
+.carousel-indicators li.active {        
+    background-color: #19CBCB !important;
+}
+
+.musica .carousel-indicators li.active {
+    background-color: #CE3EB7 !important;
+}
+
+.cinema .carousel-indicators li.active {
+    background-color: #5F778A !important;
+}
+
+.series .carousel-indicators li.active {
+    background-color: #E1BE82 !important;
+}
+
+.animacoes .carousel-indicators li.active {
+    background-color: #8BCCF2 !important;
+}
+
+.literatura .carousel-indicators li.active {
+    background-color: #DE813A !important;
+}
+
+.jogos .carousel-indicators li.active {
+    background-color: #78BB78 !important;
+}
+
+.moda .carousel-indicators li.active {
+    background-color: #FF3D4A !important;
 }

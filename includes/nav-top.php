@@ -3,7 +3,7 @@
         <li class="nav-item">
             <a class="navbar-brand align-baseline d-flex flex-row" href="<?php echo $corredor."index.php"; ?>">
                 <i><img alt="logo" src="<?php echo $corredor."img/planet.ico"; ?>" class="ml-2"/></i>
-                <h3 class="h3 indie-brand mt-auto mb-auto ml-2 mr-2 text-white">INDIE PLANET</h3>
+                <h3 class="h3 indie-brand my-auto mx-2 text-white">INDIE PLANET</h3>
             </a>
         </li>
         <?php 
@@ -14,8 +14,32 @@
                 </li>";
             } // Gera conteúdo de acordo com os elementos da matriz $navGeral, que contém os nomes das áreas gerais do portal
         ?>
-        <li class="nav-item">
-            <button type="button" class="btn btn-secondary mt-auto mb-auto mr-2 ml-0">Faça seu login!</button>
+        <li class="nav-item dropdown">
+            <button type="button" class="btn btn-secondary my-auto mr-2 ml-0 dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Faça seu login!</button>
+            <div class="dropdown-menu dropdown-menu-right rounded-0 border-0 login-dropdown px-4 py-3" aria-labelledby="dropdownMenuButton">
+                <form class="text-white">
+                    <div class="form-group">
+                        <label for="exampleDropdownFormEmail1">Email</label>
+                        <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@exemplo.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleDropdownFormPassword1">Senha</label>
+                        <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Senha">
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                        <label class="form-check-label" for="dropdownCheck">
+                            Lembrar senha
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Entrar</button>
+                </form>
+                <div class="dropdown-divider"></div>
+                <div class="d-flex flex-column">
+                    <a class="text-white font-weight-bold" href="#">Criar conta</a>
+                    <a class="text-white font-weight-bold" href="#">Esqueci minha senha</a>
+                </div>
+            </div>
         </li>
     </ul>
 </nav>
