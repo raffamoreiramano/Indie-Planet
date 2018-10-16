@@ -268,6 +268,10 @@ button:focus {
     background: linear-gradient(to top,black,rgba(0,0,0,0.95),rgba(0,0,0,0.85),rgba(0,0,0,0.70),rgba(0,0,0,0.50),rgba(0,0,0,0.30),rgba(0,0,0,0.15),rgba(0,0,0,0.10),rgba(0,0,0,0.05),transparent);
 }
 
+.feed .card::before {
+    border-radius: 0.25rem !important;
+}
+
 .carousel-link {
     color: white;
 }
@@ -277,8 +281,8 @@ button:focus {
     text-decoration: none;
 }
 
-.h1 , .h2 , .h3 , .h4 , .h5 , .h6 {
-    transition: 0.25s ease-in-out;
+.h1 , .h2 , .h3 , .h4 , .h5 , .h6 , .feed article div a {
+    transition: 0.15s ease-in-out;
 }
 
 .breadcrumb li a {
@@ -365,6 +369,7 @@ button:focus {
     width: inherit;
     display: block;
     overflow: hidden;
+    word-break: break-all;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
@@ -379,34 +384,119 @@ button:focus {
         }
 }
 
+
+.carousel-indicators li:hover {
+    background-color: rgba(0,0,0,0.25) !important;
+}
+
 .carousel-indicators li.active {        
     background-color: #19CBCB !important;
+    border-color: #19CBCB;
 }
 
 .musica .carousel-indicators li.active {
     background-color: #CE3EB7 !important;
+    border-color: #CE3EB7;
 }
 
 .cinema .carousel-indicators li.active {
     background-color: #5F778A !important;
+    border-color: #5F778A;
 }
 
 .series .carousel-indicators li.active {
     background-color: #E1BE82 !important;
+    border-color: #E1BE82;
 }
 
 .animacoes .carousel-indicators li.active {
     background-color: #8BCCF2 !important;
+    border-color: #8BCCF2;
 }
 
 .literatura .carousel-indicators li.active {
     background-color: #DE813A !important;
+    border-color: #DE813A;
 }
 
 .jogos .carousel-indicators li.active {
     background-color: #78BB78 !important;
+    border-color: #78BB78;
 }
 
 .moda .carousel-indicators li.active {
     background-color: #FF3D4A !important;
+    border-color: #FF3D4A;
+}
+
+.feed article div a:hover , .feed article a:hover h3 {
+    color: #19CBCB !important;
+    text-decoration: none;
+}
+
+.musica .feed article div a:hover , .musica .feed article a:hover h3 {
+    color: #CE3EB7 !important;
+}
+
+.cinema .feed article div a:hover , .cinema .feed article a:hover h3 {
+    color: #5F778A !important;
+}
+
+.series .feed article div a:hover , .series .feed article a:hover h3 {
+    color: #E1BE82 !important;
+}
+
+.animacoes .feed article div a:hover , .animacoes .feed article a:hover h3 {
+    color: #8BCCF2 !important;
+}
+
+.literatura .feed article div a:hover , .literatura .feed article a:hover h3 {
+    color: #DE813A !important;
+}
+
+.jogos .feed article div a:hover , .jogos .feed article a:hover h3 {
+    color: #78BB78 !important;
+}
+
+.moda .feed article div a:hover , .moda .feed article a:hover h3 {
+    color: #FF3D4A !important;
+}
+
+@media (min-width: 768px) {
+    .news-title-link {
+        font-size: 1.5rem;
+    }
+    .news-title-link-b {
+        font-size: 1.75rem;
+    }
+}
+
+.news-header::before {
+    content: "";
+    display: block;
+    vertical-align: middle;
+    margin: auto 8px auto 0;
+    border-top: solid 1px rgba(0,0,0,0.1);
+    width: 30px;
+}
+
+.news-header::after {
+    content: "";
+    display: block;
+    vertical-align: middle;
+    margin: auto 0 auto 8px;
+    border-top: solid 1px rgba(0,0,0,0.1);
+    flex: auto;
+}
+
+@media (max-width: 767px) {
+    .feed .card {
+        border-radius: 0 !important;
+    }
+    .feed .card .card-img {
+        border-radius: 0 !important;
+    }
+    .feed .card::before {
+        border-radius: 0 !important;
+    }
 }

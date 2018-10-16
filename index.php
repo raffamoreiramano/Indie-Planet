@@ -7,7 +7,7 @@
     include $corredor.'includes/head.php'; // Uso de $corredor no início dos links para voltar para a o diretorio principal do portal antes de prosseguir para o destino do arquivo
 ?>
 
-    <body class="<?php echo $pastaAtual; ?>">
+    <body class="<?php echo $pastaAtualInicio; ?>">
         <header>
             <?php
                 include $corredor.'includes/nav-top.php';
@@ -25,7 +25,73 @@
                 include $corredor.'includes/nav-mid.php';
             ?>
         </header>
-        
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-8 align-self-start feed">
+                    <?php
+                        $newsNumber=7; // Número de postagens do feed
+                        $highlight=4; // Cada postagem de número semelhante ao valor de $highlight é um destaque
+                        $titles="Título da primeira postagem do feed de notícias" // Títulos das postagens
+                            ."||".
+                            "Título da segunda postagem do feed de notícias"
+                            ."||".
+                            "Título da terceira postagem do feed de notícias"
+                            ."||".
+                            "Título da quarta postagem do feed de notícias"
+                            ."||".
+                            "Título da quinta postagem do feed de notícias"
+                            ."||".
+                            "Título da sexta postagem do feed de notícias"
+                            ."||".
+                            "Título da sétima postagem do feed de notícias";
+                        $images="carouselteste01.png" // Nomes dos arquivos de imagens do feed
+                            ."||".
+                            "carouselteste02.png"
+                            ."||".
+                            "carouselteste03.png"
+                            ."||".
+                            "carouselteste01.png"
+                            ."||".
+                            "carouselteste02.png"
+                            ."||".
+                            "carouselteste03.png"
+                            ."||".
+                            "carouselteste01.png";
+                        $links="musica/novidades/post.php" // Links dos destinos de cada postagem
+                            ."||".
+                            "cinema/novidades/post.php"
+                            ."||".
+                            "series/novidades/post.php"
+                            ."||".
+                            "animacoes/novidades/post.php"
+                            ."||".
+                            "literatura/criticas/post.php"
+                            ."||".
+                            "jogos/novidades/post.php"
+                            ."||".
+                            "moda/cortes/post.php";
+                        $dates="uma hora atrás" // Horários de cada postagem
+                            ."||".
+                            "duas horas atrás"
+                            ."||".
+                            "três horas atrás"
+                            ."||".
+                            "quatro horas atrás"
+                            ."||".
+                            "cinco horas atrás"
+                            ."||".
+                            "seis horas atrás"
+                            ."||".
+                            "sete horas atrás";
+                        $areas="Música||Cinema||Séries||Animações||Literatura||Jogos||Moda"; // Área de cada postagem
+                        include $corredor.'includes/news.php';
+                    ?>
+                </div>
+                <div class="col-12 col-lg-4 align-self-end">
+                    
+                </div>
+            </div>
+        </div>
 
         <?php
             include $corredor.'includes/footer.php';
