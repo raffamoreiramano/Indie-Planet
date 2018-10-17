@@ -29,11 +29,11 @@
                     "carouselteste02.png"
                     ."||".
                     "carouselteste03.png"; // Nomes dos arquivos de imagens dos slides
-                $links="musica/novidades/post.php"
+                $links="musica/novidades/post/index.php"
                     ."||".
-                    "cinema/novidades/post.php"
+                    "cinema/novidades/post/index.php"
                     ."||".
-                    "jogos/novidades/post.php"; // Links dos destinos de cada slide, começando pela pasta da área referente
+                    "jogos/novidades/post/index.php"; // Links dos destinos de cada slide, começando pela pasta da área referente
                 $dates="uma hora atrás"
                     ."||".
                     "duas horas atrás"
