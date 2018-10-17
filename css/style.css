@@ -500,3 +500,15 @@ button:focus {
         border-radius: 0 !important;
     }
 }
+
+@media (min-width: 992px) {
+    #carouselIndicators {
+        max-height: 347px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    #carouselIndicators {
+        max-height: 413px !important;
+    }
+}

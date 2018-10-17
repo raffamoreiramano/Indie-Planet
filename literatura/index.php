@@ -13,13 +13,29 @@
                 include $corredor.'includes/nav-top.php';
             ?>
             <?php
-                $slides=3; // Número de slides do carrossel
+                $slides=7; // Número de slides do carrossel
                 $titles="Título da primeira postagem teste do carrossel"
                     ."||".
                     "Título da segunda postagem teste do carrossel"
                     ."||".
-                    "Título da terceira postagem teste do carrossel"; // Títulos dos slides
+                    "Título da terceira postagem teste do carrossel"
+                    ."||".
+                    "Título da quarta postagem teste do carrossel"
+                    ."||".
+                    "Título da quinta postagem teste do carrossel"
+                    ."||".
+                    "Título da sexta postagem teste do carrossel"
+                    ."||".
+                    "Título da sétima postagem teste do carrossel"; // Títulos dos slides
                 $texts="Descrição resumida da postagem que se encontra em um dos slides"
+                    ."||".
+                    "Descrição resumida da postagem que se encontra em um dos slides"
+                    ."||".
+                    "Descrição resumida da postagem que se encontra em um dos slides"
+                    ."||".
+                    "Descrição resumida da postagem que se encontra em um dos slides"
+                    ."||".
+                    "Descrição resumida da postagem que se encontra em um dos slides"
                     ."||".
                     "Descrição resumida da postagem que se encontra em um dos slides"
                     ."||".
@@ -28,17 +44,41 @@
                     ."||".
                     "carouselteste02.png"
                     ."||".
+                    "carouselteste03.png"
+                    ."||".
+                    "carouselteste02.png"
+                    ."||".
+                    "carouselteste01.png"
+                    ."||".
+                    "carouselteste02.png"
+                    ."||".
                     "carouselteste03.png"; // Nomes dos arquivos de imagens dos slides
-                $links="musica/novidades/post/index.php"
+                $links="criticas/post/index.php"
                     ."||".
-                    "cinema/novidades/post/index.php"
+                    "criticas/post/index.php"
                     ."||".
-                    "jogos/novidades/post/index.php"; // Links dos destinos de cada slide, começando pela pasta da área referente
+                    "criticas/post/index.php"
+                    ."||".
+                    "criticas/post/index.php"
+                    ."||".
+                    "criticas/post/index.php"
+                    ."||".
+                    "criticas/post/index.php"
+                    ."||".
+                    "criticas/post/index.php"; // Links dos destinos de cada slide, começando pela pasta da área referente
                 $dates="uma hora atrás"
                     ."||".
                     "duas horas atrás"
                     ."||".
-                    "três horas atrás"; // Horário de cada postagem
+                    "três horas atrás"
+                    ."||".
+                    "quatro horas atrás"
+                    ."||".
+                    "cinco horas atrás"
+                    ."||".
+                    "seis horas atrás"
+                    ."||".
+                    "sete horas atrás"; // Horário de cada postagem
                 include $corredor.'includes/carousel.php';
             ?>
             <?php

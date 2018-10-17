@@ -18,7 +18,7 @@
                                 echo ($i==0)?" active'>\n":"'>\n";
                                 echo "<img class='card-img rounded-0' src='".$corredor."img/".$carousel['images'][$i]."' alt='Card image'>\n";
                                 echo "<div class='card-img-overlay h-100 d-flex flex-column justify-content-end'>\n";
-                                echo "<a class='carousel-link' href='".$corredor.$carousel['links'][$i]
+                                echo "<a class='carousel-link' href='".$carousel['links'][$i]
                                     ."?t=".str_replace(' ','+',$carousel['titles'][$i])."&img=".$carousel['images'][$i]."&dt="
                                     .str_replace(' ','+',$carousel['dates'][$i])."'>\n";
                                 echo "<h5 class='card-title h4 font-weight-bold mb-0 mb-md-3'>".$carousel['titles'][$i]."</h5>\n";
