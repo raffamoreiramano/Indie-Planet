@@ -77,19 +77,19 @@
                             "carouselteste03.png"
                             ."||".
                             "carouselteste01.png";
-                        $links="musica/novidades/post.php" // Links dos destinos de cada postagem
+                        $links="musica/novidades/post/index.php" // Links dos destinos de cada postagem
                             ."||".
-                            "cinema/novidades/post.php"
+                            "cinema/novidades/post/index.php"
                             ."||".
-                            "series/novidades/post.php"
+                            "series/novidades/post/index.php"
                             ."||".
-                            "animacoes/novidades/post.php"
+                            "animacoes/novidades/post/index.php"
                             ."||".
-                            "literatura/criticas/post.php"
+                            "literatura/criticas/post/index.php"
                             ."||".
-                            "jogos/novidades/post.php"
+                            "jogos/novidades/post/index.php"
                             ."||".
-                            "moda/cortes/post.php";
+                            "moda/cortes/post/index.php";
                         $dates="uma hora atrás" // Horários de cada postagem
                             ."||".
                             "duas horas atrás"
