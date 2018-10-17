@@ -35,7 +35,7 @@
                 echo "<a href='".$news['links'][$i]."?t=".str_replace(' ','+',$news['titles'][$i])."&img=".$news['images'][$i]."&dt=".str_replace(' ','+',$news['dates'][$i]);
                 echo "' class='text-body'>\n<h3 class='h5 d-inline news-title-link font-weight-bold'>";
                 echo $news['titles'][$i]."</h3>\n</a>\n</div>\n<div class='mt-auto mb-2'>\n";
-                echo "<a href='".$corredor.strtolower(pato($news['areas'][$i]))."/index.php' class='small text-uppercase text-body'>";
+                echo "<a href='".strtolower(pato($news['areas'][$i]))."/index.php' class='small text-uppercase text-body'>";
                 echo $news['areas'][$i]."</a>\n</div>\n</div>\n</div>\n</article>";
             }
         }

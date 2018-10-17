@@ -1,4 +1,4 @@
-<nav class="container p-0">
+<nav class="container p-0 px-lg-4">
     <ol class="breadcrumb border-0 rounded-0 bg-white m-0">
         <?php
             foreach ($trail as $item) {

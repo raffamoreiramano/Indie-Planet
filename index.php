@@ -14,20 +14,40 @@
             ?>
             <?php
                 $slides=3; // Número de slides do carrossel
-                $titles="Título da primeira postagem teste do carrossel||Título da segunda postagem teste do carrossel||Título da terceira postagem teste do carrossel"; // Títulos dos slides
-                $texts="Descrição resumida da postagem que se encontra em um dos slides||Descrição resumida da postagem que se encontra em um dos slides||Descrição resumida da postagem que se encontra em um dos slides"; // Descrições dos slides
-                $images="carouselteste01.png||carouselteste02.png||carouselteste03.png"; // Nomes dos arquivos de imagens dos slides
-                $links="musica/novidades/index.php||cinema/criticas/index.php||jogos/novidades/index.php"; // Links dos destinos de cada slide, começando pela pasta da área referente
-                $dates="uma hora atrás||duas horas atrás||três horas atrás"; // Horário de cada postagem
+                $titles="Título da primeira postagem teste do carrossel"
+                    ."||".
+                    "Título da segunda postagem teste do carrossel"
+                    ."||".
+                    "Título da terceira postagem teste do carrossel"; // Títulos dos slides
+                $texts="Descrição resumida da postagem que se encontra em um dos slides"
+                    ."||".
+                    "Descrição resumida da postagem que se encontra em um dos slides"
+                    ."||".
+                    "Descrição resumida da postagem que se encontra em um dos slides"; // Descrições dos slides
+                $images="carouselteste01.png"
+                    ."||".
+                    "carouselteste02.png"
+                    ."||".
+                    "carouselteste03.png"; // Nomes dos arquivos de imagens dos slides
+                $links="musica/novidades/post.php"
+                    ."||".
+                    "cinema/novidades/post.php"
+                    ."||".
+                    "jogos/novidades/post.php"; // Links dos destinos de cada slide, começando pela pasta da área referente
+                $dates="uma hora atrás"
+                    ."||".
+                    "duas horas atrás"
+                    ."||".
+                    "três horas atrás"; // Horário de cada postagem
                 include $corredor.'includes/carousel.php';
             ?>
             <?php
                 include $corredor.'includes/nav-mid.php';
             ?>
         </header>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-8 align-self-start feed">
+        <div class="container mt-lg-5">
+            <div class="row justify-content-between">
+                <div class="col-12 col-lg-7 feed">
                     <?php
                         $newsNumber=7; // Número de postagens do feed
                         $highlight=4; // Cada postagem de número semelhante ao valor de $highlight é um destaque
@@ -87,9 +107,9 @@
                         include $corredor.'includes/news.php';
                     ?>
                 </div>
-                <div class="col-12 col-lg-4 align-self-end">
-                    
-                </div>
+                <?php
+                    include $corredor.'includes/aside.php';
+                ?>
             </div>
         </div>
 
