@@ -1,0 +1,849 @@
+
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/ico" href="../img/favicon.ico">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="../css/all.min.css">
+    <!-- CSS dos autores -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Indie Planet</title>
+</head>
+
+<body class="musica">
+    <header>
+        <nav class="navbar container-fluid navbar-expand bg-dark d-none d-lg-block">
+            <ul class="navbar-nav container">
+                <li class="nav-item">
+                    <a class="navbar-brand align-baseline d-flex flex-row" href="../index.php">
+                        <i><img alt="logo" src="../img/planet.ico" class="ml-2" /></i>
+                        <h3 class="h3 indie-brand my-auto mx-2 text-white">INDIE PLANET</h3>
+                    </a>
+                </li>
+                <li class='nav-item'>
+                    <a class='nav-link h4 m-auto' href='../sobre/index.php'>Sobre</a>
+                </li>
+                <li class='nav-item'>
+                    <a class='nav-link h4 m-auto' href='../quem_somos/index.php'>Quem somos</a>
+                </li>
+                <li class='nav-item'>
+                    <a class='nav-link h4 m-auto' href='../forum/index.php'>Fórum</a>
+                </li>
+                <li class='nav-item'>
+                    <a class='nav-link h4 m-auto' href='../contato/index.php'>Contato</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <button type="button" class="btn btn-secondary my-auto mr-2 ml-0" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Faça seu login!</button>
+                    <div class="dropdown-menu dropdown-menu-right rounded-0 border-0 login-dropdown px-4 py-3" aria-labelledby="dropdownMenuButton">
+                        <form class="text-white">
+                            <div class="form-group">
+                                <label for="formEmail1">Email</label>
+                                <input type="email" class="form-control" id="formEmail1" placeholder="email@exemplo.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="formPassword1">Senha</label>
+                                <input type="password" class="form-control" id="formPassword1" placeholder="Senha">
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="formCheck1">
+                                <label class="form-check-label" for="formCheck1">
+                                    Lembrar senha
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Entrar</button>
+                        </form>
+                        <div class="dropdown-divider"></div>
+                        <div class="d-flex flex-column">
+                            <a class="text-white font-weight-bold" href="#">Criar conta</a>
+                            <a class="text-white font-weight-bold" href="#">Esqueci minha senha</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <nav class='navbar d-lg-none container-fluid' id="topNav">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <i class="fas fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="../index.php">
+                <i><img alt="logo" src="../img/planet.ico" /></i>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleForm" aria-expanded="false">
+                <i class="fas fa-ellipsis-v trespontinhos"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar" data-parent="#topNav">
+                <ul class="navbar-nav">
+                    <li class='nav-item row'>
+                        <div class='col'>
+                            <a class='nav-link h4' href='../musica/index.php'>Música</a>
+                        </div>
+                        <div class='col'>
+                            <button class='navbar-toggler float-right flecha' type='button' data-toggle='collapse' data-target='#collapsibleNavbarMúsica'>
+                                <i class='fas fa-angle-down'></i>
+                                <i class='fas fa-angle-left'></i>
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class='collapse navbar-collapse' id='collapsibleNavbarMúsica'>
+                            <ul class='navbar-nav ul-inside-collapse'>
+                                <li class='nav-item row'>
+                                    <div class='col'>
+                                        <a class='nav-link h4' href='../musica/artistas/index.php'>Artistas</a>
+                                    </div>
+                                </li>
+                                <li class='nav-item row'>
+                                    <div class='col'>
+                                        <a class='nav-link h4' href='../musica/playlists/index.php'>Playlists</a>
+                                    </div>
+                                </li>
+                                <li class='nav-item row'>
+                                    <div class='col'>
+                                        <a class='nav-link h4' href='../musica/novidades/index.php'>Novidades</a>
+                                    </div>
+                                </li>
+                                <li class='nav-item row'>
+                                    <div class='col'>
+                                        <a class='nav-link h4' href='../musica/top_10/index.php'>Top 10</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class='nav-item row'>
+                        <div class='col'>
+                            <a class='nav-link h4' href='../cinema/index.php'>Cinema</a>
+                        </div>
+                        <div class='col'>
+                            <button class='navbar-toggler float-right flecha' type='button' data-toggle='collapse' data-target='#collapsibleNavbarCinema'>
+                                <i class='fas fa-angle-down'></i>
+                                <i class='fas fa-angle-left'></i>
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class='collapse navbar-collapse' id='collapsibleNavbarCinema'>
+                            <ul class='navbar-nav ul-inside-collapse'>
+                                <li class='nav-item row'>
+                                    <div class='col'>
+                                        <a class='nav-link h4' href='../cinema/filmes/index.php'>Filmes</a>
+                                    </div>
+                                </li>
+                                <li class='nav-item row'>
+                                    <div class='col'>
+                                        <a class='nav-link h4' href='../cinema/novidades/index.php'>Novidades</a>
+                                    </div>
+                                </li>
+                                <li class='nav-item row'>
+                                    <div class='col'>
+                                        <a class='nav-link h4' href='../cinema/criticas/index.php'>Críticas</a>
+                                    </div>
+                                </li>
+                                <li class='nav-item row'>
+                                    <div class='col'>
+                                        <a class='nav-link h4' href='../cinema/top_10/index.php'>Top 10</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class='nav-item row'>
+                        <div class='col'>
+                            <a class='nav-link h4' href='../series/index.php'>Séries</a>
+                        </div>
+                        <div class='col'>
+                            <button class='navbar-toggler float-right flecha' type='button' data-toggle='collapse' data-target='#collapsibleNavbarSéries'>
+                                <i class='fas fa-angle-down'></i>
+                                <i class='fas fa-angle-left'></i>
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class='collapse navbar-collapse' id='collapsibleNavbarSéries'>
+                            <ul class='navbar-nav ul-inside-collapse'>
+                                <li class='nav-item row'>
+                                    <div class='col'>
+                                        <a class='nav-link h4' href='../series/seriados/index.php'>Seriados</a>
+                                    </div>
+                                </li>
+                                <li class='nav-item row'>
+                                    <div class='col'>
+                                        <a class='nav-link h4' href='../series/novidades/index.php'>Novidades</a>
+                                    </div>
+                                </li>
+                                <li class='nav-item row'>
+                                    <div class='col'>
+                                        <a class='nav-link h4' href='../series/criticas/index.php'>Críticas</a>
+                                    </div>
+                                </li>
+                                <li class='nav-item row'>
+                                    <div class='col'>
+                                        <a class='nav-link h4' href='../series/top_10/index.php'>Top 10</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class='nav-item row'>
+                        <div class='col'>
+                            <a class='nav-link h4' href='../animacoes/index.php'>Animações</a>
+                        </div>
+                        <div class='col'>
+                            <button class='navbar-toggler float-right flecha' type='button' data-toggle='collapse' data-target='#collapsibleNavbarAnimações'>
+                                <i class='fas fa-angle-down'></i>
+                                <i class='fas fa-angle-left'></i>
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class='collapse navbar-collapse' id='collapsibleNavbarAnimações'>
+                            <ul class='navbar-nav ul-inside-collapse'>
+                                <li class='nav-item row'>
+                                    <div class='col'>
+                                        <a class='nav-link h4' href='../animacoes/autores/index.php'>Autores</a>
+                                    </div>
+                                </li>
+                                <li class='nav-item row'>
+                                    <div class='col'>
+                                        <a class='nav-link h4' href='../animacoes/novidades/index.php'>Novidades</a>
+                                    </div>
+                                </li>
+                                <li class='nav-item row'>
+                                    <div class='col'>
+                                        <a class='nav-link h4' href='../animacoes/curiosidades/index.php'>Curiosidades</a>
+                                    </div>
+                                </li>
+                                <li class='nav-item row'>
+                                    <div class='col'>
+                                        <a class='nav-link h4' href='../animacoes/top_10/index.php'>Top 10</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class='nav-item row'>
+                        <div class='col'>
+                            <a class='nav-link h4' href='../literatura/index.php'>Literatura</a>
+                        </div>
+                        <div class='col'>
+                            <button class='navbar-toggler float-right flecha' type='button' data-toggle='collapse' data-target='#collapsibleNavbarLiteratura'>
+                                <i class='fas fa-angle-down'></i>
+                                <i class='fas fa-angle-left'></i>
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class='collapse navbar-collapse' id='collapsibleNavbarLiteratura'>
+                            <ul class='navbar-nav ul-inside-collapse'>
+                                <li class='nav-item row'>
+                                    <div class='col'>
+                                        <a class='nav-link h4' href='../literatura/livros/index.php'>Livros</a>
+                                    </div>
+                                </li>
+                                <li class='nav-item row'>
+                                    <div class='col'>
+                                        <a class='nav-link h4' href='../literatura/quadrinhos/index.php'>Quadrinhos</a>
+                                    </div>
+                                </li>
+                                <li class='nav-item row'>
+                                    <div class='col'>
+                                        <a class='nav-link h4' href='../literatura/memes/index.php'>Memes</a>
+                                    </div>
+                                </li>
+                                <li class='nav-item row'>
+                                    <div class='col'>
+                                        <a class='nav-link h4' href='../literatura/criticas/index.php'>Críticas</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class='nav-item row'>
+                        <div class='col'>
+                            <a class='nav-link h4' href='../jogos/index.php'>Jogos</a>
+                        </div>
+                        <div class='col'>
+                            <button class='navbar-toggler float-right flecha' type='button' data-toggle='collapse' data-target='#collapsibleNavbarJogos'>
+                                <i class='fas fa-angle-down'></i>
+                                <i class='fas fa-angle-left'></i>
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class='collapse navbar-collapse' id='collapsibleNavbarJogos'>
+                            <ul class='navbar-nav ul-inside-collapse'>
+                                <li class='nav-item row'>
+                                    <div class='col'>
+                                        <a class='nav-link h4' href='../jogos/novidades/index.php'>Novidades</a>
+                                    </div>
+                                </li>
+                                <li class='nav-item row'>
+                                    <div class='col'>
+                                        <a class='nav-link h4' href='../jogos/lancamentos/index.php'>Lançamentos</a>
+                                    </div>
+                                </li>
+                                <li class='nav-item row'>
+                                    <div class='col'>
+                                        <a class='nav-link h4' href='../jogos/analises/index.php'>Análises</a>
+                                    </div>
+                                </li>
+                                <li class='nav-item row'>
+                                    <div class='col'>
+                                        <a class='nav-link h4' href='../jogos/top_10/index.php'>Top 10</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class='nav-item row'>
+                        <div class='col'>
+                            <a class='nav-link h4' href='../moda/index.php'>Moda</a>
+                        </div>
+                        <div class='col'>
+                            <button class='navbar-toggler float-right flecha' type='button' data-toggle='collapse' data-target='#collapsibleNavbarModa'>
+                                <i class='fas fa-angle-down'></i>
+                                <i class='fas fa-angle-left'></i>
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class='collapse navbar-collapse' id='collapsibleNavbarModa'>
+                            <ul class='navbar-nav ul-inside-collapse'>
+                                <li class='nav-item row'>
+                                    <div class='col'>
+                                        <a class='nav-link h4' href='../moda/80-2000/index.php'>80-2000</a>
+                                    </div>
+                                </li>
+                                <li class='nav-item row'>
+                                    <div class='col'>
+                                        <a class='nav-link h4' href='../moda/cortes/index.php'>Cortes</a>
+                                    </div>
+                                </li>
+                                <li class='nav-item row'>
+                                    <div class='col'>
+                                        <a class='nav-link h4' href='../moda/loja/index.php'>Loja</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class='nav-item row'>
+                        <div class='col'>
+                            <a class='nav-link h4' href='../sobre/index.php'>Sobre</a>
+                        </div>
+                    </li>
+                    <li class='nav-item row'>
+                        <div class='col'>
+                            <a class='nav-link h4' href='../quem_somos/index.php'>Quem somos</a>
+                        </div>
+                    </li>
+                    <li class='nav-item row'>
+                        <div class='col'>
+                            <a class='nav-link h4' href='../forum/index.php'>Fórum</a>
+                        </div>
+                    </li>
+                    <li class='nav-item row'>
+                        <div class='col'>
+                            <a class='nav-link h4' href='../contato/index.php'>Contato</a>
+                        </div>
+                    </li>
+
+
+                </ul>
+            </div>
+            <div class="mx-auto my-5 collapse" id="collapsibleForm" data-parent="#topNav">
+                <form class="text-white">
+                    <div class="form-group">
+                        <label for="formEmail2" class="font-weight-bold">Email</label>
+                        <input type="email" class="form-control" id="formEmail2" placeholder="email@exemplo.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="formPassword2" class="font-weight-bold">Senha</label>
+                        <input type="password" class="form-control" id="formPassword2" placeholder="Senha">
+                    </div>
+                    <div class="form-check my-4">
+                        <input type="checkbox" class="form-check-input" id="formCheck2">
+                        <label class="form-check-label font-weight-bold" for="formCheck2">
+                            Lembrar senha
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Entrar</button>
+                </form>
+                <div class="dropdown-divider pt-2"></div>
+                <div class="d-flex flex-column">
+                    <a class="text-white font-weight-bold my-2" href="#">Criar conta</a>
+                    <a class="text-white font-weight-bold my-2" href="#">Esqueci minha senha</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container bg-dark">
+            <div id="carouselIndicators" class="carousel slide row" data-ride="carousel">
+                <div class="col col-lg-8 p-0">
+                    <div class="carousel-inner">
+
+                        <div class='card bg-dark text-white carousel-item border-0 active'>
+                            <img class='card-img rounded-0' src='../img/carouselteste01.png' alt='Card image'>
+                            <div class='card-img-overlay h-100 d-flex flex-column justify-content-end'>
+                                <a class='carousel-link' href='novidades/post/index.php?t=Título+da+primeira+postagem+teste+do+carrossel&img=carouselteste01.png&dt=uma+hora+atrás'>
+                                    <h5 class='card-title h4 font-weight-bold mb-0 mb-md-3'>Título da primeira postagem teste do carrossel</h5>
+                                    <p class='d-none d-md-block card-text mb-0 mb-md-3'>Descrição resumida da postagem que se encontra em um dos slides</p>
+                                    <div class='card-text d-flex flex-row float-left'>
+                                        <i class='far fa-clock mb-auto mt-auto ml-0 mr-2'></i>
+                                        <p class='m-auto'>uma hora atrás</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class='card bg-dark text-white carousel-item border-0'>
+                            <img class='card-img rounded-0' src='../img/carouselteste02.png' alt='Card image'>
+                            <div class='card-img-overlay h-100 d-flex flex-column justify-content-end'>
+                                <a class='carousel-link' href='novidades/post/index.php?t=Título+da+segunda+postagem+teste+do+carrossel&img=carouselteste02.png&dt=duas+horas+atrás'>
+                                    <h5 class='card-title h4 font-weight-bold mb-0 mb-md-3'>Título da segunda postagem teste do carrossel</h5>
+                                    <p class='d-none d-md-block card-text mb-0 mb-md-3'>Descrição resumida da postagem que se encontra em um dos slides</p>
+                                    <div class='card-text d-flex flex-row float-left'>
+                                        <i class='far fa-clock mb-auto mt-auto ml-0 mr-2'></i>
+                                        <p class='m-auto'>duas horas atrás</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class='card bg-dark text-white carousel-item border-0'>
+                            <img class='card-img rounded-0' src='../img/carouselteste03.png' alt='Card image'>
+                            <div class='card-img-overlay h-100 d-flex flex-column justify-content-end'>
+                                <a class='carousel-link' href='novidades/post/index.php?t=Título+da+terceira+postagem+teste+do+carrossel&img=carouselteste03.png&dt=três+horas+atrás'>
+                                    <h5 class='card-title h4 font-weight-bold mb-0 mb-md-3'>Título da terceira postagem teste do carrossel</h5>
+                                    <p class='d-none d-md-block card-text mb-0 mb-md-3'>Descrição resumida da postagem que se encontra em um dos slides</p>
+                                    <div class='card-text d-flex flex-row float-left'>
+                                        <i class='far fa-clock mb-auto mt-auto ml-0 mr-2'></i>
+                                        <p class='m-auto'>três horas atrás</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class='card bg-dark text-white carousel-item border-0'>
+                            <img class='card-img rounded-0' src='../img/carouselteste02.png' alt='Card image'>
+                            <div class='card-img-overlay h-100 d-flex flex-column justify-content-end'>
+                                <a class='carousel-link' href='novidades/post/index.php?t=Título+da+quarta+postagem+teste+do+carrossel&img=carouselteste02.png&dt=quatro+horas+atrás'>
+                                    <h5 class='card-title h4 font-weight-bold mb-0 mb-md-3'>Título da quarta postagem teste do carrossel</h5>
+                                    <p class='d-none d-md-block card-text mb-0 mb-md-3'>Descrição resumida da postagem que se encontra em um dos slides</p>
+                                    <div class='card-text d-flex flex-row float-left'>
+                                        <i class='far fa-clock mb-auto mt-auto ml-0 mr-2'></i>
+                                        <p class='m-auto'>quatro horas atrás</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class='card bg-dark text-white carousel-item border-0'>
+                            <img class='card-img rounded-0' src='../img/carouselteste01.png' alt='Card image'>
+                            <div class='card-img-overlay h-100 d-flex flex-column justify-content-end'>
+                                <a class='carousel-link' href='novidades/post/index.php?t=Título+da+quinta+postagem+teste+do+carrossel&img=carouselteste01.png&dt=cinco+horas+atrás'>
+                                    <h5 class='card-title h4 font-weight-bold mb-0 mb-md-3'>Título da quinta postagem teste do carrossel</h5>
+                                    <p class='d-none d-md-block card-text mb-0 mb-md-3'>Descrição resumida da postagem que se encontra em um dos slides</p>
+                                    <div class='card-text d-flex flex-row float-left'>
+                                        <i class='far fa-clock mb-auto mt-auto ml-0 mr-2'></i>
+                                        <p class='m-auto'>cinco horas atrás</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class='card bg-dark text-white carousel-item border-0'>
+                            <img class='card-img rounded-0' src='../img/carouselteste02.png' alt='Card image'>
+                            <div class='card-img-overlay h-100 d-flex flex-column justify-content-end'>
+                                <a class='carousel-link' href='novidades/post/index.php?t=Título+da+sexta+postagem+teste+do+carrossel&img=carouselteste02.png&dt=seis+horas+atrás'>
+                                    <h5 class='card-title h4 font-weight-bold mb-0 mb-md-3'>Título da sexta postagem teste do carrossel</h5>
+                                    <p class='d-none d-md-block card-text mb-0 mb-md-3'>Descrição resumida da postagem que se encontra em um dos slides</p>
+                                    <div class='card-text d-flex flex-row float-left'>
+                                        <i class='far fa-clock mb-auto mt-auto ml-0 mr-2'></i>
+                                        <p class='m-auto'>seis horas atrás</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class='card bg-dark text-white carousel-item border-0'>
+                            <img class='card-img rounded-0' src='../img/carouselteste03.png' alt='Card image'>
+                            <div class='card-img-overlay h-100 d-flex flex-column justify-content-end'>
+                                <a class='carousel-link' href='novidades/post/index.php?t=Título+da+sétima+postagem+teste+do+carrossel&img=carouselteste03.png&dt=sete+horas+atrás'>
+                                    <h5 class='card-title h4 font-weight-bold mb-0 mb-md-3'>Título da sétima postagem teste do carrossel</h5>
+                                    <p class='d-none d-md-block card-text mb-0 mb-md-3'>Descrição resumida da postagem que se encontra em um dos slides</p>
+                                    <div class='card-text d-flex flex-row float-left'>
+                                        <i class='far fa-clock mb-auto mt-auto ml-0 mr-2'></i>
+                                        <p class='m-auto'>sete horas atrás</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-lg-none">
+                        <a class="carousel-control-prev bg-dark rounded-right h-25 my-auto" href="#carouselIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next bg-dark rounded-left h-25 my-auto" href="#carouselIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="d-none d-lg-block col desk-indicators">
+                    <ol class="d-flex flex-column list-group carousel-indicators m-0 w-100 h-auto position-relative">
+                        <li data-target='#carouselIndicators' data-slide-to='0' class='m-0 p-2 border-bottom-0 w-100 list-group-item rounded-0 bg-dark active'>
+                            <h5 class='h6 font-weight-bold mb-0 text-white'>Título da primeira postagem teste do carrossel</h5>
+                            <p class='card-text text-white'>uma hora atrás</p>
+                        </li>
+                        <li data-target='#carouselIndicators' data-slide-to='1' class='m-0 p-2 border-bottom-0 w-100 list-group-item rounded-0 bg-dark'>
+                            <h5 class='h6 font-weight-bold mb-0 text-white'>Título da segunda postagem teste do carrossel</h5>
+                            <p class='card-text text-white'>duas horas atrás</p>
+                        </li>
+                        <li data-target='#carouselIndicators' data-slide-to='2' class='m-0 p-2 border-bottom-0 w-100 list-group-item rounded-0 bg-dark'>
+                            <h5 class='h6 font-weight-bold mb-0 text-white'>Título da terceira postagem teste do carrossel</h5>
+                            <p class='card-text text-white'>três horas atrás</p>
+                        </li>
+                        <li data-target='#carouselIndicators' data-slide-to='3' class='m-0 p-2 border-bottom-0 w-100 list-group-item rounded-0 bg-dark'>
+                            <h5 class='h6 font-weight-bold mb-0 text-white'>Título da quarta postagem teste do carrossel</h5>
+                            <p class='card-text text-white'>quatro horas atrás</p>
+                        </li>
+                        <li data-target='#carouselIndicators' data-slide-to='4' class='m-0 p-2 border-bottom-0 w-100 list-group-item rounded-0 bg-dark'>
+                            <h5 class='h6 font-weight-bold mb-0 text-white'>Título da quinta postagem teste do carrossel</h5>
+                            <p class='card-text text-white'>cinco horas atrás</p>
+                        </li>
+                        <li data-target='#carouselIndicators' data-slide-to='5' class='m-0 p-2 border-bottom-0 w-100 list-group-item rounded-0 bg-dark'>
+                            <h5 class='h6 font-weight-bold mb-0 text-white'>Título da sexta postagem teste do carrossel</h5>
+                            <p class='card-text text-white'>seis horas atrás</p>
+                        </li>
+                        <li data-target='#carouselIndicators' data-slide-to='6' class='m-0 p-2 border-bottom-0 w-100 list-group-item rounded-0 bg-dark'>
+                            <h5 class='h6 font-weight-bold mb-0 text-white'>Título da sétima postagem teste do carrossel</h5>
+                            <p class='card-text text-white'>sete horas atrás</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar container musica rolagem">
+            <ul class="navbar-nav row flex-row mx-auto flex-nowrap justify-content-between">
+                <li class='nav-item'>
+                    <a class='nav-link h4 rolamento' href='../musica/artistas/index.php'>Artistas</a>
+                </li>
+                <li class='nav-item'>
+                    <a class='nav-link h4 rolamento' href='../musica/playlists/index.php'>Playlists</a>
+                </li>
+                <li class='nav-item'>
+                    <a class='nav-link h4 rolamento' href='../musica/novidades/index.php'>Novidades</a>
+                </li>
+                <li class='nav-item'>
+                    <a class='nav-link h4 rolamento' href='../musica/top_10/index.php'>Top 10</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container mt-lg-5">
+        <div class="row justify-content-between">
+            <div class="col-12 col-lg-7 feed">
+                <div class="row news-header">
+                    <h4 class="mx-0 my-4 text-body">Novidades</h4>
+                </div>
+                <article class='container-fluid pr-0 pl-lg-0 mb-4'>
+                    <div class='row'>
+                        <a href='novidades/post/index.php?t=Título+da+primeira+postagem+do+feed+de+notícias&img=carouselteste01.png&dt=uma+hora+atrás' class='col-4 d-block my-auto p-0 pr-md-3'>
+                            <picture>
+                                <img class='rounded img-fluid' alt='Título da primeira postagem do feed de notícias' src='../img/carouselteste01.png' />
+                            </picture>
+                        </a>
+                        <div class='col-8 h-auto d-flex flex-column pl-2 pr-0'>
+                            <p class='small mt-2 mb-auto text-body'>uma hora atrás</p>
+                            <div class='mt-0 mb-auto'><a href='novidades/post/index.php?t=Título+da+primeira+postagem+do+feed+de+notícias&img=carouselteste01.png&dt=uma+hora+atrás' class='text-body'>
+                                    <h3 class='h5 d-inline news-title-link font-weight-bold'>Título da primeira postagem do feed de notícias</h3>
+                                </a>
+                            </div>
+                            <div class='mt-auto mb-2'>
+                                <a href='novidades/index.php' class='small text-uppercase text-body'>Novidades</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class='container-fluid pr-0 pl-lg-0 mb-4'>
+                    <div class='row'>
+                        <a href='novidades/post/index.php?t=Título+da+segunda+postagem+do+feed+de+notícias&img=carouselteste02.png&dt=duas+horas+atrás' class='col-4 d-block my-auto p-0 pr-md-3'>
+                            <picture>
+                                <img class='rounded img-fluid' alt='Título da segunda postagem do feed de notícias' src='../img/carouselteste02.png' />
+                            </picture>
+                        </a>
+                        <div class='col-8 h-auto d-flex flex-column pl-2 pr-0'>
+                            <p class='small mt-2 mb-auto text-body'>duas horas atrás</p>
+                            <div class='mt-0 mb-auto'><a href='novidades/post/index.php?t=Título+da+segunda+postagem+do+feed+de+notícias&img=carouselteste02.png&dt=duas+horas+atrás' class='text-body'>
+                                    <h3 class='h5 d-inline news-title-link font-weight-bold'>Título da segunda postagem do feed de notícias</h3>
+                                </a>
+                            </div>
+                            <div class='mt-auto mb-2'>
+                                <a href='novidades/index.php' class='small text-uppercase text-body'>Novidades</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class='container-fluid pr-0 pl-lg-0 mb-4'>
+                    <div class='row'>
+                        <a href='novidades/post/index.php?t=Título+da+terceira+postagem+do+feed+de+notícias&img=carouselteste03.png&dt=três+horas+atrás' class='col-4 d-block my-auto p-0 pr-md-3'>
+                            <picture>
+                                <img class='rounded img-fluid' alt='Título da terceira postagem do feed de notícias' src='../img/carouselteste03.png' />
+                            </picture>
+                        </a>
+                        <div class='col-8 h-auto d-flex flex-column pl-2 pr-0'>
+                            <p class='small mt-2 mb-auto text-body'>três horas atrás</p>
+                            <div class='mt-0 mb-auto'><a href='novidades/post/index.php?t=Título+da+terceira+postagem+do+feed+de+notícias&img=carouselteste03.png&dt=três+horas+atrás' class='text-body'>
+                                    <h3 class='h5 d-inline news-title-link font-weight-bold'>Título da terceira postagem do feed de notícias</h3>
+                                </a>
+                            </div>
+                            <div class='mt-auto mb-2'>
+                                <a href='novidades/index.php' class='small text-uppercase text-body'>Novidades</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <div class='container-fluid p-0 mb-4'>
+                    <div class='row'>
+                        <article class='card col-12 w-100 h-auto p-0 border-0'>
+                            <a href='novidades/post/index.php?t=Título+da+quarta+postagem+do+feed+de+notícias&img=carouselteste01.png&dt=quatro+horas+atrás' class='text-white'>
+                                <img class='card-img rounded img-fluid' alt='Título da quarta postagem do feed de notícias' src='../img/carouselteste01.png' />
+                                <div class='card-img-overlay h-100 d-flex flex-column justify-content-end mx-lg-4'>
+                                    <p class='small mt-auto mb-1 text-right'>quatro horas atrás</p>
+                                    <h3 class='card-title my-0 text-right news-title-link-b h5 font-weight-bold mb-0 mb-md-3'>Título da quarta postagem do feed de notícias</h3>
+                                    <p class='text-uppercase small my-1 text-right'>Novidades</p>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+                <article class='container-fluid pr-0 pl-lg-0 mb-4'>
+                    <div class='row'>
+                        <a href='novidades/post/index.php?t=Título+da+quinta+postagem+do+feed+de+notícias&img=carouselteste02.png&dt=cinco+horas+atrás' class='col-4 d-block my-auto p-0 pr-md-3'>
+                            <picture>
+                                <img class='rounded img-fluid' alt='Título da quinta postagem do feed de notícias' src='../img/carouselteste02.png' />
+                            </picture>
+                        </a>
+                        <div class='col-8 h-auto d-flex flex-column pl-2 pr-0'>
+                            <p class='small mt-2 mb-auto text-body'>cinco horas atrás</p>
+                            <div class='mt-0 mb-auto'><a href='novidades/post/index.php?t=Título+da+quinta+postagem+do+feed+de+notícias&img=carouselteste02.png&dt=cinco+horas+atrás' class='text-body'>
+                                    <h3 class='h5 d-inline news-title-link font-weight-bold'>Título da quinta postagem do feed de notícias</h3>
+                                </a>
+                            </div>
+                            <div class='mt-auto mb-2'>
+                                <a href='novidades/index.php' class='small text-uppercase text-body'>Novidades</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class='container-fluid pr-0 pl-lg-0 mb-4'>
+                    <div class='row'>
+                        <a href='novidades/post/index.php?t=Título+da+sexta+postagem+do+feed+de+notícias&img=carouselteste03.png&dt=seis+horas+atrás' class='col-4 d-block my-auto p-0 pr-md-3'>
+                            <picture>
+                                <img class='rounded img-fluid' alt='Título da sexta postagem do feed de notícias' src='../img/carouselteste03.png' />
+                            </picture>
+                        </a>
+                        <div class='col-8 h-auto d-flex flex-column pl-2 pr-0'>
+                            <p class='small mt-2 mb-auto text-body'>seis horas atrás</p>
+                            <div class='mt-0 mb-auto'><a href='novidades/post/index.php?t=Título+da+sexta+postagem+do+feed+de+notícias&img=carouselteste03.png&dt=seis+horas+atrás' class='text-body'>
+                                    <h3 class='h5 d-inline news-title-link font-weight-bold'>Título da sexta postagem do feed de notícias</h3>
+                                </a>
+                            </div>
+                            <div class='mt-auto mb-2'>
+                                <a href='novidades/index.php' class='small text-uppercase text-body'>Novidades</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class='container-fluid pr-0 pl-lg-0 mb-4'>
+                    <div class='row'>
+                        <a href='novidades/post/index.php?t=Título+da+sétima+postagem+do+feed+de+notícias&img=carouselteste01.png&dt=sete+horas+atrás' class='col-4 d-block my-auto p-0 pr-md-3'>
+                            <picture>
+                                <img class='rounded img-fluid' alt='Título da sétima postagem do feed de notícias' src='../img/carouselteste01.png' />
+                            </picture>
+                        </a>
+                        <div class='col-8 h-auto d-flex flex-column pl-2 pr-0'>
+                            <p class='small mt-2 mb-auto text-body'>sete horas atrás</p>
+                            <div class='mt-0 mb-auto'><a href='novidades/post/index.php?t=Título+da+sétima+postagem+do+feed+de+notícias&img=carouselteste01.png&dt=sete+horas+atrás' class='text-body'>
+                                    <h3 class='h5 d-inline news-title-link font-weight-bold'>Título da sétima postagem do feed de notícias</h3>
+                                </a>
+                            </div>
+                            <div class='mt-auto mb-2'>
+                                <a href='novidades/index.php' class='small text-uppercase text-body'>Novidades</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <aside class="col-12 col-lg-4 feed">
+                <section class="row">
+                    <div class="col">
+                        <h4 class="bg-dark p-3 row aside-content font-weight-bold">Sugestões</h4>
+                        <article class='container-fluid pr-0 pl-lg-0 my-3'>
+                            <div class='row'>
+                                <a href='../musica/novidades/post/index.php?t=Reconhecimento+da+cultura+indie&img=carouselteste01.png&dt=três+horas+atrás' class='col-4 d-block my-auto p-0 pr-md-3'>
+                                    <picture>
+                                        <img class='rounded img-fluid' alt='Reconhecimento da cultura indie' src='../img/carouselteste02.png'>
+                                    </picture>
+                                </a>
+                                <div class='col-8 h-auto d-flex flex-column pl-2 pr-0'>
+                                    <div class='my-auto'><a href='../cinema/novidades/post/index.php?t=Reconhecimento+da+cultura+indie&img=carouselteste02.png&dt=quatro+horas+atrás' class='text-body'>
+                                            <h3 class='h5 d-inline font-weight-bold'>Reconhecimento da cultura indie</h3>
+                                        </a></div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class='container-fluid pr-0 pl-lg-0 my-3'>
+                            <div class='row'>
+                                <a href='../animacoes/novidades/post/index.php?t=Festivais+indie+de+responsa&img=carouselteste03.png&dt=cinco+horas+atrás' class='col-4 d-block my-auto p-0 pr-md-3'>
+                                    <picture>
+                                        <img class='rounded img-fluid' alt='Festivais indie de responsa' src='../img/carouselteste03.png'>
+                                    </picture>
+                                </a>
+                                <div class='col-8 h-auto d-flex flex-column pl-2 pr-0'>
+                                    <div class='my-auto'><a href='../animacoes/novidades/post/index.php?t=Festivais+indie+de+responsa&img=carouselteste02.png&dt=cinco+horas+atrás' class='text-body'>
+                                            <h3 class='h5 d-inline font-weight-bold'>Festivais indie de responsa</h3>
+                                        </a></div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class='container-fluid pr-0 pl-lg-0 my-3'>
+                            <div class='row'>
+                                <a href='../jogos/novidades/post/index.php?t=Títulos+indie+que+não+perdem+pra+qualquer+AAA&img=carouselteste01.png&dt=três+horas+atrás' class='col-4 d-block my-auto p-0 pr-md-3'>
+                                    <picture>
+                                        <img class='rounded img-fluid' alt='Títulos indie que não perdem pra qualquer AAA' src='../img/carouselteste03.png'>
+                                    </picture>
+                                </a>
+                                <div class='col-8 h-auto d-flex flex-column pl-2 pr-0'>
+                                    <div class='my-auto'><a href='../cinema/novidades/post/index.php?t=Títulos+indie+que+não+perdem+pra+qualquer+AAA&img=carouselteste03.png&dt=duas+horas+atrás' class='text-body'>
+                                            <h3 class='h5 d-inline font-weight-bold'>Títulos indie que não perdem pra qualquer AAA</h3>
+                                        </a></div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class='container-fluid pr-0 pl-lg-0 my-3'>
+                            <div class='row'>
+                                <a href='../cinema/novidades/post/index.php?t=O+Rumo+da+Indústria&img=carouselteste01.png&dt=cinco+horas+atrás' class='col-4 d-block my-auto p-0 pr-md-3'>
+                                    <picture>
+                                        <img class='rounded img-fluid' alt='O Rumo da Indústria' src='../img/carouselteste03.png'>
+                                    </picture>
+                                </a>
+                                <div class='col-8 h-auto d-flex flex-column pl-2 pr-0'>
+                                    <div class='my-auto'><a href='../musica/novidades/post/index.php?t=O+Rumo+da+Indústria&img=carouselteste03.png&dt=cinco+horas+atrás' class='text-body'>
+                                            <h3 class='h5 d-inline font-weight-bold'>O Rumo da Indústria</h3>
+                                        </a></div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class='container-fluid pr-0 pl-lg-0 my-3'>
+                            <div class='row'>
+                                <a href='../series/novidades/post/index.php?t=Artista+brasileiro+ganha+prêmio+de+melhor+título+indie&img=carouselteste01.png&dt=cinco+horas+atrás' class='col-4 d-block my-auto p-0 pr-md-3'>
+                                    <picture>
+                                        <img class='rounded img-fluid' alt='Artista brasileiro ganha prêmio de melhor título indie' src='../img/carouselteste02.png'>
+                                    </picture>
+                                </a>
+                                <div class='col-8 h-auto d-flex flex-column pl-2 pr-0'>
+                                    <div class='my-auto'><a href='../jogos/novidades/post/index.php?t=Artista+brasileiro+ganha+prêmio+de+melhor+título+indie&img=carouselteste01.png&dt=cinco+horas+atrás' class='text-body'>
+                                            <h3 class='h5 d-inline font-weight-bold'>Artista brasileiro ganha prêmio de melhor título indie</h3>
+                                        </a></div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                <section class="row">
+                    <div class="col px-0">
+                        <h4 class='bg-dark p-3 row aside-content mx-0 font-weight-bold'>Top 5</h4>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First</th>
+                                    <th scope="col">Last</th>
+                                    <th scope="col">Handle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </section>
+
+            </aside>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <script src="../js/fontawesome.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+    <footer class="bg-dark">
+        <div class="container bg-dark">
+            <div class="row d-flex flex-row float-right p-3">
+                <ul class="list-inline m-0">
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com/">
+                            <i class="footer-text fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.instagram.com/">
+                            <i class="footer-text fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.twitter.com/">
+                            <i class="footer-text fab fa-twitter-square"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.youtube.com/">
+                            <i class="footer-text fab fa-youtube-square"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row mx-auto w-100 justify-content-center">
+                <a class="footer-link" href="../index.php">
+                    <h3 class="footer-text h3 indie-brand mb-3">INDIE PLANET</h3>
+                </a>
+            </div>
+            <div class="row d-flex flex-row justify-content-center pb-3">
+                <div class="d-flex align-items-start flex-column col pr-0">
+                    <p class="footer-text m-0 h6">Copyright &copy; 2018 GP'65.</p>
+                    <p class="footer-text m-0 h6">All rights reserved.</p>
+                </div>
+                <div class="d-flex align-items-end flex-column col justify-content-right pl-0">
+                    <a class="footer-link float-right" href="../mapa_do_site.php">Mapa do site</a>
+                    <a class="footer-link float-right" href="../normas.php">Normas de uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -289,35 +289,35 @@ button:focus {
     color: #6C757D;
 }
 
-.carousel-link:hover h5 , .breadcrumb li a , .sugeridas{
+.carousel-link:hover h5 , .breadcrumb li a , .aside-content {
     color: #19CBCB;
 }
 
-.musica .carousel-link:hover h5 , .musica .breadcrumb li a , .musica .sugeridas{
+.musica .carousel-link:hover h5 , .musica .breadcrumb li a , .musica .aside-content {
     color: #CE3EB7;
 }
 
-.cinema .carousel-link:hover h5 , .cinema .breadcrumb li a , .cinema .sugeridas{
+.cinema .carousel-link:hover h5 , .cinema .breadcrumb li a , .cinema .aside-content {
     color: #5F778A;
 }
 
-.series .carousel-link:hover h5 , .series .breadcrumb li a , .series .sugeridas{
+.series .carousel-link:hover h5 , .series .breadcrumb li a , .series .aside-content {
     color: #E1BE82;
 }
 
-.animacoes .carousel-link:hover h5 , .animacoes .breadcrumb li a , .animacoes .sugeridas{
+.animacoes .carousel-link:hover h5 , .animacoes .breadcrumb li a , .animacoes .aside-content {
     color: #8BCCF2;
 }
 
-.literatura .carousel-link:hover h5 , .literatura .breadcrumb li a , .literatura .sugeridas{
+.literatura .carousel-link:hover h5 , .literatura .breadcrumb li a , .literatura .aside-content {
     color: #DE813A;
 }
 
-.jogos .carousel-link:hover h5 , .jogos .breadcrumb li a , .jogos .sugeridas{
+.jogos .carousel-link:hover h5 , .jogos .breadcrumb li a , .jogos .aside-content {
     color: #78BB78;
 }
 
-.moda .carousel-link:hover h5 , .moda .breadcrumb li a , .moda .sugeridas{
+.moda .carousel-link:hover h5 , .moda .breadcrumb li a , .moda .aside-content {
     color: #FF3D4A;
 }
 
