@@ -22,11 +22,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-12 col-lg-12">
-                <a href="index.html">
-                    <h1 class="animacaot">Animações</h1>
-                </a>
-                <p>>Top10</p>
-                <p> Aqui esta o Top 10 das melhores animações indie e de quebra música indie</p>
+                <h1> Aqui esta o Top 10 das melhores animações indie e de quebra música indie</h1>
             </div>
         </div>
 
