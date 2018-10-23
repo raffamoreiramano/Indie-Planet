@@ -321,10 +321,20 @@ button:focus {
     color: #FF3D4A;
 }
 
+.aside-content:hover p {
+    color: #6c757d !important;
+}
+
+a.aside-content:hover , .aside-content p:hover {
+    text-decoration: none !important;
+    color: white !important;
+}
+
 .desk-indicators {
     padding: 0;
     overflow-y: scroll;
     overflow-x: hidden;
+    max-height: inherit;
 }
 .desk-indicators::-webkit-scrollbar { 
     display: none;

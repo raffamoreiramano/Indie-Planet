@@ -102,7 +102,7 @@
             
         </ul>
     </div>
-    <div class="mx-auto my-5 collapse" id="collapsibleForm" data-parent="#topNav">
+    <div class="px-4 w-100 my-5 collapse" id="collapsibleForm" data-parent="#topNav">
         <form class="text-white">
                     <div class="form-group">
                         <label for="formEmail2" class="font-weight-bold">Email</label>

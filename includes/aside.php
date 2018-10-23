@@ -36,11 +36,23 @@
             <?php
                 switch ($pastaAtualFim) {
                     case "musica":
-                        echo "<h4 class='bg-dark p-3 row mx-0 aside-content font-weight-bold'>Top 5 mais ouvidas</h4>\n";
+                        echo "<a class='aside-content row mx-0 bg-dark p-3' href='".$corredor."musica/top_10/index.php'>\n";
+                        echo "<h4 class='h4 col my-auto font-weight-bold pr-0'>Top 5 mais ouvidas";
+                        echo "</h4>\n<p class='small d-none d-sm-block my-auto col-3 text-dark text-right'>ver mais</p>\n</a>\n";
                         echo "<table class='table'>\n";
-                        for ($i=0;$i<5;$i++) {
-                            echo "<tr>\n<th scope='row'>".$i+1."</th>\n";
+                        for ($i=1;$i<=5;$i++) {
+                            if ($i!=5) {     
+                                echo "<tr>\n<th class='border-bottom border-top-0' scope='row'>#".$i."</th>\n";
+                                echo "<td class='border-bottom border-top-0'>".$topMusica[$i]['musica']."</td>\n";
+                                echo "<td class='border-bottom border-top-0'>".$topMusica[$i]['artista']."</td>\n</tr>";
+                            }
+                            else {
+                                echo "<tr>\n<th class='border-top-0' scope='row'>#".$i."</th>\n";
+                                echo "<td class='border-top-0'>".$topMusica[$i]['musica']."</td>\n";
+                                echo "<td class='border-top-0'>".$topMusica[$i]['artista']."</td>\n</tr>";
+                            }
                         }
+                        echo "</table>";
                         break;
                     case "cinema":
                         break;
