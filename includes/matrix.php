@@ -72,5 +72,5 @@
         9=>array("musica"=>"When You Were Young","artista"=>"The Killers"),
         10=>array("musica"=>"You Only Live Once","artista"=>"The Strokes")
     );
-
+    $spotifyPlaylist="0k0TbUHAhajil7b3FIkixs";
 ?>

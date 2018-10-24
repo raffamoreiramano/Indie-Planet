@@ -499,6 +499,31 @@ a.aside-content:hover , .aside-content p:hover {
     flex: auto;
 }
 
+
+.spotify {
+    height: 174px !important;   
+}
+@media (min-width: 375px) {
+    .spotify {
+        height: 204px !important;
+    }
+}
+@media (min-width: 425px) {
+    .spotify {
+        height: 231px !important;
+    }
+}
+@media (min-width: 576px) {
+    .spotify {
+        height: 293px !important;
+    }
+}
+@media (min-width: 576px) {
+    .spotify {
+        min-height: 347px !important;
+    }
+}
+
 @media (max-width: 767px) {
     .feed .card {
         border-radius: 0 !important;
@@ -515,10 +540,19 @@ a.aside-content:hover , .aside-content p:hover {
     #carouselIndicators {
         max-height: 347px !important;
     }
+    .spotify {
+        height: 347px !important;
+    }
 }
 
 @media (min-width: 1200px) {
     #carouselIndicators {
         max-height: 413px !important;
     }
+    .spotify {
+        height: 413px !important;
+    }
+}
+.bg-dark-indie {
+    background-color: rgb(30, 35, 40) !important;
 }

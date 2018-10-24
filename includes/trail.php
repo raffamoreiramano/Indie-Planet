@@ -1,5 +1,5 @@
-<nav class="container p-0 px-lg-4">
-    <ol class="breadcrumb border-0 rounded-0 bg-white m-0">
+<nav class="container bg-white p-0 px-lg-4">
+    <ol class="breadcrumb border-0 bg-transparent rounded-0 m-0">
         <?php
             foreach ($trail as $item) {
                 foreach ($nav as $area => $pagina) {

@@ -37,7 +37,7 @@
                 switch ($pastaAtualFim) {
                     case "musica":
                         echo "<a class='aside-content row mx-0 bg-dark p-3' href='".$corredor."musica/top_10/index.php'>\n";
-                        echo "<h4 class='h4 col my-auto font-weight-bold pr-0'>Top 5 mais ouvidas";
+                        echo "<h4 class='h4 col my-auto font-weight-bold px-0'>Top 5 mais ouvidas";
                         echo "</h4>\n<p class='small d-none d-sm-block my-auto col-3 text-dark text-right'>ver mais</p>\n</a>\n";
                         echo "<table class='table'>\n";
                         for ($i=1;$i<=5;$i++) {

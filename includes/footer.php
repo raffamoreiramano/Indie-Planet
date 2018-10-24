@@ -5,7 +5,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="<?php echo $corredor; ?>js/bootstrap.min.js"></script>
 
-<footer class="bg-dark">
+<footer class="bg-dark mt-3">
     <div class="container bg-dark">
         <div class="row d-flex flex-row float-right p-3">
             <ul class="list-inline m-0">
