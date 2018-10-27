@@ -5,6 +5,10 @@
     src: url(../webfonts/baltar.ttf);
 }
 
+html {
+    background-color: #343a40 !important;
+}
+
 html, body {
     max-width: 100%;
     overflow-x: hidden;
@@ -439,7 +443,7 @@ a.aside-content:hover , .aside-content p:hover {
     border-color: #FF3D4A;
 }
 
-.feed article div a:hover , .feed article a:hover h3 {
+.feed article div a:hover , .feed article a:hover h3 , .perfil-link:hover {
     color: #19CBCB !important;
     text-decoration: none;
 }
@@ -555,4 +559,38 @@ a.aside-content:hover , .aside-content p:hover {
 }
 .bg-dark-indie {
     background-color: rgb(30, 35, 40) !important;
+}
+.bg-gradient-0 {
+    background-image: linear-gradient(to left,#FFFFFF,#DADFE2) !important;
+    box-shadow: 0 5px 7px rgb(0,0,0,0.5);
+}
+.bg-gradient-1 {
+    background-image: linear-gradient(to right,#FFFFFF,#DADFE2) !important;
+    box-shadow: 0 5px 7px rgb(0,0,0,0.5);
+}
+@media (max-width: 425px) {
+    .perfil .h3 {
+        font-size: 1rem;
+    }
+    
+}
+
+.perfis {
+    margin-bottom: -16px;
+}
+
+.perfis section::before {
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    content: "";
+    height: 16px;
+    background-image: linear-gradient(to bottom,rgb(0,0,0,0.05),transparent,transparent,transparent);
+}
+
+#perfil0::before {
+    background-image: none;
+}
+textarea {
+    resize: none;
 }

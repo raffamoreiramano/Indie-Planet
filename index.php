@@ -7,7 +7,7 @@
     include $corredor.'includes/head.php'; // Uso de $corredor no início dos links para voltar para a o diretorio principal do portal antes de prosseguir para o destino do arquivo
 ?>
 
-    <body class="<?php echo $pastaAtualInicio; ?>">
+    <body class="<?php echo $pastaAtual; ?>">
         <header>
             <?php
                 include $corredor.'includes/nav-top.php';

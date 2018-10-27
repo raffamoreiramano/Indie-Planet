@@ -26,14 +26,14 @@
                         .$corredor.str_replace(' ','_',strtolower(pato($area)))."/index.php'>$area</a>
                     </li>
                     ";
-                } // Se a pasta atual for a pasta principal do portal, ele gere o conteúdo da navegação de acordo com os elementos da matriz $nav
+                } // Se a pasta atual for a pasta principal do portal, ele gera o conteúdo da navegação de acordo com os elementos da matriz $nav
             }
-            foreach ($navGeral as $area) {
-                if ($pastaAtual==strtolower(pato($area))||$pastaAtual=="session") {
+            foreach ($navGeral as $area) {                
+                if ($pastaAtual==str_replace(' ','_',strtolower(pato($area)))||$pastaAtual=="session") {
                     foreach ($nav as $area => $pagina) {
                         echo "<li class='nav-item'>
                             <a class='nav-link h4 rolamento' href='"
-                            .$corredor.str_replace('','_',strtolower(pato($area)))."/index.php'>$area</a>
+                            .$corredor.str_replace(' ','_',strtolower(pato($area)))."/index.php'>$area</a>
                         </li>
                         ";
                     }
