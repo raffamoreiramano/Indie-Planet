@@ -362,9 +362,21 @@ a.aside-content:hover , .aside-content p:hover {
 .breadcrumb li a:hover {
     text-decoration: none;
 }
+
 .login-dropdown {
     min-width: 300px;
-    margin-top: 10px;
+    margin-top: 11px;
+    margin-right: -42px;
+    background-color: rgb(25, 26, 27);
+}
+
+.lang-dropdown button:hover h6 {
+    color: rgb(25, 26, 27) !important;
+}
+
+.lang-dropdown.show {
+    margin-top: 11px;
+    margin-right: -1px;
     background-color: rgb(25, 26, 27);
 }
 

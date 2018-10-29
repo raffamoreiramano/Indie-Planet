@@ -27,7 +27,7 @@
                 <div class="row mt-4">
                     <div class="pl-0 pl-lg-3 col-4 col-lg-2">
                         <img class="img-fluid border border-white rounded-circle" src="../../img/behelit.jpg">
-                    </div>                    
+                    </div>
                 </div>
             </section>
         </article>

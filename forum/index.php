@@ -15,11 +15,7 @@
             <?php
                 include $corredor.'includes/nav-mid.php';
             ?>
-        </header>
-        <?php
-            include $corredor.'includes/trail.php';
-        ?>
-        
+        </header>        
         <?php
             include $corredor.'includes/footer.php';
         ?>    
