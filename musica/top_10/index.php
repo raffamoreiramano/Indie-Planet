@@ -1,6 +1,7 @@
 <!doctype html>
 <?php
     include '../../includes/matrix.php';
+    $spotifyPlaylist="7gGKwMOyRwE3ravFCAB4JY";
 ?>
 <html lang="pt-BR">
 <?php

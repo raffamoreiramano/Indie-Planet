@@ -4,9 +4,12 @@
     $news['links']=explode('||',$links);
     $news['dates']=explode('||',$dates);
     $news['areas']=explode('||',$areas);
+    $nh4['en']="News";
+    $nh4['es']="Noticias";
+    $nh4['pt']="Novidades";
 ?>
     <div class="row news-header">
-        <h4 class="mx-0 my-4 text-body">Novidades</h4>
+        <h4 class="mx-0 my-4 text-body"><?php echo $nh4[$lang]; ?></h4>
     </div>
     <?php
         $c=0;
@@ -21,8 +24,11 @@
                 echo "<div class='card-img-overlay h-100 d-flex flex-column justify-content-end mx-lg-4'>\n";
                 echo "<p class='small mt-auto mb-1 text-right'>".$news['dates'][$i]."</p>\n";
                 echo "<h3 class='card-title my-0 text-right news-title-link-b h5 font-weight-bold mb-0 mb-md-3'>";
-                echo $news['titles'][$i]."</h3>\n<p class='text-uppercase small my-1 text-right'>".$news['areas'][$i];
-                echo "</p>\n</div>\n</a>\n</article>\n</div>\n</div>";
+                echo $news['titles'][$i]."</h3>\n";
+                if ($areas != "") {
+                    echo "<p class='text-uppercase small my-1 text-right'>".$nav[$news['areas'][$i]]['primario'][$lang]."</p>\n";
+                }
+                echo "</div>\n</a>\n</article>\n</div>\n</div>";
                 $c=0;
             }
             else {
@@ -35,8 +41,11 @@
                 echo "<a href='".$news['links'][$i]."?t=".str_replace(' ','+',$news['titles'][$i])."&img=".$news['images'][$i]."&dt=".str_replace(' ','+',$news['dates'][$i]);
                 echo "' class='text-body'>\n<h3 class='h5 d-inline news-title-link font-weight-bold'>";
                 echo $news['titles'][$i]."</h3>\n</a>\n</div>\n<div class='mt-auto mb-2'>\n";
-                echo "<a href='".strtolower(pato($news['areas'][$i]))."/index.php' class='small text-uppercase text-body'>";
-                echo $news['areas'][$i]."</a>\n</div>\n</div>\n</div>\n</article>";
+                if ($areas != "") {
+                    echo "<a href='".$news['areas'][$i]."/index.php' class='small text-uppercase text-body'>";
+                    echo $nav[$news['areas'][$i]]['primario'][$lang]."</a>\n";
+                }
+                echo "</div>\n</div>\n</div>\n</article>";
             }
         }
     ?>

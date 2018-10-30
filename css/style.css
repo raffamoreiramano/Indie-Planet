@@ -606,3 +606,10 @@ a.aside-content:hover , .aside-content p:hover {
 textarea {
     resize: none;
 }
+
+.artistas a:hover {
+    text-decoration: none !important;
+}
+.artistas a:hover .h4 {
+    color: #CE3EB7 !important;
+}

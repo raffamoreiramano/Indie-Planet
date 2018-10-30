@@ -8,12 +8,16 @@
     );
     $news['areas']=array("Música","Cinema","Séries","Animações","Jogos");
     $news['dates']=array("seis","duas","três","quatro","cinco");
+    $sug=array();
+    $sug['en']="Suggestions";
+    $sug['es']="Sugerencias";
+    $sug['pt']="Sugestões";
     
 ?>
 <aside class="col-12 col-lg-4 feed">
     <section class="row">
         <div class="col">
-            <h4 class="bg-dark p-3 row aside-content font-weight-bold">Sugestões</h4>
+            <h4 class="bg-dark p-3 row aside-content font-weight-bold"><?php echo $sug[$lang]; ?></h4>
             <?php
                 for ($i=0;$i<5;$i++) {
                     echo "<article class='container-fluid pr-0 pl-lg-0 my-3'>\n<div class='row'>\n<a href='";
@@ -34,11 +38,19 @@
     <section class="row">
         <div class="col px-0">
             <?php
+            $top5Mh4=array();
+            $top5Mh4['en']="most heard";
+            $top5Mh4['es']="más escuchadas";
+            $top5Mh4['pt']="mais ouvidas";
+            $top5Ma=array();
+            $top5Ma['en']="see more";
+            $top5Ma['es']="ver más";
+            $top5Ma['pt']="ver mais";
                 switch ($pastaAtualFim) {
                     case "musica":
                         echo "<a class='aside-content row mx-0 bg-dark p-3' href='".$corredor."musica/top_10/index.php'>\n";
-                        echo "<h4 class='h4 col my-auto font-weight-bold px-0'>Top 5 mais ouvidas";
-                        echo "</h4>\n<p class='small d-none d-sm-block my-auto col-3 text-dark text-right'>ver mais</p>\n</a>\n";
+                        echo "<h4 class='h4 col my-auto font-weight-bold px-0'>Top 5 ".$top5Mh4[$lang];
+                        echo "</h4>\n<p class='small d-none d-sm-block my-auto col-3 text-dark text-right'>".$top5Ma[$lang]."</p>\n</a>\n";
                         echo "<table class='table'>\n";
                         for ($i=1;$i<=5;$i++) {
                             if ($i!=5) {     
