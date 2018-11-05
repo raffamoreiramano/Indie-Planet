@@ -613,3 +613,9 @@ textarea {
 .artistas a:hover .h4 {
     color: #CE3EB7 !important;
 }
+
+@media (min-width: 767px) {
+    .album {
+        height: 248px;
+    }
+}

@@ -2,7 +2,7 @@
 <?php
     include '../../includes/matrix.php';
     $page=isset($_GET['page'])?($_GET['page']):1;
-    $genero=array("Indie Rock","Indie Pop","Indie seilaoq");
+    $genero=array("Indie Rock","Indie Pop","Indie Folk","Indie Indie","Índio","Indie Pop-folk-rock");
 ?>
 <html lang="pt-BR">
 <?php
@@ -31,7 +31,7 @@
                 <h1 class="py-3 my-0 pl-lg-3 ml-3 ml-lg-4 text-white font-weight-bold h4"><?php echo $h1[$lang]; ?></h1>
             </div>
             <div class="row mx-0 pb-5 pt-4 my-5">
-                <div class="col-12 col-lg-6 p-0">
+                
                     <?php
                     if ($page>10) {
                         $page=10;  
@@ -40,36 +40,25 @@
                         $page=1;  
                     }
                     $p1=0+(($page-1)*26);
-                    $p2=13+(($page-1)*26); 
-                    $q1=$p2;
-                    $q2=26+(($page-1)*26);
+                    $p2=26+(($page-1)*26);
                     
                     for ($i=$p1;$i<$p2;$i++) {
+                        $pimg=rand(0,6);
                         $g=$genero[rand(0,count($genero)-1)];
+                        echo "<div class='col-12 col-lg-6 p-0'>";
                         echo "<section class='container-fluid artistas mt-4 p-0'>\n<div class='row m-0'>\n";
                         echo "<div class='pl-0 pl-lg-3 col-4 col-md-2 col-lg-4'>\n<img alt='".$artista[$i]."' ";
-                        echo "class='img-fluid border shadow border-dark rounded-circle' src='../../img/behelit.jpg'>\n";
+                        echo "class='img-fluid border shadow border-dark rounded-circle' src='../../img/perfil".$pimg.".jpg'>\n";
                         echo "</div>\n<div class='pl-0 pl-lg-3 col-8 col-md-10 col-lg-8'>\n<div class='row h-100 m-0'>";
-                        echo "\n<a href='artista/index.php?t=".str_replace(' ','+',$artista[$i])."&g=".str_replace(' ','+',$g);
+                        echo "\n<a href='artista/index.php?t=".str_replace(' ','+',$artista[$i])."&pimg=".$pimg."&g=".str_replace(' ','+',$g);
                         echo "' class='my-auto'>\n<h2 class='h4 font-weight-bold text-light'>";
                         echo $artista[$i]."</h2>\n<h3 class='h6 text-secondary'>".$g."</h3>\n";
                         echo "</a>\n</div>\n</div>\n</div>\n</section>";
+                        echo "\n</div>\n";
                     }
-                    echo "\n</div>\n<div class='col-12 col-lg-6 p-0'>";
-                    for ($i=$q1;$i<$q2;$i++) {
-                        $g=$genero[rand(0,count($genero)-1)];
-                        echo "<section class='container-fluid artistas mt-4 p-0'>\n<div class='row m-0'>\n";
-                        echo "<div class='pl-0 pl-lg-3 col-4 col-md-2 col-lg-4'>\n<img alt='".$artista[$i]."' ";
-                        echo "class='img-fluid border shadow border-dark rounded-circle' src='../../img/behelit.jpg'>\n";
-                        echo "</div>\n<div class='pl-0 pl-lg-3 col-8 col-md-10 col-lg-8'>\n<div class='row h-100 m-0'>";
-                        echo "\n<a href='artista/index.php?t=".str_replace(' ','+',$artista[$i])."&g=".str_replace(' ','+',$g);
-                        echo "' class='my-auto'>\n<h2 class='h4 font-weight-bold text-light'>";
-                        echo $artista[$i]."</h2>\n<h3 class='h6 text-secondary'>".$g."</h3>\n";
-                        echo "</a>\n</div>\n</div>\n</div>\n</section>";
-                    }
-                    echo "\n</div>\n";
+                    
                     ?>
-                </div>
+                
             </div>     
             <nav class="row m-0 pt-5 mt-5">
                 <div class="col-12">
