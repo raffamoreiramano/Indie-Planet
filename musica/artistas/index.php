@@ -50,7 +50,7 @@
                         echo "<div class='pl-0 pl-lg-3 col-4 col-md-2 col-lg-4'>\n<img alt='".$artista[$i]."' ";
                         echo "class='img-fluid border shadow border-dark rounded-circle' src='../../img/behelit.jpg'>\n";
                         echo "</div>\n<div class='pl-0 pl-lg-3 col-8 col-md-10 col-lg-8'>\n<div class='row h-100 m-0'>";
-                        echo "\n<a href='perfil/index.php?t=".str_replace(' ','+',$artista[$i])."&g=".str_replace(' ','+',$g);
+                        echo "\n<a href='artista/index.php?t=".str_replace(' ','+',$artista[$i])."&g=".str_replace(' ','+',$g);
                         echo "' class='my-auto'>\n<h2 class='h4 font-weight-bold text-light'>";
                         echo $artista[$i]."</h2>\n<h3 class='h6 text-secondary'>".$g."</h3>\n";
                         echo "</a>\n</div>\n</div>\n</div>\n</section>";
@@ -62,7 +62,7 @@
                         echo "<div class='pl-0 pl-lg-3 col-4 col-md-2 col-lg-4'>\n<img alt='".$artista[$i]."' ";
                         echo "class='img-fluid border shadow border-dark rounded-circle' src='../../img/behelit.jpg'>\n";
                         echo "</div>\n<div class='pl-0 pl-lg-3 col-8 col-md-10 col-lg-8'>\n<div class='row h-100 m-0'>";
-                        echo "\n<a href='perfil/index.php?t=".str_replace(' ','+',$artista[$i])."&g=".str_replace(' ','+',$g);
+                        echo "\n<a href='artista/index.php?t=".str_replace(' ','+',$artista[$i])."&g=".str_replace(' ','+',$g);
                         echo "' class='my-auto'>\n<h2 class='h4 font-weight-bold text-light'>";
                         echo $artista[$i]."</h2>\n<h3 class='h6 text-secondary'>".$g."</h3>\n";
                         echo "</a>\n</div>\n</div>\n</div>\n</section>";

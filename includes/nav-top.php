@@ -58,7 +58,7 @@
                 <div class="btn-group">
                     <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo $dropdown['logar'][$lang]; ?></button>
 
-                    <div class="dropdown-menu dropdown-menu-right rounded-0 border-0 login-dropdown px-4 py-3" aria-labelledby="dropdownMenuButton1">
+                    <div class="dropdown-menu dropdown-menu-right rounded-0 border-0 login-dropdown px-4 py-3">
                         <form class="text-white">
                             <div class="form-group">
                                 <label for="formEmail1">Email</label>
@@ -85,40 +85,38 @@
                     <button type="button" class="btn btn-secondary rounded-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <img src="<?php echo $corredor."img/".$lang; ?>.png" alt="#" class="img-fluid rounded">
                     </button>
-                    <div class="dropdown-menu dropdown-menu-right rounded-0 border-0 lang-dropdown pt-2" aria-labelledby="dropdownMenuButton1">
-                        <form method="get">
-                            <button name="lang" class="dropdown-item p-1" type="submit" value="en">
-                                <div class="row m-0">
-                                    <div class="col pl-4">
-                                        <img class="my-2" src="<?php echo $corredor."img/en.png"; ?>" alt="en">
-                                    </div>
-                                    <div class="col">
-                                        <h6 class="mt-2 mb-1 text-light">EN</h6>
-                                    </div>
+                    <div class="dropdown-menu dropdown-menu-right rounded-0 border-0 lang-dropdown pt-2">
+                        <a href="?lang=en" class="dropdown-item p-1">
+                            <div class="row m-0">
+                                <div class="col pl-4">
+                                    <img class="my-2" src="<?php echo $corredor."img/en.png"; ?>" alt="en">
                                 </div>
-                            </button>
-                            <button name="lang" class="dropdown-item p-1" type="submit" value="es">
-                                <div class="row m-0">
-                                    <div class="col pl-4">
-                                        <img class="my-2" src="<?php echo $corredor."img/es.png"; ?>" alt="es">
-                                    </div>
-                                    <div class="col">
-                                        <h6 class="mt-2 mb-1 text-light">ES</h6>
-                                    </div>
+                                <div class="col">
+                                    <h6 class="mt-2 mb-1 text-light">EN</h6>
                                 </div>
-                            </button>
-                            <button name="lang" class="dropdown-item p-1" type="submit" value="pt">
-                                <div class="row m-0">
-                                    <div class="col pl-4">
-                                        <img class="my-2" src="<?php echo $corredor."img/pt.png"; ?>" alt="pt">
-                                    </div>
-                                    <div class="col">
-                                        <h6 class="mt-2 mb-1 text-light">PT</h6>
-                                    </div>
+                            </div>
+                        </a>
+                        <a href="?lang=es" class="dropdown-item p-1">
+                            <div class="row m-0">
+                                <div class="col pl-4">
+                                    <img class="my-2" src="<?php echo $corredor."img/es.png"; ?>" alt="es">
                                 </div>
-                            </button>
-                        </form>
-                    </div>
+                                <div class="col">
+                                    <h6 class="mt-2 mb-1 text-light">ES</h6>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="?lang=pt" class="dropdown-item p-1">
+                            <div class="row m-0">
+                                <div class="col pl-4">
+                                    <img class="my-2" src="<?php echo $corredor."img/pt.png"; ?>" alt="pt">
+                                </div>
+                                <div class="col">
+                                    <h6 class="mt-2 mb-1 text-light">PT</h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div> 
                 </div>
             </div>
         </li>
