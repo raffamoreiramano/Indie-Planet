@@ -42,7 +42,7 @@
                         "r"=>"2650831813031",
                         "a"=>"Animations",
                         "l"=>"animacoes/index.php",
-                        "t"=>"Adrian, eighteen years old. Studying Internet Systems at Fatec São Roque. Has a way with logical reasoning and is always trying his best to help."
+                        "t"=>"Adrian, nineteen years old. Studying Internet Systems at Fatec São Roque. Has a way with logical reasoning and is always trying his best to help."
                     ),
                     1 => array (
                         "n"=>"Amauri Carvalho",
@@ -103,7 +103,7 @@
                         "r"=>"2650831813031",
                         "a"=>"Animaciones",
                         "l"=>"animacoes/index.php",
-                        "t"=>"Adrian, de dieciocho años. Estudiando Sistemas para Internet en Fatec São Roque. Tiene una especial habilidad con el razonamiento lógico y siempre está haciendo todo lo posible para ayudar."
+                        "t"=>"Adrian, de diecinueve años. Estudiando Sistemas para Internet en Fatec São Roque. Tiene una especial habilidad con el razonamiento lógico y siempre está haciendo todo lo posible para ayudar."
                     ),
                     1 => array (
                         "n"=>"Amauri Carvalho",
@@ -164,7 +164,7 @@
                         "r"=>"2650831813031",
                         "a"=>"Animações",
                         "l"=>"animacoes/index.php",
-                        "t"=>"Adrian, dezoito anos de idade. Cursando Sistemas para Internet na Fatec São Roque. Leva jeito com raciocínio lógico e está sempre dando seu melhor para ajudar."
+                        "t"=>"Adrian, dezenove anos de idade. Cursando Sistemas para Internet na Fatec São Roque. Leva jeito com raciocínio lógico e está sempre dando seu melhor para ajudar."
                     ),
                     1 => array (
                         "n"=>"Amauri Carvalho",

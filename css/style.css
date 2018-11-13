@@ -293,7 +293,7 @@ button:focus {
     color: #6C757D;
 }
 
-.carousel-link:hover h5 , .breadcrumb li a , .aside-content {
+.carousel-link:hover h5 , .breadcrumb li a , .aside-content , .strong-forum {
     color: #19CBCB;
 }
 
@@ -607,11 +607,15 @@ textarea {
     resize: none;
 }
 
-.artistas a:hover {
+.artistas a:hover , .topicos a:hover {
     text-decoration: none !important;
 }
-.artistas a:hover .h4 {
+.artistas a:hover .h4  {
     color: #CE3EB7 !important;
+}
+
+.topicos a:hover .h5 {
+    color: #19CBCB !important;
 }
 
 @media (min-width: 767px) {

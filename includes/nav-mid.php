@@ -30,7 +30,7 @@
                 } // Se a pasta atual for a pasta principal do portal, ele gera o conteúdo da navegação de acordo com os elementos da matriz $nav
             }
             foreach ($navGeral as $elemento => $valor) {
-                if ($pastaAtual==$elemento||$pastaAtual=="session") {
+                if ($pastaAtual==$elemento) {
                     foreach ($nav as $area => $pagina) {
                         echo "<li class='nav-item'>
                             <a class='nav-link h4 rolamento' href='"
@@ -39,8 +39,16 @@
                         ";
                     }
                 }
-            } // Gera o conteúdo da navegação de acordo com os elementos da matriz $nav, para as páginas pertencentes ao primeiro nível do portal
-            
+            }// Gera o conteúdo da navegação de acordo com os elementos da matriz $nav, para as páginas pertencentes ao primeiro nível do portal
+            if ($pastaAtualFake=="forum") {
+                foreach ($nav as $area => $pagina) {
+                    echo "<li class='nav-item'>
+                        <a class='nav-link h4 rolamento' href='"
+                        .$corredor.$area."/index.php'>".$nav[$area]['primario'][$lang]."</a>
+                    </li>
+                    ";
+                }    
+            }
         ?>
     </ul>
 </nav>
