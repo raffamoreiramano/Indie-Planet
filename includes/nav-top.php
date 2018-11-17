@@ -59,7 +59,7 @@
                     <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo $dropdown['logar'][$lang]; ?></button>
 
                     <div class="dropdown-menu dropdown-menu-right rounded-0 border-0 login-dropdown px-4 py-3">
-                        <form class="text-white">
+                        <form class="text-white" method="post">
                             <div class="form-group">
                                 <label for="formEmail1">Email</label>
                                 <input type="email" class="form-control" id="formEmail1" placeholder="email@<?php echo $dropdown['email'][$lang]; ?>.com">
@@ -76,8 +76,8 @@
                         </form>
                         <div class="dropdown-divider"></div>
                         <div class="d-flex flex-column">
-                            <a class="text-white font-weight-bold" href="#"><?php echo $dropdown['criar'][$lang]; ?></a>
-                            <a class="text-white font-weight-bold" href="#"><?php echo $dropdown['esqueci'][$lang]; ?></a>
+                            <a class="text-white font-weight-bold" href="<?php echo $corredor."signin/index.php"; ?>"><?php echo $dropdown['criar'][$lang]; ?></a>
+                            <a class="text-white font-weight-bold" href="<?php echo $corredor."signin/re/index.php"; ?>"><?php echo $dropdown['esqueci'][$lang]; ?></a>
                         </div>
                     </div>
                 </div>
@@ -202,7 +202,7 @@
                 <button class="col-4 px-4 btn btn-success text-warning" type="submit" name="lang" id="option3" value="pt">PT</button>
             </div>
         </form>
-        <form class="text-white">
+        <form class="text-white" method="post">
             <div class="form-group">
                 <label for="formEmail2" class="font-weight-bold">Email</label>
                 <input type="email" class="form-control" id="formEmail2" placeholder="email@<?php echo $dropdown['email'][$lang]; ?>.com">
@@ -215,12 +215,12 @@
                 <input type="checkbox" class="form-check-input" id="formCheck2">
                 <label class="form-check-label font-weight-bold" for="formCheck2"><?php echo $dropdown['lembrar'][$lang]; ?></label>
             </div>
-            <button type="submit" class="btn btn-info w-100"><?php echo $dropdown['enviar'][$lang]; ?></button>
+            <button type="submit" class="btn btn-outline-light btn-transp w-100"><?php echo $dropdown['enviar'][$lang]; ?></button>
             </form>
             <div class="dropdown-divider pt-2"></div>
             <div class="d-flex flex-column">
-                <a class="text-white font-weight-bold my-2" href="#"><?php echo $dropdown['criar'][$lang]; ?></a>
-                <a class="text-white font-weight-bold my-2" href="#"><?php echo $dropdown['esqueci'][$lang]; ?></a>
+                <a class="text-white font-weight-bold my-2" href="<?php echo $corredor."signin/index.php"; ?>"><?php echo $dropdown['criar'][$lang]; ?></a>
+                <a class="text-white font-weight-bold my-2" href="<?php echo $corredor."signin/re/index.php"; ?>"><?php echo $dropdown['esqueci'][$lang]; ?></a>
             </div>
     </div>
 </nav>

@@ -1,6 +1,7 @@
 <!doctype html>
 <?php
     include '../includes/matrix.php';
+    $pastaAtualFake="forum";
 ?>
 <html lang="pt-BR">
 <?php
@@ -19,14 +20,14 @@
         <?php
         $contato = array();
         $contato['h1'] = array(
-            "en" => "Contact us!",
-            "es" => "Contáctenos!",
-            "pt" => "Fale conosco!"        
+            "en" => "Create an account",
+            "es" => "Crear una cuenta",
+            "pt" => "Criar conta"        
         );
-        $contato['assunto'] = array(
-            "en" => "Subject",
-            "es" => "Sujeto",
-            "pt" => "Assunto"
+        $contato['nick'] = array(
+            "en" => "Username",
+            "es" => "Nombre de usuario",
+            "pt" => "Nome de usuário"
         );
         $contato['nome'] = array(
             "en" => "Full name",
@@ -38,10 +39,15 @@
             "es" => "Enviar",
             "pt" => "Enviar"
         );
-        $contato['msg'] = array(
-            "en" => "Enter your message",
-            "es" => "Escriba su mensaje",
-            "pt" => "Digite sua mensagem"
+        $contato['senha'] = array(
+            "en" => "Password",
+            "es" => "Contraseña",
+            "pt" => "Senha"
+        );
+        $contato['confirm'] = array(
+            "en" => "Confirm password",
+            "es" => "Confirmar contraseña",
+            "pt" => "Confirmar senha"
         );
         ?>
         <div class="container bg-white">
@@ -62,10 +68,13 @@
                             <input type="email" class="form-control col-12 col-md-8" name="email" placeholder="Email">
                         </div>
                         <div class="form-group row mx-3 mx-lg-4 pl-lg-3">
-                            <input type="text" class="form-control col-12 col-md-8" name="subject" placeholder="<?php echo $contato['assunto'][$lang]; ?>">
+                            <input type="text" class="form-control col-12 col-md-8" name="username" placeholder="<?php echo $contato['nick'][$lang]; ?>">
                         </div>
                         <div class="form-group row mx-3 mx-lg-4 pl-lg-3">
-                            <textarea class="form-control col-12 col-md-8" name="message" placeholder="<?php echo $contato['msg'][$lang]; ?>..." rows="4"></textarea>
+                            <input type="text" class="form-control col-12 col-md-8" name="password" placeholder="<?php echo $contato['senha'][$lang]; ?>">
+                        </div>
+                        <div class="form-group row mx-3 mx-lg-4 pl-lg-3">
+                            <input type="text" class="form-control col-12 col-md-8" name="psvalidation" placeholder="<?php echo $contato['confirm'][$lang]; ?>">
                         </div>
                         <div class="form-group row mx-3 mx-lg-4 pl-lg-3">
                             <button type="submit" class="btn btn-info"><?php echo $contato['enviar'][$lang]; ?></button>
@@ -78,5 +87,4 @@
             include $corredor.'includes/footer.php';
         ?>    
     </body>
-
 </html>

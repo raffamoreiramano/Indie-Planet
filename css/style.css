@@ -56,10 +56,13 @@ body {
     background-color: #78BB78;
 }
 
-.moda .navbar {
+.moda .navbar  {
     background-color: #FF3D4A;
 }
-
+.btn-transp {
+    background-color: rgba(0,0,0,0.25);
+    mix-blend-mode: normal;
+}
 .nav-item.row {
     padding-left: 12px;
     padding-top: 8px;
@@ -621,5 +624,100 @@ textarea {
 @media (min-width: 767px) {
     .album {
         height: 248px;
+    }
+}
+.fas.fa-thumbs-down {
+    color: #CE3EB7!important;
+}
+
+.fas.fa-thumbs-up {
+    color: #19CBCB !important;
+}
+.reply-txt {
+    min-height: 238px !important;
+}
+
+.alien-ship:hover {
+    text-decoration: none;
+}
+.alien-box {
+    position: relative;
+    min-height: 300px !important;
+}
+.alien-ship {
+    position: relative;
+    text-decoration: none;
+    font-size: 8em;
+    animation-name: movimento;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.alien-ship:hover {;
+    animation-name: movimentohover;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes movimento {
+    0% {
+        right: 0;
+        left: 0;
+    }
+    5% {
+        left: 0;
+        right: 0;
+    }
+    10% {
+        right: 2%;
+        left: 0;
+    }
+    15% {
+        left: 2%;
+        right: 0;
+    }
+    20% {
+        right: 4%;
+        left: 0;
+    }
+    25% {
+        left: 4%;
+        right: 0;
+    }
+    30% {
+        right: 2%;
+        left: 0;
+    }
+    35% {
+        left: 2%;
+        right: 0;
+    }
+    40% {
+        right: 0;
+        left: 0;
+    }
+    45% {
+        left: 1%;
+        right: 0;
+    }
+    50% {
+        right: 1%;
+        left: 0;
+    }
+    55% {
+        left: 1%;
+        right: 0;
+    }
+    60% {
+        right: 1%;
+        left: 0;
+    }
+    65% {
+        left: 0;
+        right: 0;
+    }
+    
+}
+@keyframes movimentohover {
+    50% {
+        font-size: 9em;
     }
 }

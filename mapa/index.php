@@ -1,6 +1,7 @@
 <!doctype html>
 <?php
     include '../includes/matrix.php';
+    $pastaAtualFake="forum";
 ?>
 <html lang="pt-BR">
 <?php
@@ -19,29 +20,19 @@
         <?php
         $contato = array();
         $contato['h1'] = array(
-            "en" => "Contact us!",
-            "es" => "Contáctenos!",
-            "pt" => "Fale conosco!"        
-        );
-        $contato['assunto'] = array(
-            "en" => "Subject",
-            "es" => "Sujeto",
-            "pt" => "Assunto"
-        );
-        $contato['nome'] = array(
-            "en" => "Full name",
-            "es" => "Nombre completo",
-            "pt" => "Nome completo"
+            "en" => "Redeem password",
+            "es" => "Resgatar contraseña",
+            "pt" => "Resgatar senha"        
         );
         $contato['enviar'] = array(
             "en" => "Submit",
             "es" => "Enviar",
             "pt" => "Enviar"
         );
-        $contato['msg'] = array(
-            "en" => "Enter your message",
-            "es" => "Escriba su mensaje",
-            "pt" => "Digite sua mensagem"
+        $resgate=array(
+            "en" => "Sen your email and wait for instructions.",
+            "es" => "Envíe su email y espere instruciones.",
+            "pt" => "Envie seu email e aguarde instruções."
         );
         ?>
         <div class="container bg-white">
@@ -56,19 +47,11 @@
                 <div class="col-12 col-md-8 p-0 my-4 text-white">
                     <form class="form" method="post">
                         <div class="form-group row mx-3 mx-lg-4 pl-lg-3">
-                            <input type="text" class="form-control col-12 col-md-8" name="name" placeholder="<?php echo $contato['nome'][$lang]; ?>">
-                        </div>
-                        <div class="form-group row mx-3 mx-lg-4 pl-lg-3">
                             <input type="email" class="form-control col-12 col-md-8" name="email" placeholder="Email">
                         </div>
                         <div class="form-group row mx-3 mx-lg-4 pl-lg-3">
-                            <input type="text" class="form-control col-12 col-md-8" name="subject" placeholder="<?php echo $contato['assunto'][$lang]; ?>">
-                        </div>
-                        <div class="form-group row mx-3 mx-lg-4 pl-lg-3">
-                            <textarea class="form-control col-12 col-md-8" name="message" placeholder="<?php echo $contato['msg'][$lang]; ?>..." rows="4"></textarea>
-                        </div>
-                        <div class="form-group row mx-3 mx-lg-4 pl-lg-3">
                             <button type="submit" class="btn btn-info"><?php echo $contato['enviar'][$lang]; ?></button>
+                            <p class="small my-auto ml-3 text-secondary"><?php echo $resgate[$lang]; ?></p>
                         </div>
                     </form>
                 </div>
@@ -78,5 +61,4 @@
             include $corredor.'includes/footer.php';
         ?>    
     </body>
-
 </html>
