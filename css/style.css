@@ -56,13 +56,10 @@ body {
     background-color: #78BB78;
 }
 
-.moda .navbar  {
+.moda .navbar {
     background-color: #FF3D4A;
 }
-.btn-transp {
-    background-color: rgba(0,0,0,0.25);
-    mix-blend-mode: normal;
-}
+
 .nav-item.row {
     padding-left: 12px;
     padding-top: 8px;
@@ -625,6 +622,7 @@ textarea {
     .album {
         height: 248px;
     }
+<<<<<<< HEAD
 }
 .fas.fa-thumbs-down {
     color: #CE3EB7!important;
@@ -727,3 +725,6 @@ textarea {
     }
 }
     
+=======
+}
+>>>>>>> parent of e48321e... Forum++

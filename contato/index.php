@@ -23,6 +23,11 @@
             "es" => "Contáctenos!",
             "pt" => "Fale conosco!"        
         );
+        $contato['nome'] = array(
+            "en" => "Full name",
+            "es" => "Nombre completo",
+            "pt" => "Nome completo"
+        );
         $contato['assunto'] = array(
             "en" => "Subject",
             "es" => "Sujeto",
@@ -54,7 +59,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-8 p-0 my-4 text-white">
-                    <form class="form" method="post">
+                    <form class="form">
                         <div class="form-group row mx-3 mx-lg-4 pl-lg-3">
                             <input type="text" class="form-control col-12 col-md-8" name="name" placeholder="<?php echo $contato['nome'][$lang]; ?>">
                         </div>

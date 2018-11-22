@@ -83,7 +83,7 @@
         <main class="container">
             <div class="row my-3 justify-content-center">
                 <div class="col-12 col-md-8 col-lg-6">
-                    <a href="erro/index.php" class="btn btn-info font-weight-bold btn-block btn-lg shadow rounded-0">+ <?php
+                    <a href="#" class="btn btn-info font-weight-bold btn-block btn-lg shadow rounded-0">+ <?php
                         switch ($lang) {
                             case "en":
                                 echo "Create Topic";
@@ -104,7 +104,7 @@
                 $rand1=10000*(11-$page);
                 $rand2=$rand1*2;
                 $views=rand($rand1,$rand2);
-                $data="12/11/2017 - 6:16pm";
+                $data="12/11/2018 - 6:16pm";
                 if ($page==1) {
                     echo "<section>\n<div class='row'>\n<div class='col-12 bg-dark shadow'>\n";
                     echo "<h3 class='py-3 my-0 pl-lg-3 ml-lg-2 text-white font-weight-bold h4'>";
@@ -128,7 +128,7 @@
                 }
                 $datam=12-$page;
                 $datad=28;
-                $dataa=2017;
+                $dataa=2018;
                 $datah=24;
                 $datamin=1;
                 for ($i=$p1;$i<$p2;$i+=2) {
@@ -141,7 +141,7 @@
                     $datad=$datad-rand(0,2);
                     $datah=$datah-1;
                     $datamin=rand(00,59);
-                    $data=date('d m Y - g:ia',mktime($datah, $datamin, 0, $datam, $datad, 2017));
+                    $data=date('d m Y - g:ia',mktime($datah, $datamin, 0, $datam, $datad, $dataa));
                     $dataurl=str_replace(' ','X',$data);
                     $dataurl=str_replace('-','Y',$dataurl);
                     $dataurl=str_replace(':','Z',$dataurl);
