@@ -721,3 +721,9 @@ textarea {
         font-size: 9em;
     }
 }
+@media (min-width: 768px) {
+    .play-col {
+        margin-top: -68px !important;
+    }
+}
+    

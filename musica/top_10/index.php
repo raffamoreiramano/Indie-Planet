@@ -24,7 +24,18 @@
             <div class="row justify-content-between">
                 <article class="col-12 col-lg-7">
                     <div class="row news-header">
-                        <h1 class="mx-0 h4 font-weight-bold my-4 text-body">As melhores indies</h1>
+                        <h1 class="mx-0 h4 font-weight-bold my-4 text-body"><?php switch($lang) {
+    case "en":
+        echo "Top 10 Indie Songs";
+        break;
+    case "es":
+        echo "Top 10 Canciones Indie";
+        break;
+    case "pt":
+        echo "Top 10 Músicas Indie";
+        break;
+        
+} ?></h1>
                     </div>
                     <?php
                         $text = substr($text,(strpos($text,'</blockquote>')+13),strlen($text));
