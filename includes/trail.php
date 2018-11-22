@@ -1,26 +1,26 @@
-<nav class="container p-0 px-lg-4">
-    <ol class="breadcrumb border-0 rounded-0 bg-white m-0">
+<nav class="container bg-white p-0 px-lg-4">
+    <ol class="breadcrumb border-0 bg-transparent rounded-0 m-0">
         <?php
             foreach ($trail as $item) {
                 foreach ($nav as $area => $pagina) {
-                    if (str_replace(' ','_',strtolower(pato($area)))==$item) {
-                        $crumb = $area;
+                    if ($area==$item) {
+                        $crumb = $nav[$area]['primario'][$lang];
                     } // Se um elemento da matriz for semelhante ao item, $crumb recebe o nome do elemento
-                    foreach ($nav[$area] as $pagina) {
-                        if (str_replace(' ','_',strtolower(pato($pagina)))==$item) {
-                            $crumb = $pagina;
+                    foreach ($nav[$area]['secundario'] as $pagina => $value) {
+                        if ($pagina==$item) {
+                            $crumb = $nav[$area]['secundario'][$pagina][$lang];
                         } // Se um elemento pertencente a um certo índice da matriz for semelhante ao item, $crumb recebe o nome do elemento
                     }
                 } // Vasculha a matriz $nav em busca de um elemento correspondente ao $item
                 if (isset($crumb)) {
                     echo "<li class='breadcrumb-item";
                     if (isset($nome)) {
-                        echo (end($trail)==$item)?" active'>$nome.":"'><a class='font-weight-bold' href='" #1
+                        echo (end($trail)==$item)?" active'>$nome":"'><a class='font-weight-bold' href='" #1
                             .$corredor.substr($caminho,0,strpos($caminho,$item."/"))
                             .$item."/'>".$crumb."</a>";
                     } // Se $nome estiver preenchido, o nome da página dentro do menu recebe o conteúdo de $nome
                     else {
-                        echo (end($trail)==$item)?" active'>$crumb.":"'><a class='font-weight-bold' href='" #1
+                        echo (end($trail)==$item)?" active'>$crumb":"'><a class='font-weight-bold' href='" #1
                             .$corredor.substr($caminho,0,strpos($caminho,$item."/"))
                             .$item."/'>".$crumb."</a>";
                     } // Se $nome não estiver preenchido, o nome da página segue com o conteúdo de $crumb
@@ -28,12 +28,12 @@
                 else {
                     echo "<li class='breadcrumb-item";
                     if (isset($nome)) {
-                        echo (end($trail)==$item)?" active'>$nome.":"'><a class='font-weight-bold' href='" #1
+                        echo (end($trail)==$item)?" active'>$nome":"'><a class='font-weight-bold' href='" #1
                             .$corredor.substr($caminho,0,strpos($caminho,$item."/"))
                             .$item."/'>".ucfirst($item)."</a>";
                     } // Se $nome estiver preenchido, o nome da página dentro do menu recebe o conteúdo de $nome
                     else {
-                        echo (end($trail)==$item)?" active'>Página atual.":"'><a class='font-weight-bold' href='" #1
+                        echo (end($trail)==$item)?" active'>Página atual":"'><a class='font-weight-bold' href='" #1
                             .$corredor.substr($caminho,0,strpos($caminho,$item."/"))
                             .$item."/'>".ucfirst($item)."</a>";
                     } // Se $nome não estiver preenchido, o nome da página segue com o conteúdo de $item

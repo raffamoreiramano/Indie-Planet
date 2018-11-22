@@ -7,7 +7,7 @@
     include $corredor.'includes/head.php'; // Uso de $corredor no início dos links para voltar para a o diretorio principal do portal antes de prosseguir para o destino do arquivo
 ?>
 
-    <body class="<?php echo $pastaAtualInicio; ?>">
+    <body class="<?php echo $pastaAtual; ?>">
         <header>
             <?php
                 include $corredor.'includes/nav-top.php';
@@ -143,7 +143,7 @@
                             "seis horas atrás"
                             ."||".
                             "sete horas atrás";
-                        $areas="Música||Cinema||Séries||Animações||Literatura||Jogos||Moda"; // Área de cada postagem
+                        $areas="musica||cinema||series||animacoes||literatura||jogos||moda"; // Área de cada postagem
                         include $corredor.'includes/news.php';
                     ?>
                 </div>

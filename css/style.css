@@ -5,6 +5,10 @@
     src: url(../webfonts/baltar.ttf);
 }
 
+html {
+    background-color: #343a40 !important;
+}
+
 html, body {
     max-width: 100%;
     overflow-x: hidden;
@@ -52,10 +56,13 @@ body {
     background-color: #78BB78;
 }
 
-.moda .navbar {
+.moda .navbar  {
     background-color: #FF3D4A;
 }
-
+.btn-transp {
+    background-color: rgba(0,0,0,0.25);
+    mix-blend-mode: normal;
+}
 .nav-item.row {
     padding-left: 12px;
     padding-top: 8px;
@@ -289,42 +296,52 @@ button:focus {
     color: #6C757D;
 }
 
-.carousel-link:hover h5 , .breadcrumb li a , .sugeridas{
+.carousel-link:hover h5 , .breadcrumb li a , .aside-content , .strong-forum {
     color: #19CBCB;
 }
 
-.musica .carousel-link:hover h5 , .musica .breadcrumb li a , .musica .sugeridas{
+.musica .carousel-link:hover h5 , .musica .breadcrumb li a , .musica .aside-content {
     color: #CE3EB7;
 }
 
-.cinema .carousel-link:hover h5 , .cinema .breadcrumb li a , .cinema .sugeridas{
+.cinema .carousel-link:hover h5 , .cinema .breadcrumb li a , .cinema .aside-content {
     color: #5F778A;
 }
 
-.series .carousel-link:hover h5 , .series .breadcrumb li a , .series .sugeridas{
+.series .carousel-link:hover h5 , .series .breadcrumb li a , .series .aside-content {
     color: #E1BE82;
 }
 
-.animacoes .carousel-link:hover h5 , .animacoes .breadcrumb li a , .animacoes .sugeridas{
+.animacoes .carousel-link:hover h5 , .animacoes .breadcrumb li a , .animacoes .aside-content {
     color: #8BCCF2;
 }
 
-.literatura .carousel-link:hover h5 , .literatura .breadcrumb li a , .literatura .sugeridas{
+.literatura .carousel-link:hover h5 , .literatura .breadcrumb li a , .literatura .aside-content {
     color: #DE813A;
 }
 
-.jogos .carousel-link:hover h5 , .jogos .breadcrumb li a , .jogos .sugeridas{
+.jogos .carousel-link:hover h5 , .jogos .breadcrumb li a , .jogos .aside-content {
     color: #78BB78;
 }
 
-.moda .carousel-link:hover h5 , .moda .breadcrumb li a , .moda .sugeridas{
+.moda .carousel-link:hover h5 , .moda .breadcrumb li a , .moda .aside-content {
     color: #FF3D4A;
+}
+
+.aside-content:hover p {
+    color: #6c757d !important;
+}
+
+a.aside-content:hover , .aside-content p:hover {
+    text-decoration: none !important;
+    color: white !important;
 }
 
 .desk-indicators {
     padding: 0;
     overflow-y: scroll;
     overflow-x: hidden;
+    max-height: inherit;
 }
 .desk-indicators::-webkit-scrollbar { 
     display: none;
@@ -348,9 +365,21 @@ button:focus {
 .breadcrumb li a:hover {
     text-decoration: none;
 }
+
 .login-dropdown {
     min-width: 300px;
-    margin-top: 10px;
+    margin-top: 11px;
+    margin-right: -42px;
+    background-color: rgb(25, 26, 27);
+}
+
+.lang-dropdown button:hover h6 {
+    color: rgb(25, 26, 27) !important;
+}
+
+.lang-dropdown.show {
+    margin-top: 11px;
+    margin-right: -1px;
     background-color: rgb(25, 26, 27);
 }
 
@@ -429,7 +458,7 @@ button:focus {
     border-color: #FF3D4A;
 }
 
-.feed article div a:hover , .feed article a:hover h3 {
+.feed article div a:hover , .feed article a:hover h3 , .perfil-link:hover {
     color: #19CBCB !important;
     text-decoration: none;
 }
@@ -489,6 +518,31 @@ button:focus {
     flex: auto;
 }
 
+
+.spotify {
+    height: 174px !important;   
+}
+@media (min-width: 375px) {
+    .spotify {
+        height: 204px !important;
+    }
+}
+@media (min-width: 425px) {
+    .spotify {
+        height: 231px !important;
+    }
+}
+@media (min-width: 576px) {
+    .spotify {
+        height: 293px !important;
+    }
+}
+@media (min-width: 576px) {
+    .spotify {
+        min-height: 347px !important;
+    }
+}
+
 @media (max-width: 767px) {
     .feed .card {
         border-radius: 0 !important;
@@ -505,10 +559,171 @@ button:focus {
     #carouselIndicators {
         max-height: 347px !important;
     }
+    .spotify {
+        height: 347px !important;
+    }
 }
 
 @media (min-width: 1200px) {
     #carouselIndicators {
         max-height: 413px !important;
     }
+    .spotify {
+        height: 413px !important;
+    }
 }
+.bg-dark-indie {
+    background-color: rgb(30, 35, 40) !important;
+}
+.bg-gradient-0 {
+    background-image: linear-gradient(to left,#FFFFFF,#DADFE2) !important;
+    box-shadow: 0 5px 7px rgb(0,0,0,0.5);
+}
+.bg-gradient-1 {
+    background-image: linear-gradient(to right,#FFFFFF,#DADFE2) !important;
+    box-shadow: 0 5px 7px rgb(0,0,0,0.5);
+}
+@media (max-width: 425px) {
+    .perfil .h3 {
+        font-size: 1rem;
+    }
+    
+}
+
+.perfis {
+    margin-bottom: -16px;
+}
+
+.perfis section::before {
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    content: "";
+    height: 16px;
+    background-image: linear-gradient(to bottom,rgb(0,0,0,0.05),transparent,transparent,transparent);
+}
+
+#perfil0::before {
+    background-image: none;
+}
+textarea {
+    resize: none;
+}
+
+.artistas a:hover , .topicos a:hover {
+    text-decoration: none !important;
+}
+.artistas a:hover .h4  {
+    color: #CE3EB7 !important;
+}
+
+.topicos a:hover .h5 {
+    color: #19CBCB !important;
+}
+
+@media (min-width: 767px) {
+    .album {
+        height: 248px;
+    }
+}
+.fas.fa-thumbs-down {
+    color: #CE3EB7!important;
+}
+
+.fas.fa-thumbs-up {
+    color: #19CBCB !important;
+}
+.reply-txt {
+    min-height: 238px !important;
+}
+
+.alien-ship:hover {
+    text-decoration: none;
+}
+.alien-box {
+    position: relative;
+    min-height: 300px !important;
+}
+.alien-ship {
+    position: relative;
+    text-decoration: none;
+    font-size: 8em;
+    animation-name: movimento;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.alien-ship:hover {;
+    animation-name: movimentohover;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes movimento {
+    0% {
+        right: 0;
+        left: 0;
+    }
+    5% {
+        left: 0;
+        right: 0;
+    }
+    10% {
+        right: 2%;
+        left: 0;
+    }
+    15% {
+        left: 2%;
+        right: 0;
+    }
+    20% {
+        right: 4%;
+        left: 0;
+    }
+    25% {
+        left: 4%;
+        right: 0;
+    }
+    30% {
+        right: 2%;
+        left: 0;
+    }
+    35% {
+        left: 2%;
+        right: 0;
+    }
+    40% {
+        right: 0;
+        left: 0;
+    }
+    45% {
+        left: 1%;
+        right: 0;
+    }
+    50% {
+        right: 1%;
+        left: 0;
+    }
+    55% {
+        left: 1%;
+        right: 0;
+    }
+    60% {
+        right: 1%;
+        left: 0;
+    }
+    65% {
+        left: 0;
+        right: 0;
+    }
+    
+}
+@keyframes movimentohover {
+    50% {
+        font-size: 9em;
+    }
+}
+@media (min-width: 768px) {
+    .play-col {
+        margin-top: -68px !important;
+    }
+}
+    
