@@ -143,11 +143,7 @@
                             "seis horas atrás"
                             ."||".
                             "sete horas atrás";
-<<<<<<< HEAD
                         $areas=""; // Área de cada postagem
-=======
-                        $areas="Novidades||Novidades||Novidades||Novidades||Novidades||Novidades||Novidades"; // Área de cada postagem
->>>>>>> parent of 5f3fa22... mudei tudo nessa porra
                         include $corredor.'includes/news.php';
                     ?>
                 </div>

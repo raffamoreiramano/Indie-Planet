@@ -14,19 +14,19 @@
             ?>
             <?php
                 $slides=7; // Número de slides do carrossel
-                $titles="Título da primeira postagem teste do carrossel"
+                $titles="Undercut"
                     ."||".
-                    "Título da segunda postagem teste do carrossel"
+                    "Hipster"
                     ."||".
-                    "Título da terceira postagem teste do carrossel"
+                    "Sidecut"
                     ."||".
-                    "Título da quarta postagem teste do carrossel"
+                    "Punk"
                     ."||".
-                    "Título da quinta postagem teste do carrossel"
+                    "Samurai"
                     ."||".
-                    "Título da sexta postagem teste do carrossel"
+                    "Grunge"
                     ."||".
-                    "Título da sétima postagem teste do carrossel"; // Títulos dos slides
+                    "Bob"; // Títulos dos slides
                 $texts="Descrição resumida da postagem que se encontra em um dos slides"
                     ."||".
                     "Descrição resumida da postagem que se encontra em um dos slides"
@@ -55,15 +55,15 @@
                     "carouselteste03.png"; // Nomes dos arquivos de imagens dos slides
                 $links="cortes/post/index.php"
                     ."||".
-                    "cortes/post/index.php"
+                    "80-2000/post/index.php"
                     ."||".
                     "cortes/post/index.php"
                     ."||".
-                    "cortes/post/index.php"
+                    "80-2000/post/index.php"
                     ."||".
                     "cortes/post/index.php"
                     ."||".
-                    "cortes/post/index.php"
+                    "80-2000/post/index.php"
                     ."||".
                     "cortes/post/index.php"; // Links dos destinos de cada slide, começando pela pasta da área referente
                 $dates="uma hora atrás"
@@ -91,19 +91,19 @@
                     <?php
                         $newsNumber=7; // Número de postagens do feed
                         $highlight=4; // Cada postagem de número semelhante ao valor de $highlight é um destaque
-                        $titles="Título da primeira postagem do feed de notícias" // Títulos das postagens
+                        $titles="Undercut" // Títulos das postagens
                             ."||".
-                            "Título da segunda postagem do feed de notícias"
+                            "Punk"
                             ."||".
-                            "Título da terceira postagem do feed de notícias"
+                            "Sidecut"
                             ."||".
-                            "Título da quarta postagem do feed de notícias"
+                            "Hipster"
                             ."||".
-                            "Título da quinta postagem do feed de notícias"
+                            "Samurai"
                             ."||".
-                            "Título da sexta postagem do feed de notícias"
+                            "Grunge"
                             ."||".
-                            "Título da sétima postagem do feed de notícias";
+                            "Bob";
                         $images="carouselteste01.png" // Nomes dos arquivos de imagens do feed
                             ."||".
                             "carouselteste02.png"
@@ -119,15 +119,15 @@
                             "carouselteste01.png";
                         $links="cortes/post/index.php" // Links dos destinos de cada postagem
                             ."||".
-                            "cortes/post/index.php"
+                            "80-2000/post/index.php"
                             ."||".
                             "cortes/post/index.php"
                             ."||".
-                            "cortes/post/index.php"
+                            "80-2000/post/index.php"
                             ."||".
                             "cortes/post/index.php"
                             ."||".
-                            "cortes/post/index.php"
+                            "80-2000/post/index.php"
                             ."||".
                             "cortes/post/index.php";
                         $dates="uma hora atrás" // Horários de cada postagem
@@ -143,7 +143,7 @@
                             "seis horas atrás"
                             ."||".
                             "sete horas atrás";
-                        $areas="Cortes||Cortes||Cortes||Cortes||Cortes||Cortes||Cortes"; // Área de cada postagem
+                        $areas=""; // Área de cada postagem
                         include $corredor.'includes/news.php';
                     ?>
                 </div>

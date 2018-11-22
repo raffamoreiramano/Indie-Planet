@@ -1,6 +1,6 @@
 <!doctype html>
 <?php
-    include '../includes/matrix.php';
+    include '../../../includes/matrix.php';
 ?>
 <html lang="pt-BR">
 <?php
@@ -16,7 +16,9 @@
                 include $corredor.'includes/nav-mid.php';
             ?>
         </header>
-        
+        <?php
+            include $corredor.'includes/trail.php';
+        ?>
         
         <?php
             include $corredor.'includes/footer.php';
