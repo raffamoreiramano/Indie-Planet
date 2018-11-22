@@ -5,7 +5,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="<?php echo $corredor; ?>js/bootstrap.min.js"></script>
 
-<footer class="bg-dark mt-3 footer">
+<footer class="bg-dark">
     <div class="container bg-dark">
         <div class="row d-flex flex-row float-right p-3">
             <ul class="list-inline m-0">
@@ -32,7 +32,7 @@
             </ul>
         </div>
         <div class="row mx-auto w-100 justify-content-center">
-            <a class="footer-link" href="#navigation">
+            <a class="footer-link" href="<?php echo $corredor."index.php"; ?>">
                 <h3 class="footer-text h3 indie-brand mb-3">INDIE PLANET</h3>
             </a>
         </div>
@@ -41,21 +41,9 @@
                 <p class="footer-text m-0 h6">Copyright &copy; 2018 GP'65.</p>
                 <p class="footer-text m-0 h6">All rights reserved.</p>
             </div>
-            <?php
-            $norman=array(
-                "en" => "Usage rules",
-                "es" => "Normas de uso",
-                "pt" => "Normas de utilização"
-            );
-            $mapa=array(
-                "en" => "Site map",
-                "es" => "Mapa del sitio",
-                "pt" => "Mapa do site"
-            );
-            ?>
             <div class="d-flex align-items-end flex-column col justify-content-right pl-0">
-                <a class="footer-link float-right" href="<?php echo $corredor."mapa/index.php"; ?>"><?php echo $mapa[$lang]; ?></a>
-                <a class="footer-link float-right" href="<?php echo $corredor."norman/index.php"; ?>"><?php echo $norman[$lang]; ?></a>
+                <a class="footer-link float-right" href="<?php echo $corredor."mapa_do_site.php"; ?>">Mapa do site</a>
+                <a class="footer-link float-right" href="<?php echo $corredor."normas.php"; ?>">Normas de uso</a>
             </div>
         </div>
     </div>

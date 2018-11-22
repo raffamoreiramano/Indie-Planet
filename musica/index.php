@@ -12,11 +12,75 @@
             <?php
                 include $corredor.'includes/nav-top.php';
             ?>
-            <div class="container bg-dark p-0">
-                <div class="row m-0">
-                    <iframe class='border-0 w-100 spotify' src="https://open.spotify.com/embed/user/22f6qy24qivc57h6keamwxhli/playlist/<?php echo $spotifyPlaylist; ?>" allowtransparency="true" allow="encrypted-media"></iframe>
-                </div>
-            </div>
+            <?php
+                $slides=7; // Número de slides do carrossel
+                $titles="Título da primeira postagem teste do carrossel"
+                    ."||".
+                    "Título da segunda postagem teste do carrossel"
+                    ."||".
+                    "Título da terceira postagem teste do carrossel"
+                    ."||".
+                    "Título da quarta postagem teste do carrossel"
+                    ."||".
+                    "Título da quinta postagem teste do carrossel"
+                    ."||".
+                    "Título da sexta postagem teste do carrossel"
+                    ."||".
+                    "Título da sétima postagem teste do carrossel"; // Títulos dos slides
+                $texts="Descrição resumida da postagem que se encontra em um dos slides"
+                    ."||".
+                    "Descrição resumida da postagem que se encontra em um dos slides"
+                    ."||".
+                    "Descrição resumida da postagem que se encontra em um dos slides"
+                    ."||".
+                    "Descrição resumida da postagem que se encontra em um dos slides"
+                    ."||".
+                    "Descrição resumida da postagem que se encontra em um dos slides"
+                    ."||".
+                    "Descrição resumida da postagem que se encontra em um dos slides"
+                    ."||".
+                    "Descrição resumida da postagem que se encontra em um dos slides"; // Descrições dos slides
+                $images="carouselteste01.png"
+                    ."||".
+                    "carouselteste02.png"
+                    ."||".
+                    "carouselteste03.png"
+                    ."||".
+                    "carouselteste02.png"
+                    ."||".
+                    "carouselteste01.png"
+                    ."||".
+                    "carouselteste02.png"
+                    ."||".
+                    "carouselteste03.png"; // Nomes dos arquivos de imagens dos slides
+                $links="novidades/post/index.php"
+                    ."||".
+                    "novidades/post/index.php"
+                    ."||".
+                    "novidades/post/index.php"
+                    ."||".
+                    "novidades/post/index.php"
+                    ."||".
+                    "novidades/post/index.php"
+                    ."||".
+                    "novidades/post/index.php"
+                    ."||".
+                    "novidades/post/index.php"; // Links dos destinos de cada slide, começando pela pasta da área referente
+                $dates="uma hora atrás"
+                    ."||".
+                    "duas horas atrás"
+                    ."||".
+                    "três horas atrás"
+                    ."||".
+                    "quatro horas atrás"
+                    ."||".
+                    "cinco horas atrás"
+                    ."||".
+                    "seis horas atrás"
+                    ."||".
+                    "sete horas atrás"; // Horário de cada postagem
+                include $corredor.'includes/carousel.php';
+            ?>
             <?php
                 include $corredor.'includes/nav-mid.php';
             ?>
@@ -79,7 +143,7 @@
                             "seis horas atrás"
                             ."||".
                             "sete horas atrás";
-                        $areas=""; // Área de cada postagem
+                        $areas="Novidades||Novidades||Novidades||Novidades||Novidades||Novidades||Novidades"; // Área de cada postagem
                         include $corredor.'includes/news.php';
                     ?>
                 </div>

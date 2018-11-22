@@ -143,7 +143,7 @@
                             "seis horas atrás"
                             ."||".
                             "sete horas atrás";
-                        $areas=""; // Área de cada postagem
+                        $areas="Críticas||Críticas||Críticas||Críticas||Críticas||Críticas||Críticas"; // Área de cada postagem
                         include $corredor.'includes/news.php';
                     ?>
                 </div>
