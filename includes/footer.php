@@ -41,9 +41,21 @@
                 <p class="footer-text m-0 h6">Copyright &copy; 2018 GP'65.</p>
                 <p class="footer-text m-0 h6">All rights reserved.</p>
             </div>
+            <?php
+            $norman=array(
+                "en" => "Usage rules",
+                "es" => "Normas de uso",
+                "pt" => "Normas de utilização"
+            );
+            $mapa=array(
+                "en" => "Site map",
+                "es" => "Mapa del sitio",
+                "pt" => "Mapa do site"
+            );
+            ?>
             <div class="d-flex align-items-end flex-column col justify-content-right pl-0">
-                <a class="footer-link float-right" href="<?php echo $corredor."mapa_do_site.php"; ?>">Mapa do site</a>
-                <a class="footer-link float-right" href="<?php echo $corredor."normas.php"; ?>">Normas de uso</a>
+                <a class="footer-link float-right" href="<?php echo $corredor."mapa/index.php"; ?>"><?php echo $mapa[$lang]; ?></a>
+                <a class="footer-link float-right" href="<?php echo $corredor."norman/index.php"; ?>"><?php echo $norman[$lang]; ?></a>
             </div>
         </div>
     </div>
