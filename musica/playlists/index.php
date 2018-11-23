@@ -35,7 +35,7 @@
                     <h2 class="h4 font-weight-bold py-3">Indie-Planet</h2>
                 </div>
                 <div class="col-12 col-md-4 col-lg-3 p-0 play-col">
-                    <div class="embed-responsive embed-responsive-1by1">
+                    <div class="embed-responsive embed-responsive-1by1 shadow">
                         <iframe class='border-0 w-100 playlist embed-responsive-item' src="https://open.spotify.com/embed/user/22f6qy24qivc57h6keamwxhli/playlist/<?php echo $spotifyPlaylist; ?>" allowtransparency="true" allow="encrypted-media"></iframe>
                     </div>
                 </div>
@@ -54,7 +54,7 @@
                     <h2 class="h4 font-weight-bold py-3">Indie Rock</h2>
                 </div>
                 <div class="col-12 col-md-4 col-lg-3 p-0 play-col">
-                    <div class="embed-responsive embed-responsive-1by1">
+                    <div class="embed-responsive embed-responsive-1by1 shadow">
                         <iframe class='border-0 w-100 playlist embed-responsive-item' src="https://open.spotify.com/embed/user/22f6qy24qivc57h6keamwxhli/playlist/<?php echo $spotifyPlaylist; ?>" allowtransparency="true" allow="encrypted-media"></iframe>
                     </div>
                 </div>
@@ -68,7 +68,7 @@
                     <h2 class="h4 font-weight-bold py-3">Indie Roadtrip</h2>
                 </div>
                 <div class="col-12 col-md-4 col-lg-3 p-0 play-col">
-                    <div class="embed-responsive embed-responsive-1by1">
+                    <div class="embed-responsive embed-responsive-1by1 shadow">
                         <iframe class='border-0 w-100 playlist embed-responsive-item' src="https://open.spotify.com/embed/user/22f6qy24qivc57h6keamwxhli/playlist/<?php echo $spotifyPlaylist; ?>" allowtransparency="true" allow="encrypted-media"></iframe>
                     </div>
                 </div>
@@ -82,7 +82,7 @@
                     <h2 class="h4 font-weight-bold py-3">Indiespensável</h2>
                 </div>
                 <div class="col-12 col-md-4 col-lg-3 p-0 play-col">
-                    <div class="embed-responsive embed-responsive-1by1">
+                    <div class="embed-responsive embed-responsive-1by1 shadow">
                         <iframe class='border-0 w-100 playlist embed-responsive-item' src="https://open.spotify.com/embed/user/22f6qy24qivc57h6keamwxhli/playlist/<?php echo $spotifyPlaylist; ?>" allowtransparency="true" allow="encrypted-media"></iframe>
                     </div>
                 </div>
@@ -96,7 +96,7 @@
                     <h2 class="h4 font-weight-bold py-3">(road-trippin)</h2>
                 </div>
                 <div class="col-12 col-md-4 col-lg-3 p-0 play-col">
-                    <div class="embed-responsive embed-responsive-1by1">
+                    <div class="embed-responsive embed-responsive-1by1 shadow">
                         <iframe class='border-0 w-100 playlist embed-responsive-item' src="https://open.spotify.com/embed/user/22f6qy24qivc57h6keamwxhli/playlist/<?php echo $spotifyPlaylist; ?>" allowtransparency="true" allow="encrypted-media"></iframe>
                     </div>
                 </div>
