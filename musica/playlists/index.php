@@ -36,12 +36,12 @@
                 </div>
                 <div class="col-12 col-md-4 col-lg-3 p-0 play-col">
                     <div class="embed-responsive embed-responsive-1by1 shadow">
-                        <iframe class='border-0 w-100 playlist embed-responsive-item' src="https://open.spotify.com/embed/user/22f6qy24qivc57h6keamwxhli/playlist/<?php echo $spotifyPlaylist; ?>" allowtransparency="true" allow="encrypted-media"></iframe>
+                        <iframe class='border-0 w-100 playlist embed-responsive-item' src="https://open.spotify.com/embed/user/22f6qy24qivc57h6keamwxhli/playlist/<?php echo $spotifyPlaylist; ?>"></iframe>
                     </div>
                 </div>
                 <div class="text-white col-12 col-md-8 offset-lg-1 pt-3">
                     <?php
-                    $texto['pt']="Playlist criada para exemplificar o uso de playlists do Spotify no header do portal, no lugar de um carrossel. Porém sem uma maior interatividade providenciada pela aplicaçõ de javascript, por motivos não cabíveis à esta descrição.";
+                    $texto['pt']="Playlist criada para exemplificar o uso de playlists do Spotify no header do portal, no lugar de um carrossel. Porém sem uma maior interatividade providenciada pela aplicação de javascript, por motivos não cabíveis à esta descrição.";
                     $texto['en']="Playlist created to exemplify the use of Spotify playlists in the portal header, instead of a carousel. But without greater interactivity provided by the application of javascript, for reasons not applicable to this description.";
                     $texto['es']="Playlist creada para ejemplificar el uso de playlists del Spotify en el header del portal, en lugar de un carrusel. Pero sin una mayor interactividad proporcionada por la aplicación de javascript, por motivos no aplicables a esta descripción.";
                     ?>
@@ -55,7 +55,7 @@
                 </div>
                 <div class="col-12 col-md-4 col-lg-3 p-0 play-col">
                     <div class="embed-responsive embed-responsive-1by1 shadow">
-                        <iframe class='border-0 w-100 playlist embed-responsive-item' src="https://open.spotify.com/embed/user/22f6qy24qivc57h6keamwxhli/playlist/<?php echo $spotifyPlaylist; ?>" allowtransparency="true" allow="encrypted-media"></iframe>
+                        <iframe class='border-0 w-100 playlist embed-responsive-item' src="https://open.spotify.com/embed/user/22f6qy24qivc57h6keamwxhli/playlist/<?php echo $spotifyPlaylist; ?>"></iframe>
                     </div>
                 </div>
                 <div class="text-white col-12 col-md-8 offset-lg-1 pt-3">
@@ -69,7 +69,7 @@
                 </div>
                 <div class="col-12 col-md-4 col-lg-3 p-0 play-col">
                     <div class="embed-responsive embed-responsive-1by1 shadow">
-                        <iframe class='border-0 w-100 playlist embed-responsive-item' src="https://open.spotify.com/embed/user/22f6qy24qivc57h6keamwxhli/playlist/<?php echo $spotifyPlaylist; ?>" allowtransparency="true" allow="encrypted-media"></iframe>
+                        <iframe class='border-0 w-100 playlist embed-responsive-item' src="https://open.spotify.com/embed/user/22f6qy24qivc57h6keamwxhli/playlist/<?php echo $spotifyPlaylist; ?>"></iframe>
                     </div>
                 </div>
                 <div class="text-white col-12 col-md-8 offset-lg-1 pt-3">
@@ -83,7 +83,7 @@
                 </div>
                 <div class="col-12 col-md-4 col-lg-3 p-0 play-col">
                     <div class="embed-responsive embed-responsive-1by1 shadow">
-                        <iframe class='border-0 w-100 playlist embed-responsive-item' src="https://open.spotify.com/embed/user/22f6qy24qivc57h6keamwxhli/playlist/<?php echo $spotifyPlaylist; ?>" allowtransparency="true" allow="encrypted-media"></iframe>
+                        <iframe class='border-0 w-100 playlist embed-responsive-item' src="https://open.spotify.com/embed/user/22f6qy24qivc57h6keamwxhli/playlist/<?php echo $spotifyPlaylist; ?>"></iframe>
                     </div>
                 </div>
                 <div class="text-white col-12 col-md-8 offset-lg-1 pt-3">
@@ -97,7 +97,7 @@
                 </div>
                 <div class="col-12 col-md-4 col-lg-3 p-0 play-col">
                     <div class="embed-responsive embed-responsive-1by1 shadow">
-                        <iframe class='border-0 w-100 playlist embed-responsive-item' src="https://open.spotify.com/embed/user/22f6qy24qivc57h6keamwxhli/playlist/<?php echo $spotifyPlaylist; ?>" allowtransparency="true" allow="encrypted-media"></iframe>
+                        <iframe class='border-0 w-100 playlist embed-responsive-item' src="https://open.spotify.com/embed/user/22f6qy24qivc57h6keamwxhli/playlist/<?php echo $spotifyPlaylist; ?>"></iframe>
                     </div>
                 </div>
                 <div class="text-white col-12 col-md-8 offset-lg-1 pt-3">

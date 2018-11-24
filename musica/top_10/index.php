@@ -45,7 +45,7 @@
                         for ($i=10;$i>=1;$i--) {
                             echo "<section class='row'>\n<div class='col-12'>\n<h3 class='h5 font-weight-bold'>";
                             echo "#".$i.". ".$topMusica[$i]['musica']." - ".$topMusica[$i]['artista']."</h3>\n";
-                            echo $textP[rand(1,(count($textP)-2))]."</p>\n";
+                            echo $textP[rand(1,(count($textP)-2))]."</p>\n</div>\n</section>";
                         }
                     ?>
                 </article>
@@ -54,7 +54,7 @@
                         <h4 class='h4 col my-auto font-weight-bold px-0'>Ouça já!</h4>                    
                     </div>
                     <div class="row">
-                        <iframe class='border-0 w-100 spotify' src="https://open.spotify.com/embed/user/22f6qy24qivc57h6keamwxhli/playlist/<?php echo $spotifyPlaylist; ?>" allowtransparency="true" allow="encrypted-media"></iframe>
+                        <iframe class='border-0 w-100 spotify' src="https://open.spotify.com/embed/user/22f6qy24qivc57h6keamwxhli/playlist/<?php echo $spotifyPlaylist; ?>"></iframe>
                     </div>
                     <div class='aside-content row bg-dark p-3 mt-4'>
                         <h4 class='h4 col my-auto font-weight-bold px-0'>Sugestões</h4>

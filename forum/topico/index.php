@@ -12,8 +12,8 @@
 ?>
 <html lang="pt-BR">
 <?php
-    include $corredor.'includes/head.php';
     $nome=isset($_GET['t'])?$_GET['t']:"Lorem ipsum dolor sit amet";
+    include $corredor.'includes/head.php';
     $user=isset($_GET['u'])?$_GET['u']:"mussum";
     $resps=isset($_GET['r'])?$_GET['r']:0;
     $dt=isset($_GET['dt'])?$_GET['dt']:"12X11X2017XYX10Z28pm";

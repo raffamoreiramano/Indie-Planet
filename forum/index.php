@@ -117,7 +117,7 @@
                         echo "<div class='row m-0 p-0'>\n<div class='col-12 col-md-6 col-lg-3 p-0'>\n<p class='m-0'>";
                         echo $views-((rand(0,3)*$i)*10)." ".$topico['vis'][$lang]."</p>\n</div>";
                         echo "\n<div class='col-12 col-md-6 col-lg-3 p-0'>\n<p class='m-0'>";
-                        echo "5 ".$topico['res'][$lang]."</p>\n</div>\n</div>\n</article>\n";
+                        echo "5 ".$topico['res'][$lang]."</p>\n</div>\n</div>\n</div>\n</article>\n";
                     }
                     echo "</section>\n<section>\n<div class='row'>\n<div class='col-12 bg-dark shadow'>\n";
                     echo "<h3 class='py-3 my-0 pl-lg-3 ml-lg-2 text-white font-weight-bold h4'>";
@@ -152,7 +152,7 @@
                     echo "<div class='row m-0 p-0'>\n<div class='col-12 col-md-6 col-lg-3 p-0'>\n<p class='m-0'>";
                     echo $views." ".$topico['vis'][$lang]."</p>\n</div>";
                     echo "\n<div class='col-12 col-md-6 col-lg-3 p-0'>\n<p class='m-0'>";
-                    echo $resp." ".$topico['res'][$lang]."</p>\n</div>\n</div>\n</article>\n";
+                    echo $resp." ".$topico['res'][$lang]."</p>\n</div>\n</div>\n</div>\n</article>\n";
                 }
                 echo "</section>"
                 ?>

@@ -57,8 +57,6 @@
             ?>
         </div>
     </section>
-    <section class="row">
-        <div class="col px-0">
             <?php
             $top5Mh4=array();
             $top5Mh4['en']="most heard";
@@ -70,6 +68,7 @@
             $top5Ma['pt']="ver mais";
                 switch ($pastaAtualFim) {
                     case "musica":
+                        echo "<section class='row'>\n<div class='col px-0'>\n";
                         echo "<a class='aside-content row mx-0 bg-dark p-3' href='".$corredor."musica/top_10/index.php'>\n";
                         echo "<h4 class='h4 col my-auto font-weight-bold px-0'>Top 5 ".$top5Mh4[$lang];
                         echo "</h4>\n<p class='small d-none d-sm-block my-auto col-3 text-dark text-right'>".$top5Ma[$lang]."</p>\n</a>\n";
@@ -86,7 +85,7 @@
                                 echo "<td class='border-top-0'>".$topMusica[$i]['artista']."</td>\n</tr>";
                             }
                         }
-                        echo "</table>";
+                        echo "\n</table>\n</div>\n</section>\n";
                         break;
                     case "cinema":
                         break;
@@ -102,8 +101,5 @@
                         break;
                 }
 
-            ?>
-        </div>
-    </section>
-    
+            ?>    
 </aside>

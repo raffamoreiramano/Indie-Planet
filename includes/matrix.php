@@ -260,28 +260,6 @@ setlocale(LC_ALL, 'pt_BR');
         ),
     );
 
-/* Função para retirar acentuação, ou "limpar acentos", se uma string */
-    function pato($str) {
-        $a=array(
-            "Á","á","Â","â","À","à","Å","å","Ã","ã","Ä","ä",
-            "É","é","Ê","ê","È","è","Ë","ë",
-            "Í","í","Î","î","Ì","ì","Ï","ï",
-            "Ó","ó","Ô","ô","Ò","ò","Õ","õ","Ö","ö",
-            "Ú","ú","Û","û","Ù","ù","Ü","ü",
-            "Ç","ç",
-            "Ñ","ñ"
-        ); // Lista de letras acentuadas
-        $b=array(
-            "A","a","A","a","A","a","A","a","A","a","A","a",
-            "E","e","E","e","E","e","E","e",
-            "I","i","I","i","I","i","I","i",
-            "O","o","O","o","O","o","O","o","O","o",
-            "U","u","U","u","U","u","U","u",
-            "C","c",
-            "N","n"
-        ); // Lista de letras sem acento
-        return str_replace($a,$b,$str); // Retorna string a string $str trocando cada letra de $a por $b de mesmo índice
-    }
 
 /* Variáveis de string que serão usadas nos menus de navegação para identificar quais conteúdos serão colocados na barra de menu */
     $pastaAtualFim = str_replace(substr($pastaAtual,0,strpos($pastaAtual,' ')),'',$pastaAtual); // Conteúdo da $pastaAtual, sem o início
