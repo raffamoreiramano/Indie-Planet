@@ -38,6 +38,7 @@
 } ?></h1>
                     </div>
                     <?php
+                        $listennow=array("en" => "Listen now!","es" => "Oiga ya!","pt" => "Ouça já!");
                         $text = substr($text,(strpos($text,'</blockquote>')+13),strlen($text));
                         $textP = explode ('</p>',$text);
                         $textPN = count($textP);
@@ -51,7 +52,7 @@
                 </article>
                 <aside class="col-12 col-lg-4">
                     <div class='aside-content row bg-dark p-3'>
-                        <h4 class='h4 col my-auto font-weight-bold px-0'>Ouça já!</h4>                    
+                        <h4 class='h4 col my-auto font-weight-bold px-0'><?php echo $listennow[$lang]; ?></h4>                    
                     </div>
                     <div class="row">
                         <iframe class='border-0 w-100 spotify' src="https://open.spotify.com/embed/user/22f6qy24qivc57h6keamwxhli/playlist/<?php echo $spotifyPlaylist; ?>"></iframe>
