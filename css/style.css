@@ -726,4 +726,20 @@ textarea {
         margin-top: -68px !important;
     }
 }
+.no-black-before {
+    text-decoration: none !important;
+}
+.no-black-before:hover {
+    background-color: #FF3D4A !important;
+    transition: 0.2s ease-in-out;
     
+}
+.no-black-before:hover .text-dark {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+.no-black-before:hover .text-danger {
+    color: white !important;
+}
+.no-black-before::before {
+    content: none;
+}

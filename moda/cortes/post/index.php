@@ -1,7 +1,8 @@
 <!doctype html>
 <?php
     include '../../../includes/matrix.php';
-    $title=isset($_GET['t'])?str_replace('+',' ',$_GET['t']):'Título da postagem';
+    $HC=array("en" => "Haircut", "es" => "Corte de pelo", "pt" => "Corte de cabelo");
+    $title=isset($_GET['t'])?str_replace('+',' ',$_GET['t']):$HC[$lang];
     $image=isset($_GET['img'])?$corredor."img/".$_GET['img']:$corredor."img/".'carouselteste01.png';
     $date=isset($_GET['dt'])?str_replace('+',' ',$_GET['dt']):'algumas horas atrás';
     $nome=$title;
