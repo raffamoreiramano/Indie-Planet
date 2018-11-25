@@ -61,7 +61,7 @@
 
                 <div class="card-bg-dark text-white border-0">
 
-                    <img alt="imagemquadrino1" src="../../img/capa%20rei..jpeg" class="img-fluid card-img">
+                    <img alt="imagemquadrino1" src="../../img/xadrezretrato.png" class="img-fluid card-img">
 
                     <div class="card-img-overlay p-0" style="pointer-events: none;">
                         <h5 class="card-header border-0 rounded-0 font-weight-bold justify-content-center px-4 py-3 text-center d-inline-block my-auto" style="background-color: #DE813A;">1
@@ -69,17 +69,16 @@
                     </div>
                 </div>
             </div>
-
-
+            
             <div class="col-12 col-md-8 col-lg-8 mb-5">
+                
+                <h2>A Ameaça do Barão Macaco</h2>
+                
                 <table class="table">
-                    <tr>
-                        <h1>OLHARES</h1>
-                    </tr>
+         
                     <tr>
                         <th scope="row">
-                            <div class="row">
-                                <p>
+                            
                                     <?php
                         switch ($lang) {
                             case "en":
@@ -93,15 +92,13 @@
                                 break;
                         }
                         ?>
-                                </p>
-                            </div>
+                               
                         </th>
-                        <td>Gui Oliveira</td>
+                        <td>Hector Lima, Milton Sobreiro e Felipe Sobreiro</td>
                     </tr>
                     <tr>
                         <th scope="row">
-                            <div class="row">
-                                <p>
+                            
                                     <?php
                         switch ($lang) {
                             case "en":
@@ -115,15 +112,13 @@
                                 break;
                         }
                         ?>
-                                </p>
-                            </div>
+                               
                         </th>
                         <td>01/12/2012</td>
                     </tr>
                     <tr>
                         <th scope="row">
-                            <div class="row">
-                                <p>
+                           
                                     <?php
                         switch ($lang) {
                             case "en":
@@ -137,10 +132,9 @@
                                 break;
                         }
                         ?>
-                                </p>
-                            </div>
+                                
                         </th>
-                        <td>Morbi sed mollis erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In convallis iaculis augue eget lacinia. Mauris at feugiat arcu. Nunc vitae. Morbi sed mollis erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In convallis iaculis augue eget lacinia. </td>
+                        <td>Quando algumas operações do tráfico de drogas começam a dar errado, com dinheiro sumindo e chefões do crime aparecendo mortos, a estrutura fica abalada e a desconfiança se instala. Junto com isso, correm boatos sobre uma figura misteriosa com cara de macaco no local dos crimes e uma jornalista começa a investigar o que está acontecendo. </td>
                     </tr>
                 </table>
             </div>
@@ -163,7 +157,7 @@
 
                 <div class="card-bg-dark text-white border-0">
 
-                    <img alt="imagemquadrino1" src="../../img/capa4.jpg" class="img-fluid card-img">
+                    <img alt="imagemquadrino1" src="../../img/xadrezretrato.png" class="img-fluid card-img">
 
                     <div class="card-img-overlay p-0" style="pointer-events: none;">
                         <h5 class="card-header border-0 rounded-0 font-weight-bold justify-content-center px-4 py-3 text-center d-inline-block my-auto" style="background-color: #DE813A;">2
@@ -174,14 +168,14 @@
 
 
             <div class="col-12 col-md-8 col-lg-8 mb-5">
+                
+                <h2>9 Horas</h2>
+                
                 <table class="table">
-                    <tr>
-                        <h1>OLHARES</h1>
-                    </tr>
+                    
                     <tr>
                         <th scope="row">
-                            <div class="row">
-                                <p>
+                            
                                     <?php
                         switch ($lang) {
                             case "en":
@@ -195,15 +189,13 @@
                                 break;
                         }
                         ?>
-                                </p>
-                            </div>
+                              
                         </th>
-                        <td>Gui Oliveira</td>
+                        <td>Magenta King</td>
                     </tr>
                     <tr>
                         <th scope="row">
-                            <div class="row">
-                                <p>
+                            
                                     <?php
                         switch ($lang) {
                             case "en":
@@ -217,15 +209,13 @@
                                 break;
                         }
                         ?>
-                                </p>
-                            </div>
+                                
                         </th>
                         <td>01/12/2012</td>
                     </tr>
                     <tr>
                         <th scope="row">
-                            <div class="row">
-                                <p>
+                            
                                     <?php
                         switch ($lang) {
                             case "en":
@@ -239,10 +229,9 @@
                                 break;
                         }
                         ?>
-                                </p>
-                            </div>
+                                
                         </th>
-                        <td>Morbi sed mollis erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In convallis iaculis augue eget lacinia. Mauris at feugiat arcu. Nunc vitae. Morbi sed mollis erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In convallis iaculis augue eget lacinia. </td>
+                        <td>Durante uma viagem pelo Ásia, um casal encontra um demônio que os força a passar por diferentes realidades, perigos e desafios a cada 9 horas. Em cada um desses mundos ou “fases”, eles são perseguidos por criaturas bizarras e precisam conquistar pequenos troféus antes de chegar no boss final. </td>
                     </tr>
                 </table>
             </div>
@@ -266,7 +255,7 @@
 
                 <div class="card-bg-dark text-white border-0">
 
-                    <img alt="imagemquadrino1" src="../../img/capa5.jpg" class="img-fluid card-img">
+                    <img alt="imagemquadrino1" src="../../img/xadrezretrato.png" class="img-fluid card-img">
 
                     <div class="card-img-overlay p-0" style="pointer-events: none;">
                         <h5 class="card-header border-0 rounded-0 font-weight-bold justify-content-center px-4 py-3 text-center d-inline-block my-auto" style="background-color: #DE813A;">3
@@ -275,16 +264,15 @@
                 </div>
             </div>
 
-
             <div class="col-12 col-md-8 col-lg-8 mb-5">
+                
+                <h2>Astromini</h2>
+                
                 <table class="table">
-                    <tr>
-                        <h1>OLHARES</h1>
-                    </tr>
+
                     <tr>
                         <th scope="row">
-                            <div class="row">
-                                <p>
+                            
                                     <?php
                         switch ($lang) {
                             case "en":
@@ -298,15 +286,13 @@
                                 break;
                         }
                         ?>
-                                </p>
-                            </div>
+                                
                         </th>
-                        <td>Gui Oliveira</td>
+                        <td>Vencys Lao e Welton Santos</td>
                     </tr>
                     <tr>
                         <th scope="row">
-                            <div class="row">
-                                <p>
+                            
                                     <?php
                         switch ($lang) {
                             case "en":
@@ -320,15 +306,13 @@
                                 break;
                         }
                         ?>
-                                </p>
-                            </div>
+                                
                         </th>
                         <td>01/12/2012</td>
                     </tr>
                     <tr>
                         <th scope="row">
-                            <div class="row">
-                                <p>
+                            
                                     <?php
                         switch ($lang) {
                             case "en":
@@ -342,10 +326,9 @@
                                 break;
                         }
                         ?>
-                                </p>
-                            </div>
+                                
                         </th>
-                        <td>Morbi sed mollis erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In convallis iaculis augue eget lacinia. Mauris at feugiat arcu. Nunc vitae. Morbi sed mollis erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In convallis iaculis augue eget lacinia. </td>
+                        <td>Uma aventureira desbrava um Mundo onde nada é o que parece ser. </td>
                     </tr>
                 </table>
             </div>
@@ -370,25 +353,24 @@
 
                 <div class="card-bg-dark text-white border-0">
 
-                    <img alt="imagemquadrino1" src="../../img/capa%20pow.jpeg" class="img-fluid card-img">
+                    <img alt="imagemquadrino1" src="../../img/xadrezretrato.png" class="img-fluid card-img">
 
                     <div class="card-img-overlay p-0" style="pointer-events: none;">
-                        <h5 class="card-header border-0 rounded-0 font-weight-bold justify-content-center px-4 py-3 text-center d-inline-block my-auto" style="background-color: #DE813A;">3
+                        <h5 class="card-header border-0 rounded-0 font-weight-bold justify-content-center px-4 py-3 text-center d-inline-block my-auto" style="background-color: #DE813A;">4
                         </h5>
                     </div>
                 </div>
             </div>
 
-
             <div class="col-12 col-md-8 col-lg-8 mb-5">
+               
+                <h2>Mayara e Annabelle</h2>
+                
                 <table class="table">
-                    <tr>
-                        <h1>OLHARES</h1>
-                    </tr>
+                    
                     <tr>
                         <th scope="row">
-                            <div class="row">
-                                <p>
+                            
                                     <?php
                         switch ($lang) {
                             case "en":
@@ -402,15 +384,13 @@
                                 break;
                         }
                         ?>
-                                </p>
-                            </div>
+                                
                         </th>
-                        <td>Gui Oliveira</td>
+                        <td>Pablo Casado e Talles Rodrigues</td>
                     </tr>
                     <tr>
                         <th scope="row">
-                            <div class="row">
-                                <p>
+                            
                                     <?php
                         switch ($lang) {
                             case "en":
@@ -424,15 +404,13 @@
                                 break;
                         }
                         ?>
-                                </p>
-                            </div>
+                                
                         </th>
                         <td>01/12/2012</td>
                     </tr>
                     <tr>
                         <th scope="row">
-                            <div class="row">
-                                <p>
+                            
                                     <?php
                         switch ($lang) {
                             case "en":
@@ -446,10 +424,9 @@
                                 break;
                         }
                         ?>
-                                </p>
-                            </div>
+                                
                         </th>
-                        <td>Morbi sed mollis erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In convallis iaculis augue eget lacinia. Mauris at feugiat arcu. Nunc vitae. Morbi sed mollis erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In convallis iaculis augue eget lacinia. </td>
+                        <td>Duas funcionárias públicas da Secretaria de Atividades Fora Do Comum do Ceará (SECAFC CE) precisam impedir que criaturas sobrenaturais infrinjam as leis humanas.</td>
                     </tr>
                 </table>
             </div>
@@ -474,7 +451,7 @@
 
                 <div class="card-bg-dark text-white border-0">
 
-                    <img alt="imagemquadrino1" src="../../img/capa7.jpg" class="img-fluid card-img">
+                    <img alt="imagemquadrino1" src="../../img/xadrezretrato.png" class="img-fluid card-img">
 
                     <div class="card-img-overlay p-0" style="pointer-events: none;">
                         <h5 class="card-header border-0 rounded-0 border-0 rounded-0 font-weight-bold justify-content-center px-4 py-3 text-center d-inline-block my-auto" style="background-color: #DE813A;">5
@@ -485,13 +462,14 @@
 
 
             <div class="col-12 col-md-8 col-lg-8 mb-5">
+                
+                <h2>O Rei Amarelo</h2>
+                
                 <table class="table">
+
                     <tr>
-                        <h1>OLHARES</h1>
-                    </tr>
                     <th scope="row">
-                        <div class="row">
-                            <p>
+                        
                                 <?php
                         switch ($lang) {
                             case "en":
@@ -505,15 +483,14 @@
                                 break;
                         }
                         ?>
-                            </p>
-                        </div>
+                            
                     </th>
-                    <td>Gui Oliveira</td>
+                    <td>Pedro Pedrada, Tiago P. Zanetic, LuCAS Chewie, Mauricio R. B. Campos, Péricles Ianuch, Airton Marinho, Marcos Caldas, Erik Avilez, André Freitas, Tiago Rech, Victor Freundt, Rafael Levi, Samuel Bono e Raphael Salimena.</td>
 
+                    </tr>
                     <tr>
                         <th scope="row">
-                            <div class="row">
-                                <p>
+                            
                                     <?php
                         switch ($lang) {
                             case "en":
@@ -527,15 +504,13 @@
                                 break;
                         }
                         ?>
-                                </p>
-                            </div>
+                               
                         </th>
                         <td>01/12/2012</td>
                     </tr>
                     <tr>
                         <th scope="row">
-                            <div class="row">
-                                <p>
+                            
                                     <?php
                         switch ($lang) {
                             case "en":
@@ -549,10 +524,9 @@
                                 break;
                         }
                         ?>
-                                </p>
-                            </div>
+                                     
                         </th>
-                        <td>Morbi sed mollis erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In convallis iaculis augue eget lacinia. Mauris at feugiat arcu. Nunc vitae. Morbi sed mollis erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In convallis iaculis augue eget lacinia. </td>
+                        <td>Coletânea com oito histórias de horror inspiradas por O Rei Amarelo, de Robert W. Chambers</td>
                     </tr>
                 </table>
             </div>
@@ -578,7 +552,7 @@
 
                 <div class="card-bg-dark text-white border-0">
 
-                    <img alt="imagemquadrino1" src="../../img/Capa%20olh.jpeg" class="img-fluid card-img">
+                    <img alt="imagemquadrino1" src="../../img/xadrezretrato.png" class="img-fluid card-img">
 
                     <div class="card-img-overlay p-0" style="pointer-events: none;">
                         <h5 class="card-header border-0 rounded-0 border-0 rounded-0 font-weight-bold justify-content-center px-4 py-3 text-center d-inline-block my-auto" style="background-color: #DE813A;">6
@@ -587,16 +561,15 @@
                 </div>
             </div>
 
-
             <div class="col-12 col-md-8 col-lg-8 mb-5">
+                
+             <h2>Moschitto</h2>
+                
                 <table class="table">
-                    <tr>
-                        <h1>OLHARES</h1>
-                    </tr>
+
                     <tr>
                         <th scope="row">
-                            <div class="row">
-                                <p>
+                            
                                     <?php
                         switch ($lang) {
                             case "en":
@@ -610,15 +583,13 @@
                                 break;
                         }
                         ?>
-                                </p>
-                            </div>
+                                
                         </th>
-                        <td>Gui Oliveira</td>
+                        <td>Claudia Senlle e George Schall</td>
                     </tr>
                     <tr>
                         <th scope="row">
-                            <div class="row">
-                                <p>
+                           
                                     <?php
                         switch ($lang) {
                             case "en":
@@ -632,15 +603,13 @@
                                 break;
                         }
                         ?>
-                                </p>
-                            </div>
+                                
                         </th>
                         <td>01/12/2012</td>
                     </tr>
                     <tr>
                         <th scope="row">
-                            <div class="row">
-                                <p>
+                            
                                     <?php
                         switch ($lang) {
                             case "en":
@@ -654,10 +623,9 @@
                                 break;
                         }
                         ?>
-                                </p>
-                            </div>
+                                
                         </th>
-                        <td>Morbi sed mollis erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In convallis iaculis augue eget lacinia. Mauris at feugiat arcu. Nunc vitae. Morbi sed mollis erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In convallis iaculis augue eget lacinia. </td>
+                        <td>Quando um membro de uma tradicional família da máfia italiana (de pernilongos) é assassinado brutalmente, só há uma solução: VINGANÇA!</td>
                     </tr>
                 </table>
             </div>
@@ -681,7 +649,7 @@
 
                 <div class="card-bg-dark text-white border-0">
 
-                    <img alt="imagemquadrino1" src="../../img/capa8.jpg" class="img-fluid card-img">
+                    <img alt="imagemquadrino1" src="../../img/xadrezretrato.png" class="img-fluid card-img">
 
                     <div class="card-img-overlay p-0" style="pointer-events: none;">
                         <h5 class="card-header border-0 rounded-0 font-weight-bold justify-content-center px-4 py-3 text-center d-inline-block my-auto" style="background-color: #DE813A;">7
@@ -690,16 +658,15 @@
                 </div>
             </div>
 
-
             <div class="col-12 col-md-8 col-lg-8 mb-5">
+                
+                <h2>São Paulo dos Mortos</h2>
+                
                 <table class="table">
-                    <tr>
-                        <h1>OLHARES</h1>
-                    </tr>
+
                     <tr>
                         <th scope="row">
-                            <div class="row">
-                                <p>
+                            
                                     <?php
                         switch ($lang) {
                             case "en":
@@ -713,15 +680,13 @@
                                 break;
                         }
                         ?>
-                                </p>
-                            </div>
+                                
                         </th>
-                        <td>Gui Oliveira</td>
+                        <td>Daniel Esteves, Al Stefano, Alex Rodrigues, Ibraim Roberson, Jozz, Laudo Ferreira, Omar Viñole, Samuel Bono, Wagner de Souza, Wanderson de Souza.</td>
                     </tr>
                     <tr>
                         <th scope="row">
-                            <div class="row">
-                                <p>
+                            
                                     <?php
                         switch ($lang) {
                             case "en":
@@ -735,15 +700,13 @@
                                 break;
                         }
                         ?>
-                                </p>
-                            </div>
+                                
                         </th>
                         <td>01/12/2012</td>
                     </tr>
                     <tr>
                         <th scope="row">
-                            <div class="row">
-                                <p>
+                            
                                     <?php
                         switch ($lang) {
                             case "en":
@@ -757,10 +720,9 @@
                                 break;
                         }
                         ?>
-                                </p>
-                            </div>
+                                
                         </th>
-                        <td>Morbi sed mollis erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In convallis iaculis augue eget lacinia. Mauris at feugiat arcu. Nunc vitae. Morbi sed mollis erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In convallis iaculis augue eget lacinia. </td>
+                        <td>Uma coletânea de histórias de zumbis ambientadas nas ruas cinzentas de São Paulo.</td>
                     </tr>
                 </table>
             </div>
@@ -784,7 +746,7 @@
 
                 <div class="card-bg-dark text-white border-0">
 
-                    <img alt="imagemquadrino1" src="../../img/capa9.jpg" class="img-fluid card-img">
+                    <img alt="imagemquadrino1" src="../../img/xadrezretrato.png" class="img-fluid card-img">
 
                     <div class="card-img-overlay p-0" style="pointer-events: none;">
                         <h5 class="card-header border-0 rounded-0 font-weight-bold justify-content-center px-4 py-3 text-center d-inline-block my-auto" style="background-color: #DE813A;">8
@@ -795,14 +757,14 @@
 
 
             <div class="col-12 col-md-8 col-lg-8 mb-5">
+                
+                <h2>Carnaval de Meus Demônios</h2>
+                
                 <table class="table">
-                    <tr>
-                        <h1>OLHARES</h1>
-                    </tr>
+
                     <tr>
                         <th scope="row">
-                            <div class="row">
-                                <p>
+                            
                                     <?php
                         switch ($lang) {
                             case "en":
@@ -816,15 +778,14 @@
                                 break;
                         }
                         ?>
-                                </p>
-                            </div>
+                                
+                            
                         </th>
-                        <td>Gui Oliveira</td>
+                        <td>Guilherme Petreca</td>
                     </tr>
                     <tr>
                         <th scope="row">
-                            <div class="row">
-                                <p>
+                            
                                     <?php
                         switch ($lang) {
                             case "en":
@@ -838,15 +799,14 @@
                                 break;
                         }
                         ?>
-                                </p>
-                            </div>
+                                
                         </th>
                         <td>01/12/2012</td>
                     </tr>
                     <tr>
                         <th scope="row">
-                            <div class="row">
-                                <p>
+                            
+                                
                                     <?php
                         switch ($lang) {
                             case "en":
@@ -860,10 +820,10 @@
                                 break;
                         }
                         ?>
-                                </p>
-                            </div>
+                                
+                            
                         </th>
-                        <td>Morbi sed mollis erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In convallis iaculis augue eget lacinia. Mauris at feugiat arcu. Nunc vitae. Morbi sed mollis erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In convallis iaculis augue eget lacinia. </td>
+                        <td>Uma história muda sobre demônios dos quais é impossível fugir.</td>
                     </tr>
                 </table>
             </div>
@@ -887,7 +847,7 @@
 
                 <div class="card-bg-dark text-white border-0">
 
-                    <img alt="imagemquadrino1" src="../../img/capa10.jpg" class="img-fluid card-img">
+                    <img alt="imagemquadrino1" src="../../img/xadrezretrato.png" class="img-fluid card-img">
 
                     <div class="card-img-overlay p-0" style="pointer-events: none;">
                         <h5 class="card-header border-0 rounded-0 font-weight-bold justify-content-center px-4 py-3 text-center d-inline-block my-auto" style="background-color: #DE813A;">9
@@ -898,14 +858,14 @@
 
 
             <div class="col-12 col-md-8 col-lg-8 mb-5">
+                
+                <h2>Feliz Aniversário, Minha Amada</h2>
+                
                 <table class="table">
                     <tr>
-                        <h1>OLHARES</h1>
-                    </tr>
-                    <tr>
                         <th scope="row">
-                            <div class="row">
-                                <p>
+                            
+                                
                                     <?php
                         switch ($lang) {
                             case "en":
@@ -919,15 +879,15 @@
                                 break;
                         }
                         ?>
-                                </p>
-                            </div>
+                                
+                            
                         </th>
-                        <td>Gui Oliveira</td>
+                        <td>Brão Barbosa</td>
                     </tr>
                     <tr>
                         <th scope="row">
-                            <div class="row">
-                                <p>
+                            
+                                
                                     <?php
                         switch ($lang) {
                             case "en":
@@ -941,15 +901,15 @@
                                 break;
                         }
                         ?>
-                                </p>
-                            </div>
+                                
+                            
                         </th>
                         <td>01/12/2012</td>
                     </tr>
                     <tr>
                         <th scope="row">
-                            <div class="row">
-                                <p>
+                            
+                                
                                     <?php
                         switch ($lang) {
                             case "en":
@@ -963,10 +923,10 @@
                                 break;
                         }
                         ?>
-                                </p>
-                            </div>
+                                
+                            
                         </th>
-                        <td>Morbi sed mollis erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In convallis iaculis augue eget lacinia. Mauris at feugiat arcu. Nunc vitae. Morbi sed mollis erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In convallis iaculis augue eget lacinia. </td>
+                        <td>A segunda HQ de Brão Barbosa conta a história de um triângulo amoroso bastante bizarro. Qualquer coisa que se fale da sinopse além disso, pode estragar a experiência. O final é inacreditavelmente surpreendente e qualquer sentimento que eu divulgue sobre isso: se achei estranho, bonito, se chorei ou se sorri, também pode estragar a experiência. </td>
                     </tr>
                 </table>
             </div>
@@ -983,13 +943,13 @@
 
                                 -->
 
-        <section class="row justify-content-between mb-5">
+            <section class="row justify-content-between mb-5">
 
             <div class="p-0 col-12 col-md-6 col-lg-3">
 
                 <div class="card-bg-dark text-white border-0">
 
-                    <img alt="imagemquadrino1" src="../../img/capa6.jpg" class="img-fluid card-img">
+                    <img alt="imagemquadrino1" src="../../img/xadrezretrato.png" class="img-fluid card-img">
 
                     <div class="card-img-overlay p-0" style="pointer-events: none;">
                         <h5 class="card-header border-0 rounded-0 font-weight-bold justify-content-center px-4 py-3 text-center d-inline-block my-auto" style="background-color: #DE813A;">10
@@ -1000,14 +960,15 @@
 
 
             <div class="col-12 col-md-8 col-lg-8 mb-5">
+               
+                 <h2>OLHARES</h2>
+                
                 <table class="table">
-                    <tr>
-                        <h1>OLHARES</h1>
-                    </tr>
+
                     <tr>
                         <th scope="row">
-                            <div class="row">
-                                <p>
+                            
+                                
                                     <?php
                         switch ($lang) {
                            case "en":
@@ -1021,15 +982,15 @@
                                 break;
                         }
                         ?>
-                                </p>
-                            </div>
+                                
+                            
                         </th>
                         <td>Gui Oliveira</td>
                     </tr>
                     <tr>
                         <th scope="row">
-                            <div class="row">
-                                <p>
+                            
+                                
                                     <?php
                         switch ($lang) {
                             case "en":
@@ -1043,15 +1004,15 @@
                                 break;
                         }
                         ?>
-                                </p>
-                            </div>
+                                
+                            
                         </th>
                         <td>01/12/2012</td>
                     </tr>
                     <tr>
                         <th scope="row">
-                            <div class="row">
-                                <p>
+                            
+                                
                                     <?php
                         switch ($lang) {
                             case "en":
@@ -1065,10 +1026,10 @@
                                 break;
                         }
                         ?>
-                                </p>
-                            </div>
+                                
+                            
                         </th>
-                        <td>Morbi sed mollis erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In convallis iaculis augue eget lacinia. Mauris at feugiat arcu. Nunc vitae. Morbi sed mollis erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In convallis iaculis augue eget lacinia. </td>
+                        <td>O mundo distante onde um simples olhar vale mais que qualquer nota de dinheiro, minério ou comida. O olhar verdadeiro só o cavaleiro de coração puro e a princesa real poderíam ter. </td>
                     </tr>
                 </table>
             </div>

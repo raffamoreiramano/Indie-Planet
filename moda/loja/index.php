@@ -21,24 +21,12 @@
         ?>
     <article>
         <div class="container">
-
-            <div class="row my-4">
-                <div class="col-12 my-2">
-
-                    <h1 class="text-center font-weight-bold">Loja Online</h1>
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="py-3 mt-0 my-3 pl-lg-3 ml-lg-2 font-weight-bold h3">Indieshop</h1>
                 </div>
-
             </div>
-
-            <div class="row my-4">
-
-                <div class="col-12 my-2">
-
-                    <h2 class="text-center font-weigth-bold">Nós fazemos nossa própria moda!</h2>
-
-                </div>
-
-            </div>
+            
 
             <?php
             $roupa=array(

@@ -14,6 +14,11 @@ elseif (ltrim($pastaAtualFim)=="80-2000") {
     $nh4['es']="Estilos a lo largo de los años";
     $nh4['pt']="Estilos ao longo dos anos";
 }
+elseif (ltrim($pastaAtualFim)=="criticas") {
+    $nh4['en']="Reviews";
+    $nh4['es']="Críticas";
+    $nh4['pt']="Críticas";
+}
 else { 
     $nh4['en']="News";
     $nh4['es']="Noticias";

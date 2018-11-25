@@ -41,16 +41,18 @@
         <div class="col">
             <h4 class="bg-dark p-3 row aside-content font-weight-bold"><?php echo $sug[$lang]; ?></h4>
             <?php
+            $imgrand=array(0,1,2,3,4,5,6);
+            shuffle($imgrand);
                 for ($i=0;$i<5;$i++) {
                     echo "<article class='container-fluid pr-0 pl-lg-0 my-3'>\n<div class='row'>\n<a href='";
                     echo $corredor.$news['areas'][rand(0,4)]."/novidades/post/index.php";
-                    echo "?t=".str_replace(' ','+',$news['titles'][$lang][$i])."&img=carouselteste0".rand(1,3).".png&dt="
+                    echo "?t=".str_replace(' ','+',$news['titles'][$lang][$i])."&img=content".$imgrand[$i].".jpg&dt="
                     .$news['dates'][$lang][rand(0,4)]."+horas+atrás' class='col-4 d-block my-auto p-0 pr-md-3'>\n";
                     echo "<picture>\n<img class='rounded img-fluid' alt='".$news['titles'][$lang][$i]."' src='";
-                    echo $corredor."img/carouselteste0".rand(1,3).".png'>\n</picture>\n</a>\n";
+                    echo $corredor."img/content".$imgrand[$i].".jpg'>\n</picture>\n</a>\n";
                     echo "<div class='col-8 h-auto d-flex flex-column pl-2 pr-0'><div class='my-auto'><a href='";
                     echo $corredor.$news['areas'][rand(0,4)]."/novidades/post/index.php";
-                    echo "?t=".str_replace(' ','+',$news['titles'][$lang][$i])."&img=carouselteste0".rand(1,3).".png&dt="
+                    echo "?t=".str_replace(' ','+',$news['titles'][$lang][$i])."&img=content".$imgrand[$i].".jpg&dt="
                     .$news['dates'][$lang][rand(0,4)]."+".$horas[$lang]."' class='text-body'>\n";
                     echo "<h3 class='h5 d-inline font-weight-bold'>".$news['titles'][$lang][$i]."</h3></a></div></div></div></article>";
                 }

@@ -155,19 +155,19 @@
                     ."||".
                     "$descricaosete[$lang]"; // Descrições dos slides
                 // Nomes dos arquivos de imagens dos slides
-                        $images="../../img/content1.jpg"
+                        $images="content1.jpg"
                             ."||".
-                            "../../img/content3.jpg"
+                            "content3.jpg"
                             ."||".
-                            "../../img/content4.jpg"
+                            "content4.jpg"
                             ."||".
-                            "../../img/content0.jpg"
+                            "content0.jpg"
                             ."||".
-                            "../../img/content2.jpg"
+                            "content2.jpg"
                             ."||".
-                            "../../img/content5.jpg"
+                            "content5.jpg"
                             ."||".
-                            "../../img/content6.jpg";// Títulos dos slides
+                            "content6.jpg";// Títulos dos slides
                 $links="novidades/post/index.php"
                     ."||".
                     "novidades/post/index.php"
@@ -220,19 +220,19 @@
                             "$indjogo[$lang]"
                             ."||".
                             "$sanimadores[$lang]";
-                        $images="../../img/content3.jpg"
+                        $images="content3.jpg"
                             ."||".
-                            "../../img/content4.jpg"
+                            "content4.jpg"
                             ."||".
-                            "../../img/content0.jpg"
+                            "content0.jpg"
                             ."||".
-                            "../../img/content1.jpg"
+                            "content1.jpg"
                             ."||".
-                            "../../img/content2.jpg"
+                            "content2.jpg"
                             ."||".
-                            "../../img/content5.jpg"
+                            "content5.jpg"
                             ."||".
-                            "../../img/content6.jpg";
+                            "content6.jpg";
                         $links="novidades/post/index.php" // Links dos destinos de cada postagem
                             ."||".
                             "novidades/post/index.php"

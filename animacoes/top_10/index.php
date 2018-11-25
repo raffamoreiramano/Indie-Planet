@@ -20,14 +20,23 @@
             include $corredor.'includes/trail.php';
         ?>
     <div class="container">
-        <div class="row">
-
-            <div class="col-12 col-md-12 col-lg-12">
-                <h1>
-
-                </h1>
+        <div class="row mb-3">
+                <div class="col-12">
+                    <h1 class="py-3 mt-0 my-3 pl-lg-3 ml-lg-2 font-weight-bold h3"><?php
+                        switch ($lang) {
+                            case "en":
+                                echo "Top 10 Indie Animations";
+                                break;
+                            case "es":
+                                echo "Top 10 Animaciones Indie";
+                                break;
+                            case "pt":
+                                echo "Top 10 Animações Indie";
+                                break;
+                        }
+                        ?></h1>
+                </div>
             </div>
-        </div>
 
 
 
