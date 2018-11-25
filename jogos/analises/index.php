@@ -112,7 +112,7 @@
                         $gene=$GF[rand(0,6)][$lang];
                         $nota=rand(70,99);
                         $pimg=rand(0,6);
-                        $link="filme/index.php?t=".str_replace(' ','+',$topicname)."&g=".str_replace(',','--',str_replace(' ','+',$gene))."&n=".$nota."&pimg=".$pimg;
+                        $link="post/index.php?t=".str_replace(' ','+',$topicname)."&g=".str_replace(',','--',str_replace(' ','+',$gene))."&n=".$nota."&pimg=".$pimg;
                         echo '<article class="topicos border-0 rounded-0 shadow card game-link row my-3">';
                         echo '<img class="card-img" src="../../img/content'.$pimg.'.jpg" alt="'.$topicname.'">';
                         echo '<a class="p-0 px-3 col-12 card-img-overlay shadow text-light" href="'.$link.'">';
@@ -133,13 +133,13 @@
             <nav class="row m-0 pt-5 mt-5">
                 <div class="col-12">
                     <ul class="pagination justify-content-center">
-                        <li class="page-item bg-dark<?php if ($page==1) {echo " disabled";} ?>">
-                            <a class="page-link border-secondary bg-dark text-<?php if($page==1){echo "secondary";}else{echo "light";} ?>" href="?page=1">
+                        <li class="page-item<?php if ($page==1) {echo " disabled";} ?>">
+                            <a class="page-link border-secondary text-dark" href="?page=1">
                                 <span aria-hidden="true">&laquo;</span>
                             </a>
                         </li>
-                        <li class="page-item bg-dark<?php if ($page==1) {echo " disabled";} ?>">
-                            <a class="page-link border-secondary bg-dark text-<?php if($page==1){echo "secondary";}else{echo "light";} ?>" href="?page=<?php echo $page-1; ?>">
+                        <li class="page-item<?php if ($page==1) {echo " disabled";} ?>">
+                            <a class="page-link border-secondary text-dark" href="?page=<?php echo $page-1; ?>">
                                 <span aria-hidden="true">&lsaquo;</span>
                             </a>
                         </li>
@@ -148,50 +148,50 @@
                             for ($i=$page;$i<$page+5;$i++) {
                                 if ($i==$page) {
                                     echo "<li class='page-item'>";
-                                    echo "\n<a class='page-link border-secondary bg-secondary text-light' href='?page=$i'>".$i."</a>\n</li>";
+                                    echo "\n<a class='page-link border-secondary bg-secondary text-dark' href='?page=$i'>".$i."</a>\n</li>";
                                 }
                                 else {
                                     echo "<li class='page-item d-none d-sm-block'>";   
-                                    echo "\n<a class='page-link border-secondary bg-dark text-light' href='?page=$i'>".$i."</a>\n</li>";
+                                    echo "\n<a class='page-link border-secondary text-dark' href='?page=$i'>".$i."</a>\n</li>";
                                 }
                             }
                             echo "<li class='page-item'>";   
-                            echo "\n<a class='page-link border-secondary bg-dark text-light' href='?page=".$i."'>...</a>\n</li>";
+                            echo "\n<a class='page-link border-secondary text-dark' href='?page=".$i."'>...</a>\n</li>";
                         }
                         elseif ($page==5) {
                             for ($i=$page-2;$i<$page+3;$i++) {
                                 if ($i==$page) {
                                     echo "<li class='page-item'>";
-                                    echo "\n<a class='page-link border-secondary bg-secondary text-light' href='?page=$i'>".$i."</a>\n</li>";
+                                    echo "\n<a class='page-link border-secondary bg-secondary text-dark' href='?page=$i'>".$i."</a>\n</li>";
                                 }
                                 else {
                                     echo "<li class='page-item d-none d-sm-block'>";   
-                                    echo "\n<a class='page-link border-secondary bg-dark text-light' href='?page=$i'>".$i."</a>\n</li>";
+                                    echo "\n<a class='page-link border-secondary text-dark' href='?page=$i'>".$i."</a>\n</li>";
                                 }
                             }
                         }
                         else {
                             echo "<li class='page-item'>";   
-                            echo "\n<a class='page-link border-secondary bg-dark text-light' href='?page=".($page-5)."'>...</a>\n</li>";
+                            echo "\n<a class='page-link border-secondary text-dark' href='?page=".($page-5)."'>...</a>\n</li>";
                             for ($i=6;$i<=10;$i++) {
                                 if ($i==$page) {
                                     echo "<li class='page-item'>";
-                                    echo "\n<a class='page-link border-secondary bg-secondary text-light' href='?page=$i'>".$i."</a>\n</li>";
+                                    echo "\n<a class='page-link border-secondary bg-secondary text-dark' href='?page=$i'>".$i."</a>\n</li>";
                                 }
                                 else {
                                     echo "<li class='page-item d-none d-sm-block'>";   
-                                    echo "\n<a class='page-link border-secondary bg-dark text-light' href='?page=$i'>".$i."</a>\n</li>";
+                                    echo "\n<a class='page-link border-secondary text-dark' href='?page=$i'>".$i."</a>\n</li>";
                                 }
                             }                            
                         }
                         ?>
                         <li class="page-item<?php if ($page==10) {echo " disabled";} ?>">
-                            <a class="page-link border-secondary bg-dark text-<?php if($page==10){echo "secondary";}else{echo "light";} ?>" href="?page=<?php echo $page+1; ?>">
+                            <a class="page-link border-secondary text-dark" href="?page=<?php echo $page+1; ?>">
                                 <span aria-hidden="true">&rsaquo;</span>
                             </a>
                         </li>
                         <li class="page-item<?php if ($page==10) {echo " disabled";} ?>">
-                            <a class="page-link border-secondary bg-dark text-<?php if($page==10){echo "secondary";}else{echo "light";} ?>" href="?page=10">
+                            <a class="page-link border-secondary text-dark" href="?page=10">
                                 <span aria-hidden="true">&raquo;</span>
                             </a>
                         </li>

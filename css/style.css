@@ -791,3 +791,26 @@ textarea {
     right: 0;
     
 }
+
+.game-link {
+}
+
+.game-link-post .card-img-overlay::before {
+    width: 210px;
+    content: url(../img/notaj.svg);
+    position: absolute;
+    
+    right: 0;
+    margin-right: 8px;
+    
+}
+@media (min-width: 768px) {
+    .game-link-post .card-img-overlay::before {
+        margin-right: 32px;
+    }
+}
+@media (min-width: 1024px) {
+    .game-link-post .card-img-overlay::before {
+        margin-right: 8px;
+    }
+}

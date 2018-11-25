@@ -114,19 +114,19 @@
                             "$indjogo[$lang]"
                             ."||".
                             "$sanimadores[$lang]";
-                         $images="../../img/content1.jpg"
+                         $images="content1.jpg"
                             ."||".
-                            "../../img/content3.jpg"
+                            "content3.jpg"
                             ."||".
-                            "../../img/content4.jpg"
+                            "content4.jpg"
                             ."||".
-                            "../../img/content0.jpg"
+                            "content0.jpg"
                             ."||".
-                             "../../img/content2.jpg"
+                            "content2.jpg"
                             ."||".
-                            "carouselteste01.png"
+                            "content5.jpg"
                             ."||".
-                            "carouselteste03.png";
+                            "content6.jpg";
                         $links="post/index.php" // Links dos destinos de cada postagem
                             ."||".
                             "post/index.php"
