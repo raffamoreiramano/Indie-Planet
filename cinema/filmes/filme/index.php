@@ -3,7 +3,7 @@
     include '../../../includes/matrix.php';
     $nome=isset($_GET['t'])?$_GET['t']:$artista[rand(1,259)];
     $pimg=isset($_GET['pimg'])?$_GET['pimg']:6;
-    $genero=isset($_GET['g'])?$_GET['g']:"";
+    $genero=isset($_GET['g'])?str_replace('--',',',$_GET['g']):"Drama";
     $art=array();
     $art['info']=array (
         "en" => "General Information",
@@ -11,9 +11,9 @@
         "pt" => "Informação Geral"
     );
     $art['atividade']=array (
-        "en" => "Period of activity",
-        "es" => "Periodo en actividad",
-        "pt" => "Período em atividade"
+        "en" => "Release",
+        "es" => "Lanzamiento",
+        "pt" => "Lançamento"
     );
     $art['origem']=array (
         "en" => "Origin",
@@ -59,7 +59,7 @@
         </div>
         <div class='row my-3 my-lg-4'>
             <figure class='pl-md-0 col-12 col-md-4 m-0'>
-                <img class='img-fluid border shadow' alt='<?php echo $nome; ?>' src='<?php echo $corredor."img/perfil".$pimg;?>.jpg'>
+                <img class='img-fluid border shadow' alt='<?php echo $nome; ?>' src='<?php echo $corredor."img/content".$pimg;?>.jpg'>
                 <figcaption class='text-secondary small p-2'>
                     <?php echo $nome." - ".($ativ+2); ?>
                 </figcaption>
@@ -79,26 +79,26 @@
                                 <th class='border-0' scope='row'>
                                     <?php echo $art['atividade'][$lang]; ?>:</th>
                                 <td class='border-0'>
-                                    <?php echo $ativ; ?> - presente</td>
+                                    <?php echo $ativ; ?></td>
                             </tr>
                             <tr>
-                                <th class='border-0' scope='row'>
-                                    <?php echo $art['origem'][$lang]; ?>:</th>
-                                <td class='border-0'>São Roque, SP, Brasil</td>
+                                <th class='border-0' scope='row'>IMDB:</th>
+                                <td class='border-0'>
+                                    <?php echo isset($_GET['n'])?substr($_GET['n'],0,1).",".substr($_GET['n'],1,1):'8,7'; ?></td>
                             </tr>
                             <tr>
                                 <th class='border-0' scope='row'>
                                     <?php echo $art['gen'][$lang]; ?>:</th>
                                 <td class='border-0'>
-                                    <?php echo $genero; ?>,CGI,Cartoon. </td>
+                                    <?php echo $genero; ?>, Indie.</td>
                             </tr>
                             <tr>
                                 <th class='border-0' scope='row'>
                                    <?php
             $mautor=array();
-            $mautor['en']="More about the author:";
-            $mautor['es']="Más sobre el autor:";
-            $mautor['pt']="Mais sobre o autor:";
+            $mautor['en']="Synopsis:";
+            $mautor['es']="Sinopsis:";
+            $mautor['pt']="Sinópse:";
             echo $mautor[$lang];
             
         ?> </th>
@@ -117,9 +117,9 @@
                 <h1 class='text-white'>
                     <?php
                      $desenhos=array();
-                     $desenhos['en']="Drawings by $nome";
-                     $desenhos['es']="Dibujos del $nome";
-                     $desenhos['pt']="Desenhos do $nome";
+                     $desenhos['en']="Scenes from $nome";
+                     $desenhos['es']="Escenas de $nome";
+                     $desenhos['pt']="Cenas de $nome";
                      echo $desenhos[$lang];
             
                     ?>

@@ -283,11 +283,53 @@ setlocale(LC_ALL, 'pt_BR');
     );
     $spotifyPlaylist="0k0TbUHAhajil7b3FIkixs";
 
-    $artistas="Kane Ultricies,Xerath Sed,Leo Ornare,Lacinia Elementum,Ligula Hendrerit,Aliquam Scelerisque,Cursus Sem,Lobortis Congue,Est Consequat,Eget Vivamus,Convallis Volutpat,Yisl Vitae,Mattis Maecenas,Ornare Purus,Sit Amet,Volutpat Facilisis,Vivamus Gravida,Dolor Nec,Sollicitudin Atheos,Dignissim Massa,Bros Vehicula,Ipsum Eu,Placerat Urna,Zero Cal,Ipsum Integer,Dictum Lorem,Odio Et,Dapibus Augue,Vehicula Id,Aliquam Aidentro,Erat Pretium,Luctus Orci,Eu Robo,Ex Machina,Metus Quam,Ultricies Sed,Efficitur Et,Viverra Alho,Nisl Curabitur,Sir Anta,Lacinia Urna,Vitae Scelerisque,Ligula Pellentesque,Xing Euismod,Nisi Amem,Helictor Suspendisse,Rhoncus Fermentum,Diam Ac,Dapibus Diam,Pharetra Quis,Vestibulum Ante,Ipsum Primis,In Faucibus,Orci Luctus,Bet Ultrices,Posuere Cubilia,Burae Nulla,Vel Libero,Viverra Semper,Ipsum Ut,Hendrerit Enim,Nam Quis,Felis Lobortis,Imperdiet Augue,Geici Euismod,Risus Morbi,Finibus Fermentum,Enim At,Faucibus Metus,Aliquam Et,Burabitur Ante,Quam Consequat,Herege Est,Zeta Suscipit,Lobortis Dui,Gurabitur Arca,Gonsequat Nisi,Mauris Ipsum,Libero Finibus,Et Mollis,Kid Eleifend,Non Metus,Sed Nec,Wong Lectus,Curabitur Tristique,Sem Id,Blandit Ultricies,Kin Vitae,Tempus Ex,Suspendisse Fermentum,Dolor In,Gibh Ullamcorper,Chico Cunha,Nisl Varius,Juca Bala,Viverra Mauris,Jon Pretium,Sapien Posuere,Vitae Ut,Iaculis Elit,Sit Down,Imperdiet Tempor,Arcu Ex,Condimentum Dolor,Finibus Finibus,Dui Massa,Vel Elit,Pellentesque Pharetra,Sodales Sagittis,Sed Ut,Feugiat Metus,Donec Sit,Amet Diam,Ultricies Suscipit,Nunc At,Fermentum Tortor,Etiam Auctor,Odio Vitae,Volutpat Ultricies,Nulla Mi,Pretium Libero,Vel Ullamcorper,Nisi Sapien,Yin Orci,Morbi Abinhalinbua,Magna Ac,Eh Mole,Tristique Donec,Sed Posuere,Leo Jaime";
+    $artistas="Kane Ultricies,Xerath Sed,Leo Ornare,Lacinia Elementum,Ligula Hendrerit,Aliquam Scelerisque,Cursus Sem,Lobortis Congue,Est Consequat,Eget Vivamus,Convallis Volutpat,Yisl Vitae,Mattis Maecenas,Ornare Purus,Sit Amet,Volutpat Facilisis,Vivamus Gravida,Dolor Nec,Sollicitudin Atheos,Dignissim Massa,Bros Cula,Ipsum Eu,Placerat Urna,Zero Cal,Ipsum Integer,Dictum Lorem,Odio Et,Dapibus Augue,Vehicula Id,Aliquam Aidentro,Erat Pretium,Luctus Orci,Eu Robo,Ex Machina,Metus Quam,Ultricies Sed,Efficitur Et,Viverra Alho,Nisl Curabitur,Sir Anta,Lacinia Urna,Vitae Scelerisque,Ligula Pellentesque,Xing Euismod,Nisi Amem,Helictor Suspendisse,Rhoncus Fermentum,Diam Ac,Dapibus Diam,Pharetra Quis,Vestibulum Ante,Ipsum Primis,In Faucibus,Orci Luctus,Bet Ultrices,Posuere Cubilia,Burae Nulla,Vel Libero,Viverra Semper,Ipsum Ut,Hendrerit Enim,Nam Quis,Felis Lobortis,Imperdiet Augue,Geici Euismod,Risus Morbi,Finibus Fermentum,Enim At,Faucibus Metus,Aliquam Et,Burabitur Ante,Quam Consequat,Herege Est,Zeta Suscipit,Lobortis Dui,Bitur Arca,Gonsequat Nisi,Mauris Ipsum,Libero Finibus,Et Mollis,Kid Eleifend,Non Metus,Sed Nec,Wong Lectus,Curabitur Tristique,Sem Id,Blandit Ultricies,Kin Vitae,Tempus Ex,Suspendisse Fermentum,Dolor In,Gibh Ullamcorper,Chico Cunha,Nisl Varius,Juca Bala,Viverra Mauris,Jon Pretium,Sapien Posuere,Vitae Ut,Iaculis Elit,Sit Down,Imperdiet Tempor,Arcu Ex,Condimentum Dolor,Finibus Finibus,Dui Massa,Vel Elit,Ellen Pharetra,Sodales Sagittis,Sed Ut,Feugiat Metus,Donec Sit,Amet Diam,Ultricies Suscipit,Nunc At,Fermentum Tortor,Etiam Auctor,Odio Vitae,Volutpat Ultricies,Nulla Mi,Pretium Libero,Vel Ullamcorper,Nisi Sapien,Yin Orci,Morbi Abinhalinbua,Magna Ac,Eh Mole,Tristique Donec,Sed Posuere,Leo Jaime";
     $artista=explode(',',$artistas);
     sort($artista);
     for ($a=0;$a<130;$a++) {
         $artista[130+$a]=ucwords(strtolower(strrev($artista[$a])));
     }
     sort($artista);
+
+    $date1= array(
+    "en" => "One hour ago",
+    "es" => "Una hora atras",
+    "pt" => "Uma hora atrás"
+    );
+    
+    $date2= array(
+    "en" => "Two hours ago",
+    "es" => "Dos horas atras",
+    "pt" => "Duas horas atrás"
+    );
+
+    $date3= array(
+    "en" => "Three hours ago",
+    "es" => "Tres horas atras",
+    "pt" => "Três horas atrás"
+    );
+    
+    $date4= array(
+    "en" => "Four hours ago",
+    "es" => "Cuatro horas atras",
+    "pt" => "Quatro horas atrás"
+    );
+
+    $date5= array(
+    "en" => "Five Hours Ago",
+    "es" => "Cinco horas atras",
+    "pt" => "Cinco horas atrás"
+    );
+
+    $date6= array(
+    "en" => "Six hours ago",
+    "es" => "Seis horas atras",
+    "pt" => "Seis horas atrás"
+    );
+
+    $date7= array(
+    "en" => "Seven hours ago",
+    "es" => "Siete horas atras",
+    "pt" => "Sete horas atrás"
+    );
 ?>

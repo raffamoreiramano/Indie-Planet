@@ -755,3 +755,39 @@ textarea {
         height: 45vw !important;
     }
 }
+.film-link {
+    max-height: 140px !important;
+    overflow: hidden;
+}
+.film-link:hover h2 {
+    color: #19CBCB !important;
+}
+.film-link::before {
+    background: linear-gradient(to right,black,rgba(0,0,0,0.95),rgba(0,0,0,0.85),rgba(0,0,0,0.70),rgba(0,0,0,0.50),rgba(0,0,0,0.30),rgba(0,0,0,0.15),rgba(0,0,0,0.10),rgba(0,0,0,0.05),transparent);
+}
+.film-link .card-img-overlay::before {
+    width: 210px;
+    content: url(../img/notac.svg);
+    position: absolute;
+    
+    right: 0;
+    
+}
+.game-link {
+    max-height: 140px !important;
+    overflow: hidden;
+}
+.game-link:hover h2 {
+    color: #78BB78 !important;
+}
+.game-link::before {
+    background: linear-gradient(to right,black,rgba(0,0,0,0.95),rgba(0,0,0,0.85),rgba(0,0,0,0.70),rgba(0,0,0,0.50),rgba(0,0,0,0.30),rgba(0,0,0,0.15),rgba(0,0,0,0.10),rgba(0,0,0,0.05),transparent);
+}
+.game-link .card-img-overlay::before {
+    width: 210px;
+    content: url(../img/notaj.svg);
+    position: absolute;
+    
+    right: 0;
+    
+}
