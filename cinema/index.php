@@ -74,8 +74,8 @@
     "pt" => "Sendo um sucesso de vendas, O massacre da serra elétrica arrecada mais de 1 Milhão no primeiro dia"
     );
     $menuT7 = array(
-    "en" => "La película Indie recibe el oscar de mejor banda sonora en 2018",
-    "es" => "Indie Film Receives Oscar for Best Soundtrack in 2018",
+    "es" => "La película Indie recibe el oscar de mejor banda sonora en 2018",
+    "en" => "Indie Film Receives Oscar for Best Soundtrack in 2018",
     "pt" => "Filme Indie recebe o oscar de melhor trilha sonora em 2018"
     );
     $submenu7 = array(
@@ -149,19 +149,20 @@
                 "$submenu6[$lang]"
                 ."||".
                 "$submenu7[$lang]"; // Descrições dos slides
-                $images="cin_06.jpg"
+                $images=
+                "content0.jpg"
                 ."||".
-                "cin_04.jpg"
+                "content1.jpg"
                 ."||".
-                "cin_05.jpg"
+                "content2.jpg"
                 ."||".
-                "cin_02.jpg"
+                "content3.jpg"
                 ."||".
-                "cin_03.jpg"
+                "content4.jpg"
                 ."||".
-                "cin_02.jpg"
+                "content5.jpg"
                 ."||".
-                "cin_01.jpg"; // Nomes dos arquivos de imagens dos slides
+                "content6.jpg"; // Nomes dos arquivos de imagens dos slides
                 $links="novidades/post/index.php"
                     ."||".
                     "novidades/post/index.php"
@@ -220,19 +221,20 @@
                             "$title6[$lang]"
                             ."||".
                             "$title7[$lang]";
-                        $images="cin_03.jpg" // Nomes dos arquivos de imagens do feed
+                        $images=
+                            "content6.jpg"
                             ."||".
-                            "cin_02.jpg"
+                            "content5.jpg"
                             ."||".
-                            "cin_01.jpg"
+                            "content4.jpg"
                             ."||".
-                            "perfil4.jpg"
+                            "content3.jpg"
                             ."||".
-                            "cin_04.jpg"
+                            "content2.jpg"
                             ."||".
-                            "perfil3.jpg"
+                            "content1.jpg"
                             ."||".
-                            "perfil1.jpg";
+                            "content0.jpg";
                         $links="novidades/post/index.php" // Links dos destinos de cada postagem
                             ."||".
                             "novidades/post/index.php"

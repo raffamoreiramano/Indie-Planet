@@ -73,19 +73,20 @@
                             "$title6[$lang]"
                             ."||".
                             "$title7[$lang]";
-                        $images="cin_03.jpg" // Nomes dos arquivos de imagens do feed
+                        $images=
+                             "content6.jpg"
                             ."||".
-                            "cin_02.jpg"
+                            "content5.jpg"
                             ."||".
-                            "cin_01.jpg"
+                            "content4.jpg"
                             ."||".
-                            "perfil4.jpg"
+                            "content3.jpg"
                             ."||".
-                            "cin_04.jpg"
+                            "content2.jpg"
                             ."||".
-                            "perfil3.jpg"
+                            "content1.jpg"
                             ."||".
-                            "perfil1.jpg";
+                            "content0.jpg";
                         $links="novidades/post/index.php" // Links dos destinos de cada postagem
                             ."||".
                             "novidades/post/index.php"

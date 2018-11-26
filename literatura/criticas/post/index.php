@@ -2,7 +2,7 @@
 <?php
     include '../../../includes/matrix.php';
     $title=isset($_GET['t'])?str_replace('+',' ',$_GET['t']):'Título da postagem';
-    $image=isset($_GET['img'])?$corredor."img/".$_GET['img']:$corredor."img/content6.jpg";
+    $image=isset($_GET['img'])?$corredor."img/".$_GET['img']:$corredor."img/".'carouselteste01.png';
     $date=isset($_GET['dt'])?str_replace('+',' ',$_GET['dt']):'algumas horas atrás';
     $nome=$title;
 ?>

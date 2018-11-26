@@ -36,7 +36,7 @@ setlocale(LC_ALL, 'pt_BR');
     else {
         $lang = "pt";
     }
-    setcookie("lang", $lang, 0,'/');
+    setcookie("lang", $lang, time()+3600,'/');
     $pastaAtualFake="";
 
 /* Matriz do conteúdo da navegação do portal */
@@ -332,4 +332,72 @@ setlocale(LC_ALL, 'pt_BR');
     "es" => "Siete horas atras",
     "pt" => "Sete horas atrás"
     );
+            $roupa=array(
+                0 => array(
+                    0 => array (
+                        "en" => "Tie-dye T-Shirt",
+                        "es" => "Camiseta Tie-dye",
+                        "pt" => "Camiseta Tie-dye"
+                    ),
+                    1 => array (
+                        "en" => "Bomber Jacket",
+                        "es" => "Chaqueta Bomber",
+                        "pt" => "Jaqueta Bomber"
+                    ),
+                    2 => array (
+                        "en" => "Alt-J T-Shirt",
+                        "es" => "Camiseta Alt-J",
+                        "pt" => "Camiseta Alt-J"
+                    ),
+                    3 => array (
+                        "en" => "Strapback Cap",
+                        "es" => "Gorro Strapback",
+                        "pt" => "Boné Strapback"
+                    )
+                ),
+                1 => array(
+                    0 => array (
+                        "en" => "MGMT T-Shirt",
+                        "es" => "Camiseta MGMT",
+                        "pt" => "Camiseta MGMT"
+                    ),
+                    1 => array (
+                        "en" => "Strokes Cap",
+                        "es" => "Gorro Strokes",
+                        "pt" => "Boné Strokes"
+                    ),
+                    2 => array (
+                        "en" => "Killers Dress",
+                        "es" => "Vestido Killers",
+                        "pt" => "Vestido Killers"
+                    ),
+                    3 => array (
+                        "en" => "Gorillaz T-Shirt",
+                        "es" => "Camiseta Gorillaz",
+                        "pt" => "Camiseta Gorillaz"
+                    )
+                ),
+                2 => array(
+                    0 => array (
+                        "en" => "Tie-dye Pants",
+                        "es" => "Pantalones Tie-dye",
+                        "pt" => "Calça Tie-dye"
+                    ),
+                    1 => array (
+                        "en" => "Mickey T-Shirt",
+                        "es" => "Camiseta Mickey",
+                        "pt" => "Camiseta Mickey"
+                    ),
+                    2 => array (
+                        "en" => "Perfecto Jacket",
+                        "es" => "Chaqueta Perfecto",
+                        "pt" => "Jaqueta Perfecto"
+                    ),
+                    3 => array (
+                        "en" => "Fedora",
+                        "es" => "Fedora",
+                        "pt" => "Fedora"
+                    )
+                )
+            );
 ?>

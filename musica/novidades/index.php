@@ -25,45 +25,76 @@
                     <?php
                         $newsNumber=7; // Número de postagens do feed
                         $highlight=0; // Cada postagem de número semelhante ao valor de $highlight é um destaque
-                        $titles="Título da primeira postagem do feed de notícias" // Títulos das postagens
+                        if ($lang=='en') {
+                        $titles="How indie music changed the industry" // Títulos das postagens
                             ."||".
-                            "Título da segunda postagem do feed de notícias"
+                            "How do indie artists release their songs?"
                             ."||".
-                            "Título da terceira postagem do feed de notícias"
+                            "Similarities between indie and grunge"
                             ."||".
-                            "Título da quarta postagem do feed de notícias"
+                            "Indie on the national scene"
                             ."||".
-                            "Título da quinta postagem do feed de notícias"
+                            "Vem mamar uvinha: Mc Carlos Sumaré amazes the people of Campinas"
                             ."||".
-                            "Título da sexta postagem do feed de notícias"
+                            "Zebrabra: success between children with autism"
                             ."||".
-                            "Título da sétima postagem do feed de notícias";
-                        $images="carouselteste01.png" // Nomes dos arquivos de imagens do feed
+                            "Indie band from the 90s returns with great hits";
+                        $dates="one hour ago" // Horários de cada postagem
                             ."||".
-                            "carouselteste02.png"
+                            "two hours ago"
                             ."||".
-                            "carouselteste03.png"
+                            "three hours ago"
                             ."||".
-                            "carouselteste01.png"
+                            "four hours ago"
                             ."||".
-                            "carouselteste02.png"
+                            "five hours ago"
                             ."||".
-                            "carouselteste03.png"
+                            "six hours ago"
                             ."||".
-                            "carouselteste01.png";
-                        $links="post/index.php" // Links dos destinos de cada postagem
+                            "seven hours ago";
+                    }
+                    elseif ($lang=='es') {
+                        $titles="Cómo la música indie cambió la industria." // Títulos das postagens
                             ."||".
-                            "post/index.php"
+                            "¿Cómo lanzan los artistas indie sus canciones?"
                             ."||".
-                            "post/index.php"
+                            "Similitudes entre indie y grunge."
                             ."||".
-                            "post/index.php"
+                            "Indie en la escena nacional"
                             ."||".
-                            "post/index.php"
+                            "Vem mamar uvinha: Mc Carlos Sumaré sorprende a la gente de Campinas"
                             ."||".
-                            "post/index.php"
+                            "Zebrabra: Éxito entre niños con autismo."
                             ."||".
-                            "post/index.php";
+                            "Banda indie de los años 90 regresa con grandes hits.";
+                        $dates="una hora antes" // Horários de cada postagem
+                            ."||".
+                            "dos horas antes"
+                            ."||".
+                            "tres horas antes"
+                            ."||".
+                            "cuatro horas antes"
+                            ."||".
+                            "cinco horas antes"
+                            ."||".
+                            "seis horas antes"
+                            ."||".
+                            "siete horas antes";
+                    }
+                    else {
+                        $titles="Como a música indie mudou a indústria." // Títulos das postagens
+                            ."||".
+                            "Como músicos indie lançam suas músicas?"
+                            ."||".
+                            "Semelhanças entre indie e grunge"
+                            ."||".
+                            "Indie no cenário nacional"
+                            ."||".
+                            "Vem mamar uvinha: Mc Carlos Sumaré surpreende o povo de Campinas"
+                            ."||".
+                            "Zebrabra: Sucesso entre crianças com autismo."
+                            ."||".
+                            "Banda indie dos anos 90 retorna com grandes hits.";
                         $dates="uma hora atrás" // Horários de cada postagem
                             ."||".
                             "duas horas atrás"
@@ -77,6 +108,35 @@
                             "seis horas atrás"
                             ."||".
                             "sete horas atrás";
+                    }
+                        
+                        $images="content1.jpg" // Nomes dos arquivos de imagens do feed
+                            ."||".
+                            "content6.jpg"
+                            ."||".
+                            "content4.jpg"
+                            ."||".
+                            "content2.jpg"
+                            ."||".
+                            "content0.jpg"
+                            ."||".
+                            "content5.jpg"
+                            ."||".
+                            "content3.jpg";
+                        $links="novidades/post/index.php" // Links dos destinos de cada postagem
+                            ."||".
+                            "novidades/post/index.php"
+                            ."||".
+                            "novidades/post/index.php"
+                            ."||".
+                            "novidades/post/index.php"
+                            ."||".
+                            "novidades/post/index.php"
+                            ."||".
+                            "novidades/post/index.php"
+                            ."||".
+                            "novidades/post/index.php";
+                        
                         $areas=""; // Área de cada postagem
                         include $corredor.'includes/news.php';
                     ?>

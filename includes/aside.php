@@ -90,16 +90,44 @@
                         echo "\n</table>\n</div>\n</section>\n";
                         break;
                     case "cinema":
+                        $you=array("lTVwJnW_U7M","sU0oZsqeG_s","K0SKf0K3bxg","s7EdQ4FqbhY","go0oBF4Y");
+                        $rec=array("en"=>"Recomendation","es"=>"Recomendación","pt"=>"Recomendação");
+                        echo "<section>";
+                        echo "<div class='aside-content row bg-dark p-3'><h4 class='h4 col my-auto font-weight-bold px-0'>";
+                        echo $rec[$lang]."</h4></div><div class='row pb-3'><div class='embed-responsive embed-responsive-16by9'>";
+                        echo '<iframe class="embed-resp0onsive-item" src="https://www.youtube.com/embed/'.$you[rand(0,4)];
+                        echo '" allowfullscreen></iframe></div></div></section>';
                         break;
                     case "series":
                         break;
                     case "animacoes":
+                        $animador=array("en"=>"Author of the week","es"=>"Autor de la semana","pt"=>"Autor da semana");
+                        echo "<section class='row'>\n<div class='col px-0'>\n";
+                        echo "<a class='aside-content' href='".$corredor."animacoes/autores/index.php'>";
+                        echo "<div class='row mx-0 bg-dark p-3'>\n";
+                        echo "<h4 class='h4 col my-auto font-weight-bold px-0'>".$animador[$lang];
+                        echo "</h4>\n</div>";
+                        echo "<div class='row m-0'><div class='col-12 p-0'><img src='".$corredor."img/perfil6.jpg' alt='Norman' class='img-fluid'>";
+                        echo "</div>\n</div>";
+                        echo "</a>\n</div>\n</section>\n";
                         break;
                     case "literatura":
                         break;
                     case "jogos":
                         break;
                     case "moda":
+                        $produto=array("en"=>"Offer:","es"=>"Oferta:","pt"=>"Oferta");
+                        $i=rand(0,2);
+                        $j=rand(0,3);
+                        echo "<div class='aside-content row bg-dark p-3'><h4 class='h4 col my-auto font-weight-bold px-0'>";
+                        echo $produto[$lang]."</h4></div>";
+                        echo '<section class="row">';
+                        echo '<div class="col-12 p-0"><a href="'.$corredor.'moda/loja/produto/index.php?view='.$i.$j;
+                        echo '" class="card no-black-before shadow">';
+                        echo '<img class="card-img-top" src="'.$corredor.'img/xadrezteste.png" alt="Card image cap">';
+                        echo '<div class="card-body"><h5 class="card-title text-danger font-weight-bold">';
+                        echo $roupa[$i][$j][$lang].'</h5><p class="card-text text-dark font-weight-bold">R$ '.rand(50,200).',99</p>';
+                        echo '</div></a></div></section>';
                         break;
                 }
 

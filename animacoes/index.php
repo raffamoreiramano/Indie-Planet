@@ -16,7 +16,7 @@
                     // aqui estarão os lang para dar tradução aos titulos
                     //shaun
                     $shaun=array();
-                    $shaun['en']="Shaun the Sheep: Indie Childrens Success";
+                    $shaun['en']="Shaun the Sheep: Indie success between kids";
                     $shaun['es']="Shaun el carnero: éxito indie infantil";
                     $shaun['pt']="Shaun o carneiro: sucesso indie infantil";
                     //gorillaz pt2

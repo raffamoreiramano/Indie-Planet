@@ -2,7 +2,7 @@
 <?php
     include '../../../includes/matrix.php';
     $nome=isset($_GET['t'])?$_GET['t']:$artista[rand(1,259)];
-    $pimg=isset($_GET['pimg'])?$_GET['pimg']:6;
+    $pimg=isset($_GET['pimg'])?$_GET['pimg']:4;
     $genero=isset($_GET['g'])?$_GET['g']:"Lo-Fi";
     $art=array();
     $art['info']=array (

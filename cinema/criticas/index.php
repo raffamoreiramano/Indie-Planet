@@ -146,25 +146,25 @@
                             ."||".
                             "$NF0[$lang]";
                         $images=
-                            "cin_03.jpg" // Nomes dos arquivos de imagens do feed
+                            "content6.jpg"
                             ."||".
-                            "cin_01.jpg"
+                            "content3.jpg"
                             ."||".
-                            "cin_05.jpg"
+                            "content1.jpg"
                             ."||".
-                            "cin_02.jpg"
+                            "content5.jpg"
                             ."||".
-                            "cin_04.jpg"
+                            "content4.jpg"
                             ."||".
-                            "cin_03.jpg"
+                            "content0.jpg"
                             ."||".
-                            "cin_06.jpg"
+                            "content6.jpg"
                             ."||".
-                            "cin_05.jpg"
+                            "content2.jpg"
                             ."||".
-                            "cin_01.jpg"
-                             ."||".
-                            "cin_02.jpg";
+                            "content1.jpg"
+                            ."||".
+                            "content0.jpg";
                         $links="post/index.php" // Links dos destinos de cada postagem
                             ."||".
                             "post/index.php"

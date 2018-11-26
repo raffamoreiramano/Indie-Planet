@@ -323,7 +323,7 @@
             
             <div class="col-12 col-md-8 col-lg-7 mt-5 mb-5" >
                 
-                      <h2>Submarino0</h2>
+                      <h2>Submarino</h2>
                 
                 <table class="table">
 
