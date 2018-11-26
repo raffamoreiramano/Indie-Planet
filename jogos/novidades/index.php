@@ -8,60 +8,60 @@
 ?>
 
 <body class="<?php echo $pastaAtual; ?>">
-    <header>
-        <?php
+	<header>
+		<?php
                 include $corredor.'includes/nav-top.php';
             ?>
-        <?php
+		<?php
                 include $corredor.'includes/nav-mid.php';
             ?>
-    </header>
-    <?php
+	</header>
+	<?php
             include $corredor.'includes/trail.php';
         ?>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-10 feed">
-                <?php
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-lg-10 feed">
+				<?php
                         $newsNumber=7; // Número de postagens do feed
                         $highlight=0; // Cada postagem de número semelhante ao valor de $highlight é um destaque
                     
                     // aqui estarão os lang para dar tradução aos titulos
-                    //shaun
+                    //celeste
                     $shaun=array();
-                    $shaun['en']="Shaun the Sheep: Indie Childrens Success";
-                    $shaun['es']="Shaun el carnero: éxito indie infantil";
-                    $shaun['pt']="Shaun o carneiro: sucesso indie infantil";
-                    //gorillaz pt2
+                    $shaun['en']="Celeste The brazilian indie game who was nominated to game of the year ";
+                    $shaun['es']="El juego Indie brasileño indicado para el juego del año";
+                    $shaun['pt']="Celeste O jogo Indie brasileiro indicado para game do ano.";
+                    //last night
                     $ptdois=array();
-                    $ptdois['en']="The story of the gorillaz pt2: which way will it lead?";
-                    $ptdois['es']="La historia del gorillaz es2: ¿qué camino te llevará?";
-                    $ptdois['pt']="A história do gorillaz pt2: qual rumo levara?";
-                    //tank girl
+                    $ptdois['en']="Possible delay of The last night for 2019";
+                    $ptdois['es']="Posible retraso de The last night para 2019";
+                    $ptdois['pt']="Possivel delay de The last night para 2019.";
+                    //anicine
                     $tankg=array();
-                    $tankg['en']="Tank Girl: All about the girl who lives in the war tank.";
-                    $tankg['es']="Tank Girl: todo sobre la chica q vive en el tanque de guerra.";
-                    $tankg['pt']="Tank Girl: tudo sobre a garota q vive no tank de guerra. ";
-                    //jamie
+                    $tankg['en']="National independent games receive funding from Ancine.";
+                    $tankg['es']="Los Juegos independientes nacionales reciben fondos de apoyo de Ancine.";
+                    $tankg['pt']="Jogos independentes nacionais recebem verba de apoio da Ancine.";
+                    //gory
                     $jamie=array();
-                    $jamie['en']="History of Jamie Hewlett: one of the creators and designer gorillaz.";
-                    $jamie['es']="Historia de jamie hewlett: uno de los creadores y diseñador gorillaz.";
-                    $jamie['pt']="História de jamie hewlett : um dos criadores e desenhista gorillaz.";
-                    //gorillaz pt1 
+                    $jamie['en']="GUTS Gory Ultimate Tournament The most brutal Brazilian indie is arriving soon.";
+                    $jamie['es']="GUTS Gory Ultimate Tournament El indie brasileño más brutal llegará pronto.";
+                    $jamie['pt']="GUTS Gory Ultimate Tournament Show O indie brasileiro mais brutal vem ai.";
+                    //blazing 
                     $ptum=array();
-                    $ptum['en']="The gorillaz story pt1: the beginning.";
-                    $ptum['es']="La historia del gorillaz es1: el comienzo.";
-                    $ptum['pt']="A história do gorillaz pt1: o começo.";
+                    $ptum['en']="New Blazing Chrome images a Brazilian homage to Metal Slug and Contra 3.";
+                    $ptum['es']="New Blazing Chrome representa un homenaje brasileño a Metal Slug y Contra 3.";
+                    $ptum['pt']="Novas imagens de Blazing Chrome uma homenagem brasileira a Metal Slug e Contra 3.";
                     //indie jogo
                     $indjogo=array();
                     $indjogo['en']="The success of indie animations in games";
                     $indjogo['es']="El éxito de las animaciones indie en juegos";
                     $indjogo['pt']="O sucesso das animações indie em jogos";
-                    //sobrevivencia animadores
+                    //rumor
                     $sanimadores=array();
-                    $sanimadores['en']="How do indie animators survive?";
-                    $sanimadores['es']="¿Cómo sobreviven los animadores indie?";
-                    $sanimadores['pt']="Como sobrevivem os animadores indie?";
+                    $sanimadores['en']="Possible continuation of Five Nights At Freddys may come in 2020";
+                    $sanimadores['es']="La posible continuación de cinco noches en Freddys puede llegar en 2020";
+                    $sanimadores['pt']="Possivel continuação de Five Nights At Freddys pode vir em 2020 ";
                      //mudança de linguagem nas datas
                     
                     $dataum=array();
@@ -156,10 +156,10 @@
                         $areas=""; // Área de cada postagem
                         include $corredor.'includes/news.php';
                     ?>
-            </div>
-        </div>
-    </div>
-    <?php
+			</div>
+		</div>
+	</div>
+	<?php
             include $corredor.'includes/footer.php';
         ?>
 </body>

@@ -13,6 +13,40 @@
                 include $corredor.'includes/nav-top.php';
             ?>
             <?php
+                $dataum=array();
+                $dataum['es']="una hora atras";
+                $dataum['en']="one hour ago";
+                $dataum['pt']="uma hora atrás";
+            
+                $datadois=array();
+                $datadois['es']="hace dos horas";
+                $datadois['en']="two hours ago";
+                $datadois['pt']="duas horas atrás";
+            
+                $datatres=array();
+                $datatres['es']=" hace tres horas ";
+                $datatres['en']="three hours ago";
+                $datatres['pt']="três horas atrás";
+            
+                $dataquatro=array();
+                $dataquatro['es']=" hace cuatro horas ";
+                $dataquatro['en']="four hours ago";
+                $dataquatro['pt']="quatro horas atrás";
+            
+                $datacinco=array();
+                $datacinco['es']=" hace cinco horas ";
+                $datacinco['en']="five hours ago";
+                $datacinco['pt']="cinco horas atrás";
+            
+                $dataseis=array();
+                $dataseis['es']="hace seis horas";
+                $dataseis['en']="six hours ago";
+                $dataseis['pt']="seis horas atrás";
+            
+                $datasete=array();
+                $datasete['es']="hace siete horas";
+                $datasete['en']="seven hours ago";
+                $datasete['pt']="sete horas atrás";
                 $slides=7; // Número de slides do carrossel
                 $titles="Undercut"
                     ."||".
@@ -27,32 +61,32 @@
                     "Grunge"
                     ."||".
                     "Bob"; // Títulos dos slides
-                $texts="Descrição resumida da postagem que se encontra em um dos slides"
+                $texts="Lorem ipsum dolor sit amet consectetur adipiscing elit"
                     ."||".
-                    "Descrição resumida da postagem que se encontra em um dos slides"
+                    "Lorem ipsum dolor sit amet consectetur adipiscing elit"
                     ."||".
-                    "Descrição resumida da postagem que se encontra em um dos slides"
+                    "Lorem ipsum dolor sit amet consectetur adipiscing elit"
                     ."||".
-                    "Descrição resumida da postagem que se encontra em um dos slides"
+                    "Lorem ipsum dolor sit amet consectetur adipiscing elit"
                     ."||".
-                    "Descrição resumida da postagem que se encontra em um dos slides"
+                    "Lorem ipsum dolor sit amet consectetur adipiscing elit"
                     ."||".
-                    "Descrição resumida da postagem que se encontra em um dos slides"
+                    "Lorem ipsum dolor sit amet consectetur adipiscing elit"
                     ."||".
-                    "Descrição resumida da postagem que se encontra em um dos slides"; // Descrições dos slides
-                $images="carouselteste01.png"
+                    "Lorem ipsum dolor sit amet consectetur adipiscing elit"; // Descrições dos slides
+                $images="xadrezpaisagem.png"
                     ."||".
-                    "carouselteste02.png"
+                    "xadrezpaisagem.png"
                     ."||".
-                    "carouselteste03.png"
+                    "xadrezpaisagem.png"
                     ."||".
-                    "carouselteste02.png"
+                    "xadrezpaisagem.png"
                     ."||".
-                    "carouselteste01.png"
+                    "xadrezpaisagem.png"
                     ."||".
-                    "carouselteste02.png"
+                    "xadrezpaisagem.png"
                     ."||".
-                    "carouselteste03.png"; // Nomes dos arquivos de imagens dos slides
+                    "xadrezpaisagem.png"; // Nomes dos arquivos de imagens dos slides
                 $links="cortes/post/index.php"
                     ."||".
                     "80-2000/post/index.php"
@@ -66,19 +100,19 @@
                     "80-2000/post/index.php"
                     ."||".
                     "cortes/post/index.php"; // Links dos destinos de cada slide, começando pela pasta da área referente
-                $dates="uma hora atrás"
+                $dates=$dataum[$lang]
                     ."||".
-                    "duas horas atrás"
+                    $datadois[$lang]
                     ."||".
-                    "três horas atrás"
+                    $datatres[$lang]
                     ."||".
-                    "quatro horas atrás"
+                    $dataquatro[$lang]
                     ."||".
-                    "cinco horas atrás"
+                    $datacinco[$lang]
                     ."||".
-                    "seis horas atrás"
+                    $dataseis[$lang]
                     ."||".
-                    "sete horas atrás"; // Horário de cada postagem
+                    $datasete[$lang]; // Horário de cada postagem
                 include $corredor.'includes/carousel.php';
             ?>
             <?php
@@ -90,59 +124,7 @@
                 <div class="col-12 col-lg-7 feed">
                     <?php
                         $newsNumber=7; // Número de postagens do feed
-                        $highlight=4; // Cada postagem de número semelhante ao valor de $highlight é um destaque
-                        $titles="Undercut" // Títulos das postagens
-                            ."||".
-                            "Punk"
-                            ."||".
-                            "Sidecut"
-                            ."||".
-                            "Hipster"
-                            ."||".
-                            "Samurai"
-                            ."||".
-                            "Grunge"
-                            ."||".
-                            "Bob";
-                        $images="carouselteste01.png" // Nomes dos arquivos de imagens do feed
-                            ."||".
-                            "carouselteste02.png"
-                            ."||".
-                            "carouselteste03.png"
-                            ."||".
-                            "carouselteste01.png"
-                            ."||".
-                            "carouselteste02.png"
-                            ."||".
-                            "carouselteste03.png"
-                            ."||".
-                            "carouselteste01.png";
-                        $links="cortes/post/index.php" // Links dos destinos de cada postagem
-                            ."||".
-                            "80-2000/post/index.php"
-                            ."||".
-                            "cortes/post/index.php"
-                            ."||".
-                            "80-2000/post/index.php"
-                            ."||".
-                            "cortes/post/index.php"
-                            ."||".
-                            "80-2000/post/index.php"
-                            ."||".
-                            "cortes/post/index.php";
-                        $dates="uma hora atrás" // Horários de cada postagem
-                            ."||".
-                            "duas horas atrás"
-                            ."||".
-                            "três horas atrás"
-                            ."||".
-                            "quatro horas atrás"
-                            ."||".
-                            "cinco horas atrás"
-                            ."||".
-                            "seis horas atrás"
-                            ."||".
-                            "sete horas atrás";
+                        $highlight=4; // Cada postagem de número semelhante ao valor de $highlight é um destaque                     
                         $areas=""; // Área de cada postagem
                         include $corredor.'includes/news.php';
                     ?>

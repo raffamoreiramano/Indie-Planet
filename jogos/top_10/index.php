@@ -39,107 +39,67 @@
                     </div>
                     <?php
     $NF = array(
-        0 => array(
-            "en" => "Linked By Love",
-            "es" => "Vinculados Por El Amor",
-            "pt" => "Ligados Pelo Amor"
-        ),
-        1 => array(
-            "en" => "Paranormal activity",
-            "es" => "Actividad Paranormal",
-            "pt" => "Atividade Paranormal"
-        ),
-        2 => array(
-            "en" => "The Blair Witch",
-            "es" => "La Bruja de Blair",
-            "pt" => "A Bruxa de Blair"
-        ),
-        3 => array(
-            "en" => "Somewhere",
-            "es" => "Un lugar cualquiera",
-            "pt" => "Um Lugar Qualquer"
-        ),
-        4 => array(
-            "en" => "Our Idiot Brother",
-            "es" => "El Idiota de Mi Hermano",
-            "pt" => "O Idiota do Meu Irmão"
-        ),
-        5 => array(
-            "en" => "Paranoid Park",
-            "es" => "Parque Paranoico",
-            "pt" => "Parque Pararóico"
-        ),
-        6 => array(
-            "en" => "Your Sister's Sister",
-            "es" => "La Hermana de Su Hermana",
-            "pt" => "A Irmã da Sua Irmã"
-        ),
-        7 => array(
-            "en" => "The Texas Chain Saw Massacre",
-            "es" => "La Masacre de la Sierra Eléctrica",
-            "pt" => "O Massacre da Serra Elétrica"
-        ),
-        8 => array(
-            "en" => "Kicking and Screaming",
-            "es" => "Tiempo de decisión",
-            "pt" => "Tempo de Decisão"
-        ),
-        9 => array(
-            "en" => "Music Never Stopped",
-            "es" => "La Música Nunca Paró",
-            "pt" => "A Música Nunca Parou"
-        )
+        0 => "Cuphead",
+        1 => "Minecraft",
+        2 => "Undertale",
+        3 => "Celeste",
+        4 => "Stardew Valley",
+        5 => "Hellblade: Senua&apos;s sacrifice",
+        6 => "Don&apos;t Starve",
+        7 => "Hotline Miami",
+        8 => "Red Strings Club",
+        9 => "Papers, Please"
     );
     $GF = array(
         0 => array(
-            "en" => "Drama, Romance",
-            "es" => "Drama, Romance",
-            "pt" => "Drama, Romance"
+            "en" => "Run and gun, Platform",
+            "es" => "Run and gun, Plataforma",
+            "pt" => "Run and gun, Plataforma"
         ),
         1 => array(
-            "en" => "Thriller",
-            "es" => "Suspense",
-            "pt" => "Suspense"
+            "en" => "Sandbox",
+            "es" => "Sandbox",
+            "pt" => "Sandbox"
         ),
         2 => array(
-            "en" => "Mystery, Psychological Horror",
-            "es" => "Misterio, Terror psicologico",
-            "pt" => "Mistério, Terror psicológico"
+            "en" => "RPG",
+            "es" => "RPG",
+            "pt" => "RPG"
         ),
         3 => array(
-            "en" => "Drama",
-            "es" => "Drama",
-            "pt" => "Drama"
+            "en" => "Platform",
+            "es" => "Plataforma",
+            "pt" => "Plataforma"
         ),
         4 => array(
-            "en" => "Comedy",
-            "es" => "Comedia",
-            "pt" => "Comédia"
+            "en" => "Farming simulation, RPG",
+            "es" => "Agro-simulación, RPG",
+            "pt" => "Agro-simulação, RPG"
         ),
         5 => array(
-            "en" => "Drama, thriller",
-            "es" => "Drama, Suspense",
-            "pt" => "Drama, Suspense"
+            "en" => "Action, Adventure",
+            "es" => "Acción, Aventura",
+            "pt" => "Ação, Aventura"
         ),
         6 => array(
-            "en" => "Comedy, Drama",
-            "es" => "Comedia, Drama",
-            "pt" => "Comédia, Drama"
+            "en" => "Survival",
+            "es" => "Supervivencia",
+            "pt" => "Sobrevivência"
         ),
         7 => array(
-            "en" => "Thriller",
-            "es" => "Suspense",
-            "pt" => "Suspense"
+            "en" => "Shoot&apos;em up",
+            "es" => "Shoot&apos;em up",
+            "pt" => "Shoot&apos;em up"
         ),
         8 => array(
-            "en" => "Drama, Comedy",
-            "es" => "Drama, Comedia",
-            "pt" => "Drama, Comédia"
+            "en" => "Adventure",
+            "es" => "Aventura",
+            "pt" => "Aventura"
         ),
         9 => array(
-            "en" => "Drama",
-            "es" => "Drama",
-            "pt" => "Drama"
+            "en" => "Strategy",
+            "es" => "Estrategia",
+            "pt" => "Estratégia"
         )
     );
                         $watchnow=array("en" => "Coming soon:","es" => "En breve:","pt" => "Em breve:");
@@ -149,7 +109,7 @@
                         
                         for ($i=9;$i>=0;$i--) {
                             echo "<section class='row'>\n<div class='col-12'>\n<h3 class='h5 font-weight-bold'>";
-                            echo "#".($i+1).". ".$NF[$i][$lang]." - ".$GF[$i][$lang]."</h3>\n";
+                            echo "#".($i+1).". ".$NF[$i]." - ".$GF[$i][$lang]."</h3>\n";
                             echo $textP[rand(1,(count($textP)-2))]."</p>\n</div>\n</section>";
                         }
                     ?>
@@ -160,7 +120,7 @@
                     </div>
                     <div class="row pb-3">
                         <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-resp0onsive-item" src="https://www.youtube.com/embed/y23HyopQxEg" allowfullscreen></iframe>
+                            <iframe class="embed-resp0onsive-item" src="https://www.youtube.com/embed/UJfeziEzSg4" allowfullscreen></iframe>
                         </div>
                     </div>
                     <section class="row">
