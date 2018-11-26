@@ -814,3 +814,10 @@ textarea {
         margin-right: 8px;
     }
 }
+#perfil2 {
+    text-decoration: line-through;
+}
+#perfil2 div img {
+    filter: gray;
+    filter: grayscale(100%);
+}
