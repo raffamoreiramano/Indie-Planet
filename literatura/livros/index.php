@@ -40,10 +40,10 @@
                         ?></h1>
                 </div>
             </div>
-        <div class="row">
+        <div class="row text-justify">
             
              <div class="col-10 col-md-8 col-lg-3 mb-5" >
-                 <div class="row">
+                 
                         <?php
                         switch ($lang) {
                             case "en";
@@ -58,12 +58,13 @@
                         }
                         ?>
                     </div>
-             </div>
+             
             
               <div class="col-12 col-md-8 col-lg-6 mb-5" >
-                  <img alt="imagemquadrino1" src="../../img/carouselteste03.png" class="img-fluid"> 
+                  <img alt="imagemquadrinho1" src="../../img/content3.jpg" class="img-fluid"> 
               </div>
             
+             
               <div class="col-10 col-md-8 col-lg-3 mb-5" >
              <?php
                         switch ($lang) {

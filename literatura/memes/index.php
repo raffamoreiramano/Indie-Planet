@@ -51,16 +51,16 @@
                             case "en":
                                 echo "Memes are usually Indie because they are created by most people most of the time. It ceases to be independent at the time it is posted on any page, blog or other medium of administrative scale. But a lot of the memes do not go through this stage of publishing in famous companies, it becomes known through the sharing of individuals in social networks, websites, and so on.
                                 Even after they pass through organized media vehicles (pages and others) they will still be of independent origin, as the author / creator is a person without associations or links with such vehicles. And that makes about 95% of all memes in Brazil are Indies. 
-                                The theory behind this text was the work of Mmikhail Bakhtin, a great scholar of the forms of discourse ";
+                                The theory behind this text was the work of Mikhail Bakhtin, a great scholar of the forms of discourse ";
                                 break;
                             case "es":
                                 echo "Los memes normalmente son indie por qué son creados por la persona física la mayor parte del tiempo. Deja de ser independiente en el momento en que se publica en alguna página, blog u otro medio de comunicación que tenga escala administrativa. Pero mucho de los memes no pasan por esa etapa de publicación en compañías famosas, se vuelve conocido a través del compartir de individuos en las redes sociales, sitios web y etc.
                                 Incluso después de que pasen por vehículos mediáticos organizados (páginas y otros), serán de origen independiente, pues el autor / creador es una persona sin asociaciones o vínculos con dichos vehículos. Y eso hace que alrededor del 95% de todos los memes en Brasil sean Indies. 
-                                La teoría que embasa ese texto fue el trabajo de Mmikhail Bakhtin, gran investigador de las formas del discurso.";
+                                La teoría que embasa ese texto fue el trabajo de Mikhail Bakhtin, gran investigador de las formas del discurso.";
                                 break;
                             case "pt":
-                                echo "Os memes normalmente são Indie pelo fato de serem criados por pessoa independentes na maioria das vezes. Ele não deixa de de ter origem independente mesmo no momento em que é públicado em alguma página, blog ou outro meio de comunicação que tenha escala administrativa. Mas muito dos memes não passam por essa etapa de publicação em companhias famosas, ele se torna conhecido através do compartilhamento de indivíduos nas redes sociais, sites e etc.
-                                Mesmo após eles passarem por veículos midiaticos organizados (páginas e outros) ainda assim serão de origem independente, pois o autor/criador é uma pessoa sem associações ou vínculos com tais veículos. E isso faz com que por volta de 95% de todos os memes no Brasil sejam Indies. A teoria que embasa esse texto foi o trabalho de Mmikhail Bakhtin, grande pesquisador das formas do discurso.";
+                                echo "Os memes normalmente são Indie pelo fato de serem criados por pessoas independentes. Ele não deixa de de ter origem independente mesmo no momento em que é públicado em alguma página, blog ou outro meio de comunicação que tenha escala administrativa. Muito dos memes não passam por essa etapa de publicação em companhias famosas, ele se torna conhecido através do compartilhamento de indivíduos nas redes sociais, sites e etc.
+                                Após eles passarem por veículos midiaticos organizados (páginas e outros) ainda assim serão de origem independente, pois o autor/criador é uma pessoa sem associações ou vínculos com tais veículos. E isso faz com que por volta de 95% de todos os memes no Brasil sejam Indies. A teoria que embasa esse texto foi o trabalho de Mikhail Bakhtin, grande pesquisador das formas do discurso.";
                                 break;
                         }
                     ?>

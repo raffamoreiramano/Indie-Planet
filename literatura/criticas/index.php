@@ -123,9 +123,9 @@
                             ."||".
                              "content2.jpg"
                             ."||".
-                            "carouselteste01.png"
+                            "content5.jpg"
                             ."||".
-                            "carouselteste03.png";
+                            "content6.jpg";
                         $links="post/index.php" // Links dos destinos de cada postagem
                             ."||".
                             "post/index.php"

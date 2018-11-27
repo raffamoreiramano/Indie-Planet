@@ -134,7 +134,19 @@
                         ?>
                                 
                         </th>
-                        <td>Quando algumas operações do tráfico de drogas começam a dar errado, com dinheiro sumindo e chefões do crime aparecendo mortos, a estrutura fica abalada e a desconfiança se instala. Junto com isso, correm boatos sobre uma figura misteriosa com cara de macaco no local dos crimes e uma jornalista começa a investigar o que está acontecendo. </td>
+                        <td><?php
+                        switch ($lang) {
+                            case "en":
+                                echo "When some drug trafficking operations begin to go wrong, with money fading and crime bosses dead, the structure is shaken and mistrust sets in. Along with this, rumors are running about a mysterious monkey-like figure at the scene of the crime and a journalist begins to investigate what is happening.";
+                                break;
+                            case "es":
+                                echo "Cuando algunas operaciones del tráfico de drogas empiezan a ir mal, con dinero desapareciendo y los jefes del crimen apareciendo muertos, la estructura se vuelve sacudida y la desconfianza se instala. Junto con eso, corren rumores sobre una figura misteriosa con cara de mono en el lugar de los crímenes y una periodista empieza a investigar lo que está pasando.";
+                                break;
+                            case "pt":
+                                echo "Quando algumas operações do tráfico de drogas começam a dar errado, com dinheiro sumindo e chefões do crime aparecendo mortos, a estrutura fica abalada e a desconfiança se instala. Junto com isso, correm boatos sobre uma figura misteriosa com cara de macaco no local dos crimes e uma jornalista começa a investigar o que está acontecendo.";
+                                break;
+                        }
+                        ?></td>
                     </tr>
                 </table>
             </div>
@@ -231,7 +243,19 @@
                         ?>
                                 
                         </th>
-                        <td>Durante uma viagem pelo Ásia, um casal encontra um demônio que os força a passar por diferentes realidades, perigos e desafios a cada 9 horas. Em cada um desses mundos ou “fases”, eles são perseguidos por criaturas bizarras e precisam conquistar pequenos troféus antes de chegar no boss final. </td>
+                        <td><?php
+                        switch ($lang) {
+                            case "en":
+                                echo "During a trip through Asia, a couple finds a demon that forces them to go through different realities, dangers and challenges every 9 hours. In each of these worlds or stages, they are pursued by bizarre creatures and need to win small trophies before reaching the final boss.";
+                                break;
+                            case "es":
+                                echo "Durante un viaje por Asia, una pareja encuentra a un demonio que los fuerza a pasar por diferentes realidades, peligros y desafíos cada 9 horas. En cada uno de estos mundos o fases, son perseguidos por criaturas extrañas y necesitan conquistar pequeños trofeos antes de llegar al jefe final.";
+                                break;
+                            case "pt":
+                                echo "Durante uma viagem pelo Ásia, um casal encontra um demônio que os força a passar por diferentes realidades, perigos e desafios a cada 9 horas. Em cada um desses mundos ou fases, eles são perseguidos por criaturas bizarras e precisam conquistar pequenos troféus antes de chegar no boss final.";
+                                break;
+                        }
+                        ?></td>
                     </tr>
                 </table>
             </div>
@@ -328,7 +352,19 @@
                         ?>
                                 
                         </th>
-                        <td>Uma aventureira desbrava um Mundo onde nada é o que parece ser. </td>
+                        <td><?php
+                        switch ($lang) {
+                            case "en":
+                                echo "An adventurer breaks a world where nothing is what it seems.";
+                                break;
+                            case "es":
+                                echo "Una aventurera desbraba un mundo donde nada es lo que parece ser.";
+                                break;
+                            case "pt":
+                                echo "Uma aventureira desbrava um Mundo onde nada é o que parece ser. ";
+                                break;
+                        }
+                        ?></td>
                     </tr>
                 </table>
             </div>
@@ -426,7 +462,19 @@
                         ?>
                                 
                         </th>
-                        <td>Duas funcionárias públicas da Secretaria de Atividades Fora Do Comum do Ceará (SECAFC CE) precisam impedir que criaturas sobrenaturais infrinjam as leis humanas.</td>
+                        <td><?php
+                        switch ($lang) {
+                            case "en":
+                                echo "Two public officials from the Secretariat of Activities Outside the Common Place of Ceará (SECAFC CE) must prevent supernatural creatures from violating human laws.";
+                                break;
+                            case "es":
+                                echo "Dos funcionarios públicos de la Secretaría de Actividades Fuera del Common de Ceará (SECAFC CE) necesitan impedir que criaturas sobrenaturales infrinjan las leyes humanas.";
+                                break;
+                            case "pt":
+                                echo "Duas funcionárias públicas da Secretaria de Atividades Fora Do Comum do Ceará (SECAFC CE) precisam impedir que criaturas sobrenaturais infrinjam as leis humanas.";
+                                break;
+                        }
+                        ?></td>
                     </tr>
                 </table>
             </div>
@@ -526,7 +574,19 @@
                         ?>
                                      
                         </th>
-                        <td>Coletânea com oito histórias de horror inspiradas por O Rei Amarelo, de Robert W. Chambers</td>
+                        <td><?php
+                        switch ($lang) {
+                            case "en":
+                                echo "A collection of eight horror stories inspired by The Yellow King by Robert W. Chambers";
+                                break;
+                            case "es":
+                                echo "Coletánea con ocho historias de horror inspiradas por El Rey Amarillo, de Robert W. Chambers";
+                                break;
+                            case "pt":
+                                echo "Coletânea com oito histórias de horror inspiradas por O Rei Amarelo, de Robert W. Chambers";
+                                break;
+                        }
+                        ?></td>
                     </tr>
                 </table>
             </div>
@@ -625,7 +685,19 @@
                         ?>
                                 
                         </th>
-                        <td>Quando um membro de uma tradicional família da máfia italiana (de pernilongos) é assassinado brutalmente, só há uma solução: VINGANÇA!</td>
+                        <td><?php
+                        switch ($lang) {
+                            case "en":
+                                echo "When a member of a traditional Italian mafia family (of mosquitoes) is brutally murdered, there is only one solution: REVENGE!";
+                                break;
+                            case "es":
+                                echo "Cuando un miembro de una tradicional familia de la mafia italiana (de pernilongos) es asesinado brutalmente, sólo hay una solución: ¡VENGANZA!";
+                                break;
+                            case "pt":
+                                echo "Quando um membro de uma tradicional família da máfia italiana (de pernilongos) é assassinado brutalmente, só há uma solução: VINGANÇA!";
+                                break;
+                        }
+                        ?></td>
                     </tr>
                 </table>
             </div>
@@ -722,7 +794,19 @@
                         ?>
                                 
                         </th>
-                        <td>Uma coletânea de histórias de zumbis ambientadas nas ruas cinzentas de São Paulo.</td>
+                        <td><?php
+                        switch ($lang) {
+                            case "en":
+                                echo "A collection of zombie stories set in the gray streets of São Paulo.";
+                                break;
+                            case "es":
+                                echo "Una colección de historias de zombis ambientadas en las calles grises de São Paulo.";
+                                break;
+                            case "pt":
+                                echo "Uma coletânea de histórias de zumbis ambientadas nas ruas cinzentas de São Paulo.";
+                                break;
+                        }
+                        ?></td>
                     </tr>
                 </table>
             </div>
@@ -823,7 +907,19 @@
                                 
                             
                         </th>
-                        <td>Uma história muda sobre demônios dos quais é impossível fugir.</td>
+                        <td><?php
+                        switch ($lang) {
+                            case "en":
+                                echo "A story changes about demons from which it is impossible to escape.";
+                                break;
+                            case "es":
+                                echo "Una historia cambia sobre demonios de los cuales es imposible huir.";
+                                break;
+                            case "pt":
+                                echo "Uma história muda sobre demônios dos quais é impossível fugir.";
+                                break;
+                        }
+                        ?></td>
                     </tr>
                 </table>
             </div>
@@ -926,7 +1022,19 @@
                                 
                             
                         </th>
-                        <td>A segunda HQ de Brão Barbosa conta a história de um triângulo amoroso bastante bizarro. Qualquer coisa que se fale da sinopse além disso, pode estragar a experiência. O final é inacreditavelmente surpreendente e qualquer sentimento que eu divulgue sobre isso: se achei estranho, bonito, se chorei ou se sorri, também pode estragar a experiência. </td>
+                        <td><?php
+                        switch ($lang) {
+                            case "en":
+                                echo "The second HQ of Brão Barbosa tells the story of a rather bizarre love triangle. Anythingd that speaks of the synopsis in addition can ruin the experience. The ending is unbelievably surprising and any sentiment I divulge about it: if I found it strange, beautiful, if I cried or smiled, it can also ruin the experience.";
+                                break;
+                            case "es":
+                                echo "La segunda HQ de Brão Barbosa cuenta la historia de un triángulo amoroso bastante bizarro. Cualquier cosa que se hable de la sinopsis además, puede estropear la experiencia. El final es increíblemente sorprendente y cualquier sentimiento que yo divulgue sobre eso: si me pareció extraño, bonito, si lloré o si sonríe, también puede arruinar la experiencia.";
+                                break;
+                            case "pt":
+                                echo "A segunda HQ de Brão Barbosa conta a história de um triângulo amoroso bastante bizarro. Qualquer coisa que se fale da sinopse além disso, pode estragar a experiência. O final é inacreditavelmente surpreendente e qualquer sentimento que eu divulgue sobre isso: se achei estranho, bonito, se chorei ou se sorri, também pode estragar a experiência.";
+                                break;
+                        }
+                        ?> </td>
                     </tr>
                 </table>
             </div>
@@ -1029,7 +1137,19 @@
                                 
                             
                         </th>
-                        <td>O mundo distante onde um simples olhar vale mais que qualquer nota de dinheiro, minério ou comida. O olhar verdadeiro só o cavaleiro de coração puro e a princesa real poderíam ter. </td>
+                        <td><?php
+                        switch ($lang) {
+                            case "en":
+                                echo "The distant world where a mere glance is worth more than any note of money, ore, or food. The true look only the pure-hearted knight and the royal princess could have.";
+                                break;
+                            case "es":
+                                echo "El mundo distante donde una simple mirada vale más que cualquier nota de dinero, mineral o comida. La mirada verdadera sólo el caballero de corazón puro y la princesa real podían tener.";
+                                break;
+                            case "pt":
+                                echo "O mundo distante onde um simples olhar vale mais que qualquer nota de dinheiro, minério ou comida. O olhar verdadeiro só o cavaleiro de coração puro e a princesa real poderíam ter. ";
+                                break;
+                        }
+                        ?></td>
                     </tr>
                 </table>
             </div>
