@@ -1,6 +1,7 @@
 <!doctype html>
 <?php
     include '../includes/matrix.php';
+    $pastaAtualFake="forum";
 ?>
 <html lang="pt-BR">
 <?php
