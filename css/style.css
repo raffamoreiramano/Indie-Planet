@@ -821,3 +821,27 @@ textarea {
     filter: gray;
     filter: grayscale(100%);
 }
+.map-text-1 {
+    color: #19CBCB !important;
+}
+.map-text-2 {
+    color: #CE3EB7 !important;
+}
+.map-text-3 {
+    color: #5F778A !important;
+}
+.map-text-4 {
+    color: #E1BE82 !important;
+}
+.map-text-5 {
+    color: #8BCCF2 !important;
+}
+.map-text-6 {
+    color: #DE813A !important;
+}
+.map-text-7 {
+    color:  #78BB78 !important;
+}
+.map-text-8 {
+    color:  #FF3D4A !important;
+}

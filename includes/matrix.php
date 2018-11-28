@@ -79,7 +79,7 @@ setlocale(LC_ALL, 'pt_BR');
             "secundario" => array (
                 "filmes" => array (
                     "en" => "Movies",
-                    "es" => "Peliculas",
+                    "es" => "Películas",
                     "pt" => "Filmes"
                 ),
                 "novidades" => array (
@@ -399,5 +399,16 @@ setlocale(LC_ALL, 'pt_BR');
                         "pt" => "Fedora"
                     )
                 )
+            );
+
+            $norman=array(
+                "en" => "Usage rules",
+                "es" => "Normas de uso",
+                "pt" => "Normas de utilização"
+            );
+            $mapa=array(
+                "en" => "Site map",
+                "es" => "Mapa del sitio",
+                "pt" => "Mapa do site"
             );
 ?>
