@@ -72,11 +72,12 @@
 						?>
 				</p>
 
-				<table class="table">
-					<thead class="thead-dark">
-						<tr>
-							<th scope="row">
-								<?php
+				<div class="row">
+					<table class="table table-responsive">
+						<thead class="thead-dark">
+							<tr>
+								<th scope="row">
+									<?php
                         		switch ($lang) {
                             case "en":
                                 echo "Name";
@@ -87,10 +88,10 @@
                             case "pt":
                                 echo "Nome";
                                 break;}?>
-							</th>
+								</th>
 
-							<th scope="row">
-								<?php
+								<th scope="row">
+									<?php
 								switch ($lang) {
 							case "en":
 								echo "Studio";
@@ -102,9 +103,9 @@
 								echo "Estúdio";
 								break;
 								}?>
-							</th>
-							<th scope="row">
-								<?php
+								</th>
+								<th scope="row">
+									<?php
 								switch ($lang) {
 							case "en":
 								echo "Platform";
@@ -116,9 +117,9 @@
 								echo "Plataforma";
 								break;
 								}?>
-							</th>
-							<th scope="row">
-								<?php
+								</th>
+								<th scope="row">
+									<?php
 								switch ($lang) {
 							case "en":
 								echo "Date";
@@ -130,74 +131,75 @@
 								echo "Data";
 								break;
 								}?>
-							</th>
-						</tr>
-					</thead>
+								</th>
+							</tr>
+						</thead>
 
-					<tbody>
-						<tr>
-							<th scope="row">The Last Night</th>
-							<td>Odd Tales</td>
-							<td>Xbox One/Microsoft Windows/Linux/Mac OS Classic</td>
-							<td>2019</td>
-						</tr>
-						<tr>
-							<th scope="row">Ooblets</th>
-							<td>Double Fine</td>
-							<td>Xbox One/Microsoft Windows</td>
-							<td>2018</td>
-						</tr>
-						<tr>
-							<th scope="row">We Happy Feel</th>
-							<td>Compulsion Games, Gearbox Software</td>
-							<td>PlayStation 4/Xbox One/Microsoft Windows/Linux/Mac OS Classic</td>
-							<td>10/08/2018</td>
-						</tr>
-						<tr>
-							<th scope="row">Super Meat Boy Forever</th>
-							<td>Team Meatr</td>
-							<td>PlayStation 4/Xbox One/Nintendo Switch/Android/iOS/Microsoft Windows/Linux</td>
-							<td>2018</td>
-						</tr>
-						<tr>
-							<th scope="row">Light Fall</th>
-							<td>Bishop Games</td>
-							<td>Microsoft Windows/PlayStation 4/Nintendo Switch/Xbox One/Mac OS Classic</td>
-							<td>26/04/2018</td>
-						</tr>
-						<tr>
-							<th scope="row">My Time At Portia</th>
-							<td>Team17</td>
-							<td>PC</td>
-							<td>23/01/2018</td>
-						</tr>
-						<tr>
-							<th scope="row">PLANET ALPHA</th>
-							<td>Team17</td>
-							<td>PlayStation 4/Xbox One/Nintendo Switch/Microsoft Windows</td>
-							<td>04/09/2018</td>
-						</tr>
-						<tr>
-							<th scope="row">My Memory of Us</th>
-							<td>IMGN.PRO</td>
-							<td>PlayStation 4/Xbox One/Nintendo Switch/Microsoft Windows</td>
-							<td>09/10/2018</td>
-						</tr>
-						<tr>
-							<th scope="row">Guacamelee! 2</th>
-							<td>DrinkBox Studios</td>
-							<td> PlayStation 4/Nintendo Switch/Microsoft Windows</td>
-							<td>21/08/2018</td>
-						</tr>
-						<tr>
-							<th scope="row">Celeste</th>
-							<td>MiniBoss</td>
-							<td>PlayStation 4/Nintendo Switch/Xbox One/Microsoft Windows/Linux/Mac OS Classic</td>
-							<td>25/01/2018</td>
-						</tr>
+						<tbody>
+							<tr>
+								<th scope="row">The Last Night</th>
+								<td>Odd Tales</td>
+								<td>Xbox One/Microsoft Windows/Linux/Mac OS Classic</td>
+								<td>2019</td>
+							</tr>
+							<tr>
+								<th scope="row">Ooblets</th>
+								<td>Double Fine</td>
+								<td>Xbox One/Microsoft Windows</td>
+								<td>2018</td>
+							</tr>
+							<tr>
+								<th scope="row">We Happy Feel</th>
+								<td>Compulsion Games, Gearbox Software</td>
+								<td>PlayStation 4/Xbox One/Microsoft Windows/Linux/Mac OS Classic</td>
+								<td>10/08/2018</td>
+							</tr>
+							<tr>
+								<th scope="row">Super Meat Boy Forever</th>
+								<td>Team Meatr</td>
+								<td>PlayStation 4/Xbox One/Nintendo Switch/Android/iOS/Microsoft Windows/Linux</td>
+								<td>2018</td>
+							</tr>
+							<tr>
+								<th scope="row">Light Fall</th>
+								<td>Bishop Games</td>
+								<td>Microsoft Windows/PlayStation 4/Nintendo Switch/Xbox One/Mac OS Classic</td>
+								<td>26/04/2018</td>
+							</tr>
+							<tr>
+								<th scope="row">My Time At Portia</th>
+								<td>Team17</td>
+								<td>PC</td>
+								<td>23/01/2018</td>
+							</tr>
+							<tr>
+								<th scope="row">PLANET ALPHA</th>
+								<td>Team17</td>
+								<td>PlayStation 4/Xbox One/Nintendo Switch/Microsoft Windows</td>
+								<td>04/09/2018</td>
+							</tr>
+							<tr>
+								<th scope="row">My Memory of Us</th>
+								<td>IMGN.PRO</td>
+								<td>PlayStation 4/Xbox One/Nintendo Switch/Microsoft Windows</td>
+								<td>09/10/2018</td>
+							</tr>
+							<tr>
+								<th scope="row">Guacamelee! 2</th>
+								<td>DrinkBox Studios</td>
+								<td> PlayStation 4/Nintendo Switch/Microsoft Windows</td>
+								<td>21/08/2018</td>
+							</tr>
+							<tr>
+								<th scope="row">Celeste</th>
+								<td>MiniBoss</td>
+								<td>PlayStation 4/Nintendo Switch/Xbox One/Microsoft Windows/Linux/Mac OS Classic</td>
+								<td>25/01/2018</td>
+							</tr>
 
-					</tbody>
-				</table>
+						</tbody>
+					</table>
+				</div>
 			</div>
 		</div>
 	</div>

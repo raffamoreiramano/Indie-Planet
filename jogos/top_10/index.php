@@ -8,23 +8,24 @@
     include $corredor.'includes/head.php';
 ?>
 
-    <body class="<?php echo $pastaAtual; ?>">
-        <header>
-            <?php
+<body class="<?php echo $pastaAtual; ?>">
+	<header>
+		<?php
                 include $corredor.'includes/nav-top.php';
             ?>
-            <?php
+		<?php
                 include $corredor.'includes/nav-mid.php';
             ?>
-        </header>
-        <?php
+	</header>
+	<?php
             include $corredor.'includes/trail.php';
         ?>
-        <div class="container">
-            <div class="row justify-content-between">
-                <article class="col-12 col-lg-7">
-                    <div class="row news-header">
-                        <h1 class="mx-0 h4 font-weight-bold my-4 text-body"><?php switch($lang) {
+	<div class="container">
+		<div class="row justify-content-between">
+			<article class="col-12 col-lg-7">
+				<div class="row news-header">
+					<h1 class="mx-0 h4 font-weight-bold my-4 text-body">
+						<?php switch($lang) {
     case "en":
         echo "Top 10 Indie Movies";
         break;
@@ -35,9 +36,10 @@
         echo "Top 10 Filmes Indie";
         break;
         
-} ?></h1>
-                    </div>
-                    <?php
+} ?>
+					</h1>
+				</div>
+				<?php
                         $gen=array(
                             "en" => "Genre",
                             "es" => "Género",
@@ -82,15 +84,15 @@
                     
                         $LJ = array(
                             0 => "29/09/2017",
-                            1 => "Minecraft",
-                            2 => "Undertale",
-                            3 => "Celeste",
-                            4 => "Stardew Valley",
-                            5 => "Hellblade: Senua&apos;s sacrifice",
-                            6 => "Don&apos;t Starve",
-                            7 => "Hotline Miami",
-                            8 => "Red Strings Club",
-                            9 => "Papers, Please"
+                            1 => "17/05/2009",
+                            2 => "15/09/2015",
+                            3 => "25/01/2018",
+                            4 => "26/02/2016",
+                            5 => "08/08/2017",
+                            6 => "23/04/2013",
+                            7 => "23/10/2012",
+                            8 => "22/01/2018",
+                            9 => "08/08/2013"
                         );
                     
                         $GJ = array(
@@ -153,49 +155,49 @@
                                 "pt" => "Chad e Jared Moldenhauer"
                             ),
                             1 => array(
-                                "en" => "Sandbox",
-                                "es" => "Sandbox",
-                                "pt" => "Sandbox"
+                                "en" => "Markus Persson, Mojang",
+                                "es" => "Markus Persson, Mojang",
+                                "pt" => "Markus Persson, Mojang"
                             ),
                             2 => array(
-                                "en" => "RPG",
-                                "es" => "RPG",
-                                "pt" => "RPG"
+                                "en" => "Toby Fox",
+                                "es" => "Toby Fox",
+                                "pt" => "Toby Fox"
                             ),
                             3 => array(
-                                "en" => "Platform",
-                                "es" => "Plataforma",
-                                "pt" => "Plataforma"
+                                "en" => " Matt Makes Games, Noel Berry",
+                                "es" => " Matt Makes Games, Noel Berry",
+                                "pt" => " Matt Makes Games, Noel Berry"
                             ),
                             4 => array(
-                                "en" => "Farming simulation, RPG",
-                                "es" => "Agro-simulación, RPG",
-                                "pt" => "Agro-simulação, RPG"
+                                "en" => "Eric Barone, Sickhead Games",
+                                "es" => "Eric Barone, Sickhead Games",
+                                "pt" => "Eric Barone, Sickhead Games"
                             ),
                             5 => array(
-                                "en" => "Action, Adventure",
-                                "es" => "Acción, Aventura",
-                                "pt" => "Ação, Aventura"
+                                "en" => "Ninja Theory",
+                                "es" => "Ninja Theory",
+                                "pt" => "Ninja Theory"
                             ),
                             6 => array(
-                                "en" => "Survival",
-                                "es" => "Supervivencia",
-                                "pt" => "Sobrevivência"
+                                "en" => "Klei Entertainment",
+                                "es" => "Klei Entertainment",
+                                "pt" => "Klei Entertainment"
                             ),
                             7 => array(
-                                "en" => "Shoot&apos;em up",
-                                "es" => "Shoot&apos;em up",
-                                "pt" => "Shoot&apos;em up"
+                                "en" => "Dennaton Games, Jonatan Söderström",
+                                "es" => "Dennaton Games, Jonatan Söderström",
+                                "pt" => "Dennaton Games, Jonatan Söderström"
                             ),
                             8 => array(
-                                "en" => "Adventure",
-                                "es" => "Aventura",
-                                "pt" => "Aventura"
+                                "en" => "Deconstructeam",
+                                "es" => "Deconstructeam",
+                                "pt" => "Deconstructeam"
                             ),
                             9 => array(
-                                "en" => "Strategy",
-                                "es" => "Estrategia",
-                                "pt" => "Estratégia"
+                                "en" => "Lucas Pope, 3909",
+                                "es" => "Lucas Pope, 3909",
+                                "pt" => "Lucas Pope, 3909"
                             )
                         );
                     
@@ -216,20 +218,22 @@
                             echo $textP[rand(1,(count($textP)-2))]."</p>\n</div>\n</section>";
                         }
                     ?>
-                </article>
-                <aside class="col-12 col-lg-4">
-                    <div class='aside-content row bg-dark p-3'>
-                        <h4 class='h4 col my-auto font-weight-bold px-0'><?php echo $watchnow[$lang]; ?></h4>                    
-                    </div>
-                    <div class="row mb-3">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-resp0onsive-item" src="https://www.youtube.com/embed/UJfeziEzSg4" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <section class="row">
-                        <div class="col">
-                            
-                            <?php
+			</article>
+			<aside class="col-12 col-lg-4">
+				<div class='aside-content row bg-dark p-3'>
+					<h4 class='h4 col my-auto font-weight-bold px-0'>
+						<?php echo $watchnow[$lang]; ?>
+					</h4>
+				</div>
+				<div class="row mb-3">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-resp0onsive-item" src="https://www.youtube.com/embed/UJfeziEzSg4" allowfullscreen></iframe>
+					</div>
+				</div>
+				<section class="row">
+					<div class="col">
+
+						<?php
                             $news['titles']['en']=array(
                                 "Recognition of the Indie Culture",
                                 "Artist being sued for plagiarism of indie titles",
@@ -282,14 +286,14 @@
                                     echo "<h3 class='h5 d-inline font-weight-bold'>".$news['titles'][$lang][$i]."</h3></a></div></div></div></article>";
                                 }
                             ?>
-                        </div>
-                    </section>
-                </aside>
-            </div>
-        </div>
-        <?php
+					</div>
+				</section>
+			</aside>
+		</div>
+	</div>
+	<?php
             include $corredor.'includes/footer.php';
-        ?>    
-    </body>
+        ?>
+</body>
 
 </html>
