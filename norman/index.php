@@ -44,7 +44,7 @@
                     </div>
                     <section>
                         <div class="row mr-lg-4 news-header">
-                            <h2 class="mx-0 h4 font-weight-bold my-4 text-body">Police verso</h2>
+                            <h2 class="mx-0 h4 font-weight-bold my-4 text-body">Pollice verso</h2>
                         </div>
                         <div class="row m-0">
                             <div class="px-lg-4">
